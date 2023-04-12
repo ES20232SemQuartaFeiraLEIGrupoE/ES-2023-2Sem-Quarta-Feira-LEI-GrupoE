@@ -1,8 +1,13 @@
 package utils;
+import java.awt.Desktop;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.PrintWriter;
+import java.net.URL;
+
 import org.apache.commons.io.FilenameUtils;
 
 public class Utils {
@@ -28,6 +33,15 @@ public class Utils {
 	
 	public static void saveFileLocal(String path) {
 		
+//		Desktop desktop = Desktop.getDesktop();
+//		
+//		try {
+//			desktop.open(new File(path));
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
 		String ext = FilenameUtils.getExtension(path);
 		switch (ext) {
 		case "csv":
@@ -37,6 +51,41 @@ public class Utils {
 		// jsonToFile(path);
 		}
 
+	}
+	
+	public static void copyURLToFile(URL url, File file) {
+		
+		try {
+			InputStream input = url.openStream();
+			if (file.exists()) {
+				if (file.isDirectory())
+					throw new IOException("File '" + file + "' is a directory");
+				
+				if (!file.canWrite())
+					throw new IOException("File '" + file + "' cannot be written");
+			} else {
+				File parent = file.getParentFile();
+				if ((parent != null) && (!parent.exists()) && (!parent.mkdirs())) {
+					throw new IOException("File '" + file + "' could not be created");
+				}
+			}
+
+			FileOutputStream output = new FileOutputStream(file);
+
+			byte[] buffer = new byte[4096];
+			int n = 0;
+			while (-1 != (n = input.read(buffer))) {
+				output.write(buffer, 0, n);
+			}
+
+			input.close();
+			output.close();
+			
+			System.out.println("File '" + file + "' downloaded successfully!");
+		}
+		catch(IOException ioEx) {
+			ioEx.printStackTrace();
+		}
 	}
 
 }
