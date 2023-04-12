@@ -8,6 +8,7 @@ import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 public class Utils {
+
     public static ArrayList<JSONObject> jsonToArrayList(String fileName){
         ArrayList<JSONObject>  list = new ArrayList<>();
         JSONParser parser = new JSONParser();
