@@ -24,6 +24,18 @@
 			<artifactId>commons-io</artifactId>
 			<version>2.6</version>
 		</dependency>
+<<<<<<< HEAD
 	</dependencies>
 
+=======
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20230227</version>
+		</dependency>
+	</dependencies>
+
+
+>>>>>>> 1d955df085cd5385ae5c8c53c2ea642b3e4a215e
 </project>
