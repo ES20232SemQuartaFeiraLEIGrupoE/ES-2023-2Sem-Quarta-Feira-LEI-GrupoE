@@ -12,66 +12,52 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.net.URL;
-//import org.apache.commons.io.FilenameUtils;
+
+import model.Block;
 
 
-public class Utils {
+public class FileReaderWriter {
 	
-	public static List<Block> csvToArray(String csv_path) {
-		List<Block> result = new ArrayList<>();
+
+
+    public static void csvToFile(String fileName, List<Block> data) {
+        try {
+            PrintWriter writer = new PrintWriter(new FileWriter(fileName));
+
+            writer.println(Block.getHeader()); // cabeçalho do arquivo
+
+            for(Block b : data)
+            writer.printf(b.toCsvString());
+            
+
+            writer.close();
+        } catch (IOException e) {
+            System.err.println("Erro ao criar arquivo CSV: " + e.getMessage());
+        }
+    }
+
+	
+	public static void saveFileLocal(String path) {
+		
+		Desktop desktop = Desktop.getDesktop();
+		
 		try {
-			Scanner scanner = new Scanner(new File(csv_path));
-	        while (scanner.hasNext()) {
-	        	String[] data = scanner.nextLine().split(";");
-	        	Block block = new Block(data[0], data[1], data[2],data[3],data[4],data[5],data[6], data[7],data[8],data[9],data[10]);
-	        	result.add(block);
-	        }
-		}catch(FileNotFoundException e){
-			System.out.println("Ficheiro n�o encontrado");
-		}
-		return result;
-	}
-
-	public static void csvToFile(String fileName) {
-		try {
-			FileWriter fw = new FileWriter(fileName);
-			PrintWriter pw = new PrintWriter(fw);
-
-			pw.println("Nome, Idade, Cidade"); // cabeçalho do arquivo
-
-			pw.println("João, 30, São Paulo");
-			pw.println("Maria, 25, Rio de Janeiro");
-			pw.println("Pedro, 40, Belo Horizonte");
-
-			pw.close();
-			fw.close();
+			desktop.open(new File(path));
 		} catch (IOException e) {
-			System.err.println("Erro ao criar arquivo CSV: " + e.getMessage());
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-	}
-
-	
-//	public static void saveFileLocal(String path) {
-//		
-////		Desktop desktop = Desktop.getDesktop();
-////		
-////		try {
-////			desktop.open(new File(path));
-////		} catch (IOException e) {
-////			// TODO Auto-generated catch block
-////			e.printStackTrace();
-////		}
-//		
+		
 //		String ext = FilenameUtils.getExtension(path);
 //		switch (ext) {
 //		case "csv":
 //			csvToFile(path);
 //			break;
-//		// default:
-//		// jsonToFile(path);
+//		 default:
+//		 jsonToFile(path);
 //		}
-//
-//	}
+
+	}
 	
 	public static void copyURLToFile(URL url, File file) {
 		
