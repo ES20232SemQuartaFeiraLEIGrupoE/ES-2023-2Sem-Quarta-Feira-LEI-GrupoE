@@ -52,3 +52,7 @@ Thumbs.db
 *.classpath
 *.project
 */.settings/
+/bin/
+
+# add pom
+!pom.xml

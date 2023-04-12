@@ -1,24 +1,21 @@
 package utils;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.io.FileReader;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+import java.util.ArrayList;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 public class Utils {
 
-
     public static ArrayList<JSONObject> jsonToArrayList(String fileName){
-        ArrayList<JSONObject>  list = new JSONParser();
+        ArrayList<JSONObject>  list = new ArrayList<>();
         JSONParser parser = new JSONParser();
         try{
             Object obj = parser.parse(new FileReader(fileName));
             JSONArray jsonArray = (JSONArray) obj;
-            for (Object obj : jsonArray){
+            for (Object o : jsonArray){
                 JSONObject jsonObject = (JSONObject) o;
                 list.add(jsonObject);
             }
@@ -27,6 +24,4 @@ public class Utils {
         }
         return list;
     }
-
-
 }
