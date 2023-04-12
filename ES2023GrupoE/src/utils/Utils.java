@@ -1,11 +1,12 @@
 package utils;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 
 public class Utils {
 
-	
     public static void csvToFile(String fileName) {
         try {
             FileWriter fw = new FileWriter(fileName);
@@ -23,5 +24,5 @@ public class Utils {
             System.err.println("Erro ao criar arquivo CSV: " + e.getMessage());
         }
     }
-	
+
 }
