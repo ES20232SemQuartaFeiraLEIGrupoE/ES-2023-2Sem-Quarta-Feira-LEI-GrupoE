@@ -6,9 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import com.aspose.cells.Workbook;
-
 import model.Block;
 
 // É necessário importar esta biblioteca
