@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import com.aspose.cells.LoadFormat;
 import com.aspose.cells.Workbook;
 import com.aspose.cells.TxtLoadOptions;
