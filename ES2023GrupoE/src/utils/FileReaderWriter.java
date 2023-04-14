@@ -12,13 +12,9 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import javax.swing.JFileChooser;
-
 import org.apache.commons.io.FilenameUtils;
-
 import java.net.URL;
-
 import model.Block;
 
 public class FileReaderWriter {
@@ -49,19 +45,17 @@ public class FileReaderWriter {
 	}
 
 	public static void saveFileLocal(File file) {
-
 		JFileChooser fileChooser = new JFileChooser();
 		fileChooser.setDialogTitle("Save File");
 		int returnVal = fileChooser.showSaveDialog(null);
 		if (returnVal == JFileChooser.APPROVE_OPTION) {
 			File fileToSave = fileChooser.getSelectedFile();
-			String ext = FilenameUtils.getExtension(fileToSave.toString());
+			String ext = FilenameUtils.getExtension(file.toString());
 			switch (ext) {
-
-			case "csv":
+			case "json":
 				ConvertFiles.jsonToCsv(file, fileToSave.getAbsolutePath());
 				break;
-			default:
+			case "csv":
 				ConvertFiles.csvToJson(file, fileToSave.getAbsolutePath());
 				break;
 			}
@@ -70,7 +64,6 @@ public class FileReaderWriter {
 	}
 
 	public static void copyURLToFile(URL url, File file) {
-
 		try {
 			InputStream input = url.openStream();
 			if (file.exists()) {

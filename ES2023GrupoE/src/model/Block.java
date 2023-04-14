@@ -15,7 +15,8 @@ public class Block {
 	String date;
 	String room;
 	String size_room;
-	
+
+
 	public Block(String course, String curricular_unit, String shift, String team, String number_of_subscribers,String day_of_week, String hour_begin, String hour_end, String date, String room, String size_room){
 		this.course = course;
 		this.curricular_unit = curricular_unit;
@@ -29,7 +30,7 @@ public class Block {
 		this.room = room;
 		this.size_room = size_room;	
 	}
-	
+
 
     public static String getHeader() {
         StringBuilder header = new StringBuilder();
