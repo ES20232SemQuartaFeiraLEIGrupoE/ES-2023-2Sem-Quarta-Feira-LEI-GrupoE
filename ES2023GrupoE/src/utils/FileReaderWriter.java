@@ -19,7 +19,6 @@ import model.Block;
 public class FileReaderWriter {
 	
 
-
     public static void csvToFile(String fileName, List<Block> data) {
         try {
             PrintWriter writer = new PrintWriter(new FileWriter(fileName));
@@ -27,7 +26,7 @@ public class FileReaderWriter {
             writer.println(Block.getHeader()); // cabeçalho do arquivo
 
             for(Block b : data)
-            writer.printf(b.toCsvString());
+            writer.printf(b.toString());
             
 
             writer.close();

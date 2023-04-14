@@ -38,14 +38,15 @@ public class Block {
 
         for (int i = 0; i < fields.length; i++) {
             if (i > 0) {
-                header.append(",");
+                header.append(";");
             }
             header.append(fields[i].getName());
         }
         return header.toString();
     }
-    
-    public String toCsvString() {
+
+	@Override
+    public String toString() {
         return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s%n",
                 this.course, this.curricular_unit, this.shift, this.team, this.number_of_subscribers,
                 this.day_of_week, this.hour_begin, this.hour_end, this.date, this.room, this.size_room);
