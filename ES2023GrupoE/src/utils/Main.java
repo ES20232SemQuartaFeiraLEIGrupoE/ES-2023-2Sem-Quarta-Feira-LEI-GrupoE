@@ -19,11 +19,11 @@ public class Main {
 			e.printStackTrace();
 		}
 
-		File file = FileReaderWriter.uploadFile();
-		FileReaderWriter.saveFileLocal(file);
+//		File file = FileReaderWriter.uploadFile();
+//		FileReaderWriter.saveFileLocal(file);
 
 //		List<Block> list = ConvertFiles.csvToArray();
-//		for (Block j : list) System.out.println(j.toString());
+//		for (Block j : list) System.out.print(j.toString());
 
 //		List<Block> list = ConvertFiles.jsonToArrayList();
 //		for (Block j : list) System.out.println(j.toString());
