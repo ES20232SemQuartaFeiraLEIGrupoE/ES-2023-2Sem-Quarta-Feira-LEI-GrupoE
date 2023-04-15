@@ -51,8 +51,9 @@ public class ConvertFiles {
 		try {
 			Scanner scanner = new Scanner(csv_file);
 			while (scanner.hasNext()) {
-				String[] data = scanner.nextLine().split(";");
-				Block block = new Block(data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8], data[9], data[10]);
+				List<String> data = List.of(scanner.nextLine().split(";"));
+				Block block = new Block();
+				for (int i = 0; i< data.size(); i++) block.setAttribute(i , data.get(i));
 				result.add(block);
 			}
 			scanner.close();
@@ -93,4 +94,5 @@ public class ConvertFiles {
 		}
 		return list;
 	}
+
 }
