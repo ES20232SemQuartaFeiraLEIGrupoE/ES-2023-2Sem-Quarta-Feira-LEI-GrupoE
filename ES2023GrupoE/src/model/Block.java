@@ -65,7 +65,7 @@ public class Block {
 
 	@Override
     public String toString() {
-        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s%n",
+        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n",
                 this.course, this.curricular_unit, this.shift, this.team, this.number_of_subscribers,
                 this.day_of_week, this.hour_begin, this.hour_end, this.date, this.room, this.size_room);
     }
