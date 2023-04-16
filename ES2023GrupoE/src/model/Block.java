@@ -1,6 +1,8 @@
 package model;
 
 import java.lang.reflect.Field;
+import java.time.DayOfWeek;
+import java.time.LocalTime;
 
 public class Block {
 	
@@ -30,6 +32,53 @@ public class Block {
 		this.date = date;
 		this.room = room;
 		this.size_room = size_room;	
+	}
+
+	public String getCourse() {
+		return course;
+	}
+
+	public String getCurricular_unit() {
+		return curricular_unit;
+	}
+
+	public LocalTime getHour_begin(){
+		LocalTime hour = LocalTime.parse(hour_begin);
+		return hour;
+	}
+
+	public LocalTime getHour_end() {
+		LocalTime hour = LocalTime.parse(hour_end);
+		return hour;
+	}
+
+	public DayOfWeek getDayOfWeek() {
+		DayOfWeek day = DayOfWeek.valueOf(day_of_week.toUpperCase());
+		return day;
+	}
+
+	public String getShift() {
+		return shift;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public String getNumberOfSubscribers() {
+		return number_of_subscribers;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public String getRoom() {
+		return room;
+	}
+
+	public String getSizeRoom() {
+		return size_room;
 	}
 
 	public void setAttribute(int attribute, String data){
