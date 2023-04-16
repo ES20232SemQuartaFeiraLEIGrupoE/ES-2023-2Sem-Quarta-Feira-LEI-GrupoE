@@ -19,20 +19,6 @@ import model.Block;
 
 public class FileReaderWriter {
 
-	public static void csvToFile(String fileName, List<Block> data) {
-		try {
-			PrintWriter writer = new PrintWriter(new FileWriter(fileName));
-
-			writer.println(Block.getHeader()); // cabeçalho do arquivo
-
-			for (Block b : data)
-				writer.printf(b.toString());
-
-			writer.close();
-		} catch (IOException e) {
-			System.err.println("Erro ao criar arquivo CSV: " + e.getMessage());
-		}
-	}
 
 	public static File uploadFile() {
 		JFileChooser fileChooser = new JFileChooser();
@@ -95,5 +81,21 @@ public class FileReaderWriter {
 			ioEx.printStackTrace();
 		}
 	}
+
+	public static void csvToFile(String fileName, List<Block> data) {
+		try {
+			PrintWriter writer = new PrintWriter(new FileWriter(fileName));
+
+			writer.println(Block.getHeader()); // cabeçalho do arquivo
+
+			for (Block b : data)
+				writer.printf(b.toString());
+
+			writer.close();
+		} catch (IOException e) {
+			System.err.println("Erro ao criar arquivo CSV: " + e.getMessage());
+		}
+	}
+
 
 }

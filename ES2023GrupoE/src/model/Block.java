@@ -4,18 +4,19 @@ import java.lang.reflect.Field;
 
 public class Block {
 	
-	String course;
-	String curricular_unit;
-	String shift;
-	String team;
-	String number_of_subscribers;
-	String day_of_week;
-	String hour_begin;
-	String hour_end;
-	String date;
-	String room;
-	String size_room;
+	public String course;
+	public String curricular_unit;
+	public String shift;
+	public String team;
+	public String number_of_subscribers;
+	public String day_of_week;
+	public String hour_begin;
+	public String hour_end;
+	public String date;
+	public String room;
+	public String size_room;
 
+	public Block (){}
 
 	public Block(String course, String curricular_unit, String shift, String team, String number_of_subscribers,String day_of_week, String hour_begin, String hour_end, String date, String room, String size_room){
 		this.course = course;
@@ -31,6 +32,22 @@ public class Block {
 		this.size_room = size_room;	
 	}
 
+	public void setAttribute(int attribute, String data){
+		switch (attribute){
+			case 0: course = data; break;
+			case 1: curricular_unit = data; break;
+			case 2: shift = data; break;
+			case 3: team = data; break;
+			case 4: number_of_subscribers = data; break;
+			case 5: day_of_week = data; break;
+			case 6: hour_begin = data; break;
+			case 7: hour_end = data; break;
+			case 8: date = data; break;
+			case 9: room = data; break;
+			default: size_room = data; break;
+		}
+
+	}
 
     public static String getHeader() {
         StringBuilder header = new StringBuilder();
@@ -48,7 +65,7 @@ public class Block {
 
 	@Override
     public String toString() {
-        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s%n",
+        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n",
                 this.course, this.curricular_unit, this.shift, this.team, this.number_of_subscribers,
                 this.day_of_week, this.hour_begin, this.hour_end, this.date, this.room, this.size_room);
     }
