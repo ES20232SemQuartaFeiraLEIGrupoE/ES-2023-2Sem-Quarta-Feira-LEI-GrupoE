@@ -25,8 +25,8 @@ public class Main {
 //		List<Block> list = ConvertFiles.csvToArray();
 //		for (Block j : list) System.out.print(j.toString());
 
-//		List<Block> list = ConvertFiles.jsonToArrayList();
-//		for (Block j : list) System.out.println(j.toString());
+		List<Block> list = ConvertFiles.jsonToArrayList();
+		for (Block j : list) System.out.println(j.toString());
 
 	}
 
