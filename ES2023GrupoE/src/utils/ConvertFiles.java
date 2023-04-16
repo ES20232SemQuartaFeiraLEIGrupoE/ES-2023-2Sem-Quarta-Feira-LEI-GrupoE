@@ -45,8 +45,7 @@ public class ConvertFiles {
 		}
 	}
 
-	public static List<Block> csvToArray() {
-		File csv_file = FileReaderWriter.uploadFile();
+	public static List<Block> csvToArray(File csv_file) {
 		List<Block> result = new ArrayList<>();
 		try {
 			Scanner scanner = new Scanner(csv_file);

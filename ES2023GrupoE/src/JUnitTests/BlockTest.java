@@ -1,5 +1,6 @@
-package model;
+package JUnitTests;
 
+import model.Block;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
