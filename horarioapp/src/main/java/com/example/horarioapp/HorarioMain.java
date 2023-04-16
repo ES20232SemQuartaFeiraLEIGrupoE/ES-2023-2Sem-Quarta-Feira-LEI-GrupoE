@@ -1,4 +1,4 @@
-package com.example.horarioapp;
+package main.java.com.example.horarioapp;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import model.Block;
 
 import java.util.List;
 
