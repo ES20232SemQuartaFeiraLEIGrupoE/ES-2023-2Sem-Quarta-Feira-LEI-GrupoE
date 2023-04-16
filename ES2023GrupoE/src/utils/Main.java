@@ -1,6 +1,6 @@
 package utils;
 
-import java.io.File;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.UIManager;
@@ -22,12 +22,16 @@ public class Main {
 //		File file = FileReaderWriter.uploadFile();
 //		FileReaderWriter.saveFileLocal(file);
 
-//		List<Block> list = ConvertFiles.csvToArray();
-//		for (Block j : list) System.out.print(j.toString());
 
 		List<Block> list = ConvertFiles.jsonToArrayList();
 		for (Block j : list) System.out.println(j.toString());
+//
+//		File json_file = FileReaderWriter.uploadFile();
+//		ConvertFiles.jsonToCsv(json_file, json_file.getPath());
+//
+//
+//
+//
 
 	}
-
 }
