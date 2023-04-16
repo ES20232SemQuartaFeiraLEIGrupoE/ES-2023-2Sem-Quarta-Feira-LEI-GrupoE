@@ -17,9 +17,18 @@ import org.apache.commons.io.FilenameUtils;
 import java.net.URL;
 import model.Block;
 
+/**
+ * Classe para ler e escrever em ficheiros
+ * @author Grupo E
+ * @version 1.0
+ */
+
 public class FileReaderWriter {
 
-
+	/**
+	 *
+	 * @return retorna o ficheiro selecionado através do explorador de ficheiros
+	 */
 	public static File uploadFile() {
 		JFileChooser fileChooser = new JFileChooser();
 		fileChooser.setDialogTitle("Upload File");
@@ -30,6 +39,10 @@ public class FileReaderWriter {
 		return fileChooser.getSelectedFile();
 	}
 
+	/**
+	 * Função que recebe um ficheiro como parâmetro e guarda no formato selecionado pelo utilizador
+	 * @param file ficheiro que queremos guardar localmente
+	 */
 	public static void saveFileLocal(File file) {
 		JFileChooser fileChooser = new JFileChooser();
 		fileChooser.setDialogTitle("Save File");
@@ -49,6 +62,11 @@ public class FileReaderWriter {
 
 	}
 
+	/**
+	 * Função que recebe um URL de onde irá ler os dados existentes
+	 * @param url url dos dados a serem lidos
+	 * @param file ficheiro recebido como parâmetro onde serão escritos os dados lidos do URL
+	 */
 	public static void copyURLToFile(URL url, File file) {
 		try {
 			InputStream input = url.openStream();
@@ -82,6 +100,11 @@ public class FileReaderWriter {
 		}
 	}
 
+	/**
+	 * Função que recebe o nome para um ficheiro que será criado através de uma lista de blocks
+	 * @param fileName nome do ficheiro onde serão escritos os blocks lidos da lista
+	 * @param data lista de blocks
+	 */
 	public static void csvToFile(String fileName, List<Block> data) {
 		try {
 			PrintWriter writer = new PrintWriter(new FileWriter(fileName));

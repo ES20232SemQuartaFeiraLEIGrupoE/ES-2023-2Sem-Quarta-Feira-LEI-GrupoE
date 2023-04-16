@@ -8,8 +8,16 @@ import javax.swing.UnsupportedLookAndFeelException;
 import model.Block;
 import org.json.JSONObject;
 
+/**
+ * @author Grupo E
+ * @version 1.0
+ */
 public class Main {
 
+	/**
+	 * Função main
+	 * @param args array de strings
+	 */
 	public static void main(String[] args) {
 
 		try {
