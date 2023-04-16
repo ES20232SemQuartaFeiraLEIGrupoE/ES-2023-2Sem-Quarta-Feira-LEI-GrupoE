@@ -4,17 +4,17 @@ import java.lang.reflect.Field;
 
 public class Block {
 	
-	String course;
-	String curricular_unit;
-	String shift;
-	String team;
-	String number_of_subscribers;
-	String day_of_week;
-	String hour_begin;
-	String hour_end;
-	String date;
-	String room;
-	String size_room;
+	public String course;
+	public String curricular_unit;
+	public String shift;
+	public String team;
+	public String number_of_subscribers;
+	public String day_of_week;
+	public String hour_begin;
+	public String hour_end;
+	public String date;
+	public String room;
+	public String size_room;
 
 	public Block (){}
 
@@ -44,7 +44,7 @@ public class Block {
 			case 7: hour_end = data; break;
 			case 8: date = data; break;
 			case 9: room = data; break;
-			case 10: size_room = data; break;
+			default: size_room = data; break;
 		}
 
 	}
@@ -65,7 +65,7 @@ public class Block {
 
 	@Override
     public String toString() {
-        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s%n",
+        return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n",
                 this.course, this.curricular_unit, this.shift, this.team, this.number_of_subscribers,
                 this.day_of_week, this.hour_begin, this.hour_end, this.date, this.room, this.size_room);
     }
