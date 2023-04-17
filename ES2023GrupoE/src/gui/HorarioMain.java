@@ -1,4 +1,4 @@
-package main.java.com.example.horarioapp;
+package gui;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -86,6 +86,8 @@ public class HorarioMain extends Application {
         return blocks;
     }
 
+    // vm varible --module-path "C:\Java\JavaFx\javafx-sdk-17.0.1\lib" --add-modules javafx.controls,javafx.fxml
+    // alterar o path
     public static void main(String[] args) {
         launch(args);
     }
