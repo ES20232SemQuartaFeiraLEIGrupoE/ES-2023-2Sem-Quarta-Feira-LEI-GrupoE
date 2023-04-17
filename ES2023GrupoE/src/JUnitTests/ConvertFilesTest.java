@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,6 +21,9 @@ class ConvertFilesTest {
     private String csv_data = "Curso;Unidade Curricular;Turno;Turma;Inscritos no turno;Dia da semana;Hora inicio da aula;Hora fim da aula;Data da aula;Sala atribuida a aula;Lotacao da sala\n" +
                               "ME;Teoria dos Jogos e dos Contratos;01789TP01;MEA1;30;Sex;13:00:00;14:30:00;02/12/2022;AA2.25;34";
     private File csv_file = createTempFile(csv_data);
+
+    private String json_data = "{\"Curso\":\"ME\",\"Unidade Curricular\":Teoria dos Jogos e dos Contratos,\"Turno\":\"01789TP01\"Turma\":\"MEA1\"Inscritos no turno\":\"30\"Dia da semana\":\"Sex\"}";
+    private File json_file = createTempFile(json_data);
 
     @Test
     void csvToJson() throws IOException, ParseException {
@@ -51,6 +55,18 @@ class ConvertFilesTest {
     }
 
     @Test
+    void jsonToCsv() throws IOException {
+        String path = "Files_for_Tests\\json_file.csv";
+        ConvertFiles.jsonToCsv(json_file,path);
+        File csv_file = new File(path);
+        List<String> lines = Files.readAllLines(csv_file.toPath());
+        assertEquals(3, lines.size());
+        assertEquals("Curso;Unidade Curricular;Turno;Inscritos no turno", lines.get(0));
+        assertEquals("ME;Teoria;01789TP01;30", lines.get(1));
+        csv_file.delete();
+    }
+
+    @Test
     void csvToArray() {
         List<Block> blocks = ConvertFiles.csvToArray(csv_file);
         assertEquals(2, blocks.size());
@@ -78,5 +94,10 @@ class ConvertFilesTest {
         } catch (IOException e) {
             throw new RuntimeException("Failed to create temp file");
         }
+    }
+
+
+    @Test
+    void jsonToArrayList() {
     }
 }

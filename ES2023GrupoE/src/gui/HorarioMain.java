@@ -86,7 +86,8 @@ public class HorarioMain extends Application {
         return blocks;
     }
 
-    // vm varible --module-path "C:\Java\JavaFx\javafx-sdk-17.0.1\lib" --add-modules javafx.controls,javafx.fxml
+    // eclipse: vm varible --module-path "C:\Users\tbati\Documents\openjfx-17.0.6_windows-x64_bin-sdk\javafx-sdk-17.0.6\lib" --add-modules javafx.controls,javafx.fxml
+    // intellij: --module-path C:\Users\tbati\Documents\openjfx-17.0.6_windows-x64_bin-sdk\javafx-sdk-17.0.6\lib --add-modules=javafx.controls
     // alterar o path
     public static void main(String[] args) {
         launch(args);
