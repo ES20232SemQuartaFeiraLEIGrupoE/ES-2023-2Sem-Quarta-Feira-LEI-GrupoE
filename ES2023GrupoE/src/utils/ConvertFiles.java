@@ -30,7 +30,6 @@ public class ConvertFiles {
 			Workbook workbook = new Workbook(csv_file.getPath(), loadOptions);
 			workbook.save(path.substring(0, path.lastIndexOf('\\')) + "\\" + FilenameUtils.getBaseName(name) + ".json");
 		} catch (Exception e) {
-			e.printStackTrace();
 			System.out.println("Ficheiro nao encontrado");
 		}
 	}
@@ -79,8 +78,7 @@ public class ConvertFiles {
 	 * Função que carrega um ficheiro .json, converte para csv e passa para uma lista de blocks
 	 * @return retorna uma lista de blocks criados com os campos do ficheiro .json convertido para .csv
 	 */
-	public static List<Block> jsonToArrayList() {
-		File json_file = FileReaderWriter.uploadFile();
+	public static List<Block> jsonToArrayList(File json_file) {
 		jsonToCsv(json_file,json_file.getPath());
 		File csv_file = new File(json_file.getPath().replace(".json",".csv"));
 		return csvToArray(csv_file);
