@@ -3,6 +3,9 @@ package JUnitTests;
 import model.Block;
 import org.junit.jupiter.api.Test;
 
+import java.time.DayOfWeek;
+import java.time.LocalTime;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class BlockTest {
@@ -25,17 +28,17 @@ class BlockTest {
         block.setAttribute(10, "34");
 
 
-        assertEquals("ME", block.course);
-        assertEquals("Teoria dos Jogos e dos Contratos", block.curricular_unit);
-        assertEquals("01789TP01", block.shift);
-        assertEquals("MEA1", block.team);
-        assertEquals("30", block.number_of_subscribers);
+        assertEquals("ME", block.getCourse());
+        assertEquals("Teoria dos Jogos e dos Contratos", block.getCurricular_unit());
+        assertEquals("01789TP01", block.getShift());
+        assertEquals("MEA1", block.getTeam());
+        assertEquals("30", block.getNumberOfSubscribers());
         assertEquals("Sex", block.day_of_week);
         assertEquals("13:00:00", block.hour_begin);
         assertEquals("14:30:00", block.hour_end);
-        assertEquals("02/12/2022", block.date);
-        assertEquals("AA2.25", block.room);
-        assertEquals("34", block.size_room);
+        assertEquals("02/12/2022", block.getDate());
+        assertEquals("AA2.25", block.getRoom());
+        assertEquals("34", block.getSizeRoom());
 
     }
 
@@ -45,10 +48,36 @@ class BlockTest {
         assertEquals("course;curricular_unit;shift;team;number_of_subscribers;day_of_week;hour_begin;hour_end;date;room;size_room", header);
     }
 
+
+
     @Test
     void testToString() {
         Block b = new Block("ME","Teoria dos Jogos e dos Contratos","01789TP01","MEA1","30","Sex","13:00:00","14:30:00","02/12/2022","AA2.25","34");
         String block_string = b.toString();
         assertEquals("ME,Teoria dos Jogos e dos Contratos,01789TP01,MEA1,30,Sex,13:00:00,14:30:00,02/12/2022,AA2.25,34\n" , block_string);
+    }
+
+    @Test
+    void getHour_begin() {
+        String hour = "13:00:00";
+        Block b = new Block();
+        b.setAttribute(6, hour);
+        assertEquals(LocalTime.parse(hour), b.getHour_begin());
+    }
+
+    @Test
+    void getHour_end() {
+        String hour = "13:00:00";
+        Block b = new Block();
+        b.setAttribute(7, hour);
+        assertEquals(LocalTime.parse(hour), b.getHour_end());
+    }
+
+    @Test
+    void getDayOfWeek() {
+        String day = "Monday";
+        Block b = new Block();
+        b.setAttribute(5 , day);
+        assertEquals(DayOfWeek.MONDAY , b.getDayOfWeek());
     }
 }
