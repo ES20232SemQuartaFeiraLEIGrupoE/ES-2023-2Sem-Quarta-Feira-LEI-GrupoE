@@ -2,24 +2,26 @@ package utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import com.aspose.cells.*;
 import model.Block;
 import org.apache.commons.io.FilenameUtils;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 
-
+/**
+ * Classe para guardar e converter ficheiros
+ * @author Grupo E
+ * @version 1.0
+ */
 public class ConvertFiles {
 
+	/**
+	 * Função que converte um ficheiro .csv para .json
+	 * @param csv_file ficheiro .csv a converter
+	 * @param path path para onde queremos guardar o ficheiro convertido
+	 */
 	public static void csvToJson(File csv_file, String path) {
 		try {
 			String name = path.substring(path.lastIndexOf('\\'));
@@ -34,7 +36,11 @@ public class ConvertFiles {
 	}
 
 
-
+	/**
+	 * Função que converte um ficheiro .csv para .json
+	 * @param json_file ficheiro .json a converter
+	 * @param path path para onde queremos guardar o ficheiro convertido
+	 */
 	public static void jsonToCsv(File json_file, String path) {
 		try {
 			String name = path.substring(path.lastIndexOf('\\'));
@@ -47,7 +53,11 @@ public class ConvertFiles {
 		}
 	}
 
-
+	/**
+	 * Função que passa um ficheiro .csv para uma lista
+	 * @param csv_file ficheiro .csv que queremos passar para uma lista
+	 * @return retorna uma lista com os blocks criados através dos campos do ficheiro .csv recebido como parâmetro
+	 */
 	public static List<Block> csvToArray(File csv_file) {
 		List<Block> result = new ArrayList<>();
 		try {
@@ -65,13 +75,15 @@ public class ConvertFiles {
 		return result;
 	}
 
-
+	/**
+	 * Função que carrega um ficheiro .json, converte para csv e passa para uma lista de blocks
+	 * @return retorna uma lista de blocks criados com os campos do ficheiro .json convertido para .csv
+	 */
 	public static List<Block> jsonToArrayList() {
 		File json_file = FileReaderWriter.uploadFile();
 		jsonToCsv(json_file,json_file.getPath());
 		File csv_file = new File(json_file.getPath().replace(".json",".csv"));
 		return csvToArray(csv_file);
-
 	}
 
 }
