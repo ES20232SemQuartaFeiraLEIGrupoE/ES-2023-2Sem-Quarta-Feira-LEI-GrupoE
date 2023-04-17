@@ -54,5 +54,3 @@ Thumbs.db
 */.settings/
 /bin/
 
-# add pom
-!pom.xml
