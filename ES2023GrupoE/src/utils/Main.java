@@ -27,8 +27,8 @@ public class Main {
 			e.printStackTrace();
 		}
 
-		File file = FileReaderWriter.uploadFile();
-		FileReaderWriter.saveFileLocal(file);
+//		File file = FileReaderWriter.uploadFile();
+//		FileReaderWriter.saveFileLocal(file);
 
 		System.out.println("Sonar Funcionou");
 
