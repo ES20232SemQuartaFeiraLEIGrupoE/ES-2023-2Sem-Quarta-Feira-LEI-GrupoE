@@ -92,8 +92,4 @@
 			<version>17</version>
 		</dependency>
 	</dependencies>
-	<properties>
-		<sonar.organization>es20232semquartafeiraleigrupoe</sonar.organization>
-		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-	</properties>
 </project>
