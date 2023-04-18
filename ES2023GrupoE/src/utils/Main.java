@@ -30,7 +30,7 @@ public class Main {
 //		File file = FileReaderWriter.uploadFile();
 //		FileReaderWriter.saveFileLocal(file);
 
-		System.out.println("Sonar Funcionou");
+		System.out.println("Funcionou");
 
 		File json_file = FileReaderWriter.uploadFile();
 		ConvertFiles.jsonToCsv(json_file, json_file.getPath());
