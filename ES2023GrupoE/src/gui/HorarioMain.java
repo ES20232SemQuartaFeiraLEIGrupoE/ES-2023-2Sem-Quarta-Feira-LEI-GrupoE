@@ -1,4 +1,4 @@
-package com.example.horarioapp;
+package gui;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import model.Block;
 
 import java.util.List;
 
@@ -85,6 +86,9 @@ public class HorarioMain extends Application {
         return blocks;
     }
 
+    // eclipse: vm varible --module-path "C:\Users\tbati\Documents\openjfx-17.0.6_windows-x64_bin-sdk\javafx-sdk-17.0.6\lib" --add-modules javafx.controls,javafx.fxml
+    // intellij: --module-path C:\Users\tbati\Documents\openjfx-17.0.6_windows-x64_bin-sdk\javafx-sdk-17.0.6\lib --add-modules=javafx.controls
+    // alterar o path
     public static void main(String[] args) {
         launch(args);
     }

@@ -1,4 +1,4 @@
-package com.example.horarioapp;
+package gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

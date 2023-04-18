@@ -8,8 +8,16 @@ import javax.swing.UnsupportedLookAndFeelException;
 import model.Block;
 import org.json.JSONObject;
 
+/**
+ * @author Grupo E
+ * @version 1.0
+ */
 public class Main {
 
+	/**
+	 * Função main
+	 * @param args array de strings
+	 */
 	public static void main(String[] args) {
 
 		try {
@@ -19,19 +27,13 @@ public class Main {
 			e.printStackTrace();
 		}
 
-//		File file = FileReaderWriter.uploadFile();
-//		FileReaderWriter.saveFileLocal(file);
+		File file = FileReaderWriter.uploadFile();
+		FileReaderWriter.saveFileLocal(file);
 
+		System.out.println("Sonar Funcionou");
 
-		List<Block> list = ConvertFiles.jsonToArrayList();
-		for (Block j : list) System.out.println(j.toString());
-//
-//		File json_file = FileReaderWriter.uploadFile();
-//		ConvertFiles.jsonToCsv(json_file, json_file.getPath());
-//
-//
-//
-//
+		File json_file = FileReaderWriter.uploadFile();
+		ConvertFiles.jsonToCsv(json_file, json_file.getPath());
 
 	}
 }
