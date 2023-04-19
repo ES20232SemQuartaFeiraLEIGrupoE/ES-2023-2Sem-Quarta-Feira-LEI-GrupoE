@@ -9,6 +9,7 @@ import java.time.LocalTime;
  * necessária para ser apresentada num horário
  * @author Grupo E
  * @version 1.0
+ *
  */
 public class Block {
 	
