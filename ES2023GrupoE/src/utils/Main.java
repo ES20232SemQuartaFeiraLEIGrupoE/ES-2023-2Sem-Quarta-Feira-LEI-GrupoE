@@ -30,11 +30,19 @@ public class Main {
 		}
 
 		// DEMO
+		textMainInterface();
+		options();
+	}
+
+	public static void textMainInterface (){
+		System.out.print("-------------- Demo --------------\n");
+		System.out.print("1. Convert File\n");
+		System.out.print("2. Show Gui\n");
+		System.out.print("Insert Option: ");
+	}
+
+	public static void options(){
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("-------------- Demo --------------");
-		System.out.println("1. Convert File");
-		System.out.println("2. Show Gui");
-		System.out.print ("Insert Option: ");
 		switch (scanner.nextInt()){
 			case 2:
 				HorarioMain.main(null);
@@ -63,5 +71,4 @@ public class Main {
 				}
 		}
 	}
-	
 }
