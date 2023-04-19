@@ -19,21 +19,6 @@ public class Main {
 	 * @param args array de strings
 	 */
 	public static void main(String[] args) {
-
-		try {
-			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
-				| UnsupportedLookAndFeelException e) {
-			e.printStackTrace();
-		}
-
-//		File file = FileReaderWriter.uploadFile();
-//		FileReaderWriter.saveFileLocal(file);
-
-		System.out.println("Funcionou");
-
-		File json_file = FileReaderWriter.uploadFile();
-		ConvertFiles.jsonToCsv(json_file, json_file.getPath());
-
+		
 	}
 }
