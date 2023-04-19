@@ -1,15 +1,13 @@
 package utils;
 
 import java.io.*;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import JUnitTests.AllTests;
 import gui.HorarioMain;
 import model.Block;
-import org.json.JSONObject;
+
 
 /**
  * @author Grupo E
