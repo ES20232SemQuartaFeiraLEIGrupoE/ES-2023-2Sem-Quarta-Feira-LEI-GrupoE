@@ -63,4 +63,6 @@ public class Main {
 				}
 		}
 	}
+
+	//Linha de testes Sonarcloud
 }
