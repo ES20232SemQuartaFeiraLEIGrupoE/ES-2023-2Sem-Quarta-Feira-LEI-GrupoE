@@ -24,5 +24,4 @@ class MainTest {
 
         assertEquals(expectedOutput, outContent.toString());
     }
-    
 }
