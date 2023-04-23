@@ -7,6 +7,6 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(JUnitPlatform.class)
-@SelectClasses({BlockTest.class, ConvertFilesTest.class, FileReaderWriterTest.class})
+@SelectClasses({BlockTest.class, ConvertFilesTest.class, FileReaderWriterTest.class, MainTest.class})
 public class AllTests {}
 
