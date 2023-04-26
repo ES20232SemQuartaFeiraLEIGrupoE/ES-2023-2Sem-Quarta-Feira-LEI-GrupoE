@@ -19,6 +19,7 @@ import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.io.FilenameUtils;
 import java.net.URL;
 import model.Block;
+import org.json.simple.JSONObject;
 import org.junit.jupiter.params.shadow.com.univocity.parsers.csv.CsvFormat;
 import org.junit.jupiter.params.shadow.com.univocity.parsers.csv.CsvWriter;
 
@@ -125,6 +126,10 @@ public class FileReaderWriter {
 		}
 	}
 
+	/**
+	 * Função que recebe um horário (lista de block) e escreve num ficheiro CSV
+	 * @param data lista de block
+	 */
 	public static void scheduleToCsv(List<Block> data){
 
 		// falta decidir o path que queremos para o ficheiro gerado
@@ -148,6 +153,7 @@ public class FileReaderWriter {
 
 	}
 
+//	 just to test. in the end i'll remove it
 	public static void main(String[] args) {
 		Block block = new Block("lei", "es", "1", "3", "45", "segunda", "10:56", "11:00", "12.12.2021", "A", "56" );
 		List<Block> list = new ArrayList<>();
@@ -161,6 +167,30 @@ public class FileReaderWriter {
 	}
 
 	public static void scheduleToJson(List<Block> data){
+		JSONObject jsonFile = new JSONObject();
+
+		for (Block block : data) {
+			jsonFile.put("course", block.getCourse());
+			jsonFile.put("curricular_unit", block.getCurricular_unit());
+			jsonFile.put("shift", block.getShift());
+			jsonFile.put("team", block.getTeam());
+			jsonFile.put("number_of_subscribers", block.getNumberOfSubscribers());
+			jsonFile.put("day_of_week", block.getDayOfWeek());
+			jsonFile.put("hour_begin", block.getHour_begin());
+			jsonFile.put("hour_end", block.getHour_end());
+			jsonFile.put("date", block.getDate());
+			jsonFile.put("room", block.getRoom());
+			jsonFile.put("size_room", block.getSizeRoom());
+		}
+		try{
+			FileWriter fileWriter = new FileWriter("C:\\Users\\calde\\OneDrive - ISCTE-IUL\\Desktop\\test.csv");
+			fileWriter.write(jsonFile.toJSONString());
+			fileWriter.close();
+		} catch (Exception e){
+			System.out.println("-> FileReaderWriter / scheduleToJson - Não foi possivel criar o ficheiro JSON");
+			e.printStackTrace();
+		}
+
 
 	}
 
