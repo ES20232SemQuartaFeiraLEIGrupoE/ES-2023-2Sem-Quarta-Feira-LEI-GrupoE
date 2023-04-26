@@ -13,9 +13,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import javax.swing.JFileChooser;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.io.FilenameUtils;
 import java.net.URL;
 import model.Block;
+import org.junit.jupiter.params.shadow.com.univocity.parsers.csv.CsvFormat;
 import org.junit.jupiter.params.shadow.com.univocity.parsers.csv.CsvWriter;
 
 /**
@@ -122,18 +126,37 @@ public class FileReaderWriter {
 	}
 
 	public static void scheduleToCsv(List<Block> data){
-		File file = new File("");
+
+		// falta decidir o path que queremos para o ficheiro gerado
+		File file = new File("C:\\Users\\calde\\OneDrive - ISCTE-IUL\\Desktop\\test.csv");
 		try{
 			FileWriter outputFile = new FileWriter(file);
+			CSVFormat format = CSVFormat.EXCEL;
 
-
+			CSVPrinter print = new CSVPrinter(outputFile, format);
+			print.printRecord(Block.getHeader().toString());
 			for (Block block : data) {
 
+				print.printRecord(block.toStringColumn());
 			}
+			print.close();
 		} catch (Exception e){
 			System.out.println("-> FileReaderWriter / scheduleToCsv - Não foi possivel criar o ficheiro CSV");
 			e.printStackTrace();
+
 		}
+
+	}
+
+	public static void main(String[] args) {
+		Block block = new Block("lei", "es", "1", "3", "45", "segunda", "10:56", "11:00", "12.12.2021", "A", "56" );
+		List<Block> list = new ArrayList<>();
+
+		for (int i = 0; i < 10; i++) {
+			list.add(block);
+		}
+
+		scheduleToCsv(list);
 
 	}
 
