@@ -127,13 +127,14 @@ public class FileReaderWriter {
 	}
 
 	/**
-	 * Função que recebe um horário (lista de block) e escreve num ficheiro CSV
-	 * @param data lista de block
+	 * Função que recebe um horário (lista de Block) e escreve num ficheiro CSV
+	 * e salva num path definido
+	 * @param data lista de Block
 	 */
 	public static void scheduleToCsv(List<Block> data){
 
 		// falta decidir o path que queremos para o ficheiro gerado
-		File file = new File("C:\\Users\\calde\\OneDrive - ISCTE-IUL\\Desktop\\test.csv");
+		File file = new File("");
 		try{
 			FileWriter outputFile = new FileWriter(file);
 			CSVFormat format = CSVFormat.EXCEL;
@@ -153,19 +154,11 @@ public class FileReaderWriter {
 
 	}
 
-//	 just to test. in the end i'll remove it
-	public static void main(String[] args) {
-		Block block = new Block("lei", "es", "1", "3", "45", "segunda", "10:56", "11:00", "12.12.2021", "A", "56" );
-		List<Block> list = new ArrayList<>();
-
-		for (int i = 0; i < 10; i++) {
-			list.add(block);
-		}
-
-		scheduleToCsv(list);
-
-	}
-
+	/**
+	 * Função que recebe um horário (lista de Block) e escreve num ficheiro JSON
+	 * e salva num path definido
+	 * @param data lista de Block
+	 */
 	public static void scheduleToJson(List<Block> data){
 		JSONObject jsonFile = new JSONObject();
 
@@ -183,15 +176,15 @@ public class FileReaderWriter {
 			jsonFile.put("size_room", block.getSizeRoom());
 		}
 		try{
-			FileWriter fileWriter = new FileWriter("C:\\Users\\calde\\OneDrive - ISCTE-IUL\\Desktop\\test.csv");
-			fileWriter.write(jsonFile.toJSONString());
+			// falta definir o path que queremos para o ficheiro gerado
+			FileWriter fileWriter = new FileWriter("");
+			fileWriter.write(jsonFile.toJSONString()+"\n");
 			fileWriter.close();
 		} catch (Exception e){
 			System.out.println("-> FileReaderWriter / scheduleToJson - Não foi possivel criar o ficheiro JSON");
 			e.printStackTrace();
 		}
-
-
 	}
+
 
 }
