@@ -16,6 +16,7 @@ import javax.swing.JFileChooser;
 import org.apache.commons.io.FilenameUtils;
 import java.net.URL;
 import model.Block;
+import org.junit.jupiter.params.shadow.com.univocity.parsers.csv.CsvWriter;
 
 /**
  * Classe para ler e escrever em ficheiros
@@ -120,5 +121,24 @@ public class FileReaderWriter {
 		}
 	}
 
+	public static void scheduleToCsv(List<Block> data){
+		File file = new File("");
+		try{
+			FileWriter outputFile = new FileWriter(file);
+
+
+			for (Block block : data) {
+
+			}
+		} catch (Exception e){
+			System.out.println("-> FileReaderWriter / scheduleToCsv - Não foi possivel criar o ficheiro CSV");
+			e.printStackTrace();
+		}
+
+	}
+
+	public static void scheduleToJson(List<Block> data){
+
+	}
 
 }

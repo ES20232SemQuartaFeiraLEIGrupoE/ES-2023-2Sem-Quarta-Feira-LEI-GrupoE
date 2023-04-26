@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ES-2023-2Sem-Quarta-Feira-LEI-GrupoE</groupId>
@@ -27,10 +27,18 @@
 	</build>
 	<repositories>
 		<repository>
+			<id>central</id>
+			<name>Maven Central Repository</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+			<releases><enabled>true</enabled></releases>
+			<snapshots><enabled>false</enabled></snapshots>
+		</repository>
+		<repository>
 			<id>AsposeJavaAPI</id>
 			<name>Aspose Java API</name>
 			<url>https://repository.aspose.com/repo/</url>
 		</repository>
+
 	</repositories>
 
 	<dependencies>
@@ -96,6 +104,12 @@
 			<artifactId>javafx-graphics</artifactId>
 			<version>17</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-csv</artifactId>
+			<version>1.8</version>
+		</dependency>
+
 	</dependencies>
 	<properties>
 		<sonar.organization>es20232semquartafeiraleigrupoe</sonar.organization>
