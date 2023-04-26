@@ -32,6 +32,8 @@ public class Main {
 		// DEMO
 		textMainInterface();
 		options();
+
+
 	}
 
 	public static void textMainInterface (){
