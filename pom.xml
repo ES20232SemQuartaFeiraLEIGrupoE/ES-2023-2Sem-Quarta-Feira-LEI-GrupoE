@@ -104,10 +104,17 @@
 			<artifactId>javafx-graphics</artifactId>
 			<version>17</version>
 		</dependency>
+<!--		escrever em ficheiros csv-->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-csv</artifactId>
 			<version>1.8</version>
+		</dependency>
+<!--		escrever em ficheiros json-->
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
 		</dependency>
 
 	</dependencies>
