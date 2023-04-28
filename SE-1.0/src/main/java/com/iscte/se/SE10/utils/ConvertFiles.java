@@ -2,6 +2,7 @@ package com.iscte.se.SE10.utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -22,6 +23,7 @@ public class ConvertFiles {
 	 * @param csv_file ficheiro .csv a converter
 	 * @param path path para onde queremos guardar o ficheiro convertido
 	 */
+
 	public static void csvToJson(File csv_file, String path) {
 		try {
 			String name = path.substring(path.lastIndexOf('\\'));
@@ -33,6 +35,7 @@ public class ConvertFiles {
 			System.out.println("Ficheiro nao encontrado");
 		}
 	}
+
 
 
 	/**
@@ -47,10 +50,12 @@ public class ConvertFiles {
 			saveOptions.setSeparator(';');
 			Workbook workbook = new Workbook(json_file.getPath());
 			workbook.save(path.substring(0, path.lastIndexOf('\\')) + "\\" + FilenameUtils.getBaseName(name) + ".csv", saveOptions);
+
 		} catch (Exception e) {
 			System.out.println("Ficheiro nao encontrado");
 		}
 	}
+
 
 	/**
 	 * Função que passa um ficheiro .csv para uma lista
@@ -58,13 +63,16 @@ public class ConvertFiles {
 	 * @return retorna uma lista com os blocks criados através dos campos do ficheiro .csv recebido como parâmetro
 	 */
 	public static List<Block> csvToArray(File csv_file) {
+
 		List<Block> result = new ArrayList<>();
 		try {
 			Scanner scanner = new Scanner(csv_file);
 			while (scanner.hasNext()) {
+
 				List<String> data = List.of(scanner.nextLine().split(";"));
 				Block block = new Block();
 				for (int i = 0; i< data.size(); i++) block.setAttribute(i , data.get(i));
+
 				result.add(block);
 			}
 			scanner.close();
@@ -73,6 +81,7 @@ public class ConvertFiles {
 		}
 		return result;
 	}
+
 
 	/**
 	 * Função que carrega um ficheiro .json, converte para csv e passa para uma lista de blocks
@@ -83,5 +92,6 @@ public class ConvertFiles {
 		File csv_file = new File(json_file.getPath().replace(".json",".csv"));
 		return csvToArray(csv_file);
 	}
+
 
 }

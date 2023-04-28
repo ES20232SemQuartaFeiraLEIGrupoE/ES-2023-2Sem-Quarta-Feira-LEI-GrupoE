@@ -1,5 +1,6 @@
 package com.iscte.se.SE10.utils;
 
+
 import java.io.*;
 import java.util.List;
 import java.util.Scanner;
@@ -21,12 +22,14 @@ public class Main {
 	public static void main(String[] args) {
 
 		//Changes the look of the File chooser
+
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
 				| UnsupportedLookAndFeelException e) {
 			e.printStackTrace();
 		}
+
 
 		// DEMO
 		textMainInterface();
@@ -72,4 +75,5 @@ public class Main {
 //				}
 //		}
 	}
+
 

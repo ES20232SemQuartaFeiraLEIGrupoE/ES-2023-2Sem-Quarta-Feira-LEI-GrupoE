@@ -15,6 +15,7 @@ import java.util.Scanner;
 import javax.swing.JFileChooser;
 
 import com.iscte.se.SE10.model.Block;
+
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.io.FilenameUtils;
@@ -35,6 +36,7 @@ public class FileReaderWriter {
 	 *
 	 * @return retorna o ficheiro selecionado através do explorador de ficheiros
 	 */
+
 	public static File uploadFile() {
 		JFileChooser fileChooser = new JFileChooser();
 		fileChooser.setDialogTitle("Upload File");
@@ -45,10 +47,12 @@ public class FileReaderWriter {
 		return fileChooser.getSelectedFile();
 	}
 
+
 	/**
 	 * Função que recebe um ficheiro como parâmetro e guarda no formato selecionado pelo utilizador
 	 * @param file ficheiro que queremos guardar localmente
 	 */
+
 	public static void saveFileLocal(File file) {
 		JFileChooser fileChooser = new JFileChooser();
 		fileChooser.setDialogTitle("Save File");
@@ -68,11 +72,13 @@ public class FileReaderWriter {
 
 	}
 
+
 	/**
 	 * Função que recebe um URL de onde irá ler os dados existentes
 	 * @param url url dos dados a serem lidos
 	 * @param file ficheiro recebido como parâmetro onde serão escritos os dados lidos do URL
 	 */
+
 	public static void copyURLToFile(URL url, File file) {
 		try {
 			InputStream input = url.openStream();
@@ -105,6 +111,7 @@ public class FileReaderWriter {
 			ioEx.printStackTrace();
 		}
 	}
+
 
 	/**
 	 * Função que recebe o nome para um ficheiro que será criado através de uma lista de blocks
@@ -185,6 +192,7 @@ public class FileReaderWriter {
 			e.printStackTrace();
 		}
 	}
+
 
 
 }

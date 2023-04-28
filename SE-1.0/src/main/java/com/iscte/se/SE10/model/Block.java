@@ -1,6 +1,7 @@
 package com.iscte.se.SE10.model;
 
 import java.lang.reflect.Field;
+
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
@@ -46,6 +47,7 @@ public class Block {
 	 */
 	public Block(String course, String curricular_unit, String shift, String team, String number_of_subscribers,
 				 String day_of_week, String hour_begin, String hour_end, String date, String room, String size_room){
+
 		this.course = course;
 		this.curricular_unit = curricular_unit;
 		this.shift = shift;
@@ -58,6 +60,7 @@ public class Block {
 		this.room = room;
 		this.size_room = size_room;	
 	}
+
 
 	/**
 	 * Função get curso
@@ -176,6 +179,7 @@ public class Block {
 	 * Função que devolve o header do block
 	 * @return retorna o header
 	 */
+
     public static String getHeader() {
         StringBuilder header = new StringBuilder();
         Class<Block> blockClass = Block.class;
@@ -192,6 +196,7 @@ public class Block {
 
 	@Override
     public String toString() {
+
         return String.format("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n",
                 this.course, this.curricular_unit, this.shift, this.team, this.number_of_subscribers,
                 this.day_of_week, this.hour_begin, this.hour_end, this.date, this.room, this.size_room);
@@ -202,5 +207,6 @@ public class Block {
 				this.course, this.curricular_unit, this.shift, this.team, this.number_of_subscribers,
 				this.day_of_week, this.hour_begin, this.hour_end, this.date, this.room, this.size_room);
 	}
+
    
 }
