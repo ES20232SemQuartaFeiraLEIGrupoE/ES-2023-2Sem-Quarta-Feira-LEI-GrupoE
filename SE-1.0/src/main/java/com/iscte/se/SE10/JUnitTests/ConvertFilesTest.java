@@ -1,12 +1,12 @@
-package JUnitTests;
+package com.iscte.se.SE10.JUnitTests;
 
-import model.Block;
+import com.iscte.se.SE10.model.Block;
+import com.iscte.se.SE10.utils.ConvertFiles;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.junit.jupiter.api.Test;
-import utils.ConvertFiles;
 
 import java.io.*;
 import java.nio.file.Files;

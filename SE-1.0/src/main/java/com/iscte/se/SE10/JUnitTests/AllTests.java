@@ -1,4 +1,4 @@
-package JUnitTests;
+package com.iscte.se.SE10.JUnitTests;
 
 
 import org.junit.platform.runner.JUnitPlatform;

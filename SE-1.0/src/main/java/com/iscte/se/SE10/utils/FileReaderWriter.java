@@ -1,4 +1,4 @@
-package utils;
+package com.iscte.se.SE10.utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -14,11 +14,11 @@ import java.util.List;
 import java.util.Scanner;
 import javax.swing.JFileChooser;
 
+import com.iscte.se.SE10.model.Block;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.io.FilenameUtils;
 import java.net.URL;
-import model.Block;
 import org.json.simple.JSONObject;
 import org.junit.jupiter.params.shadow.com.univocity.parsers.csv.CsvFormat;
 import org.junit.jupiter.params.shadow.com.univocity.parsers.csv.CsvWriter;

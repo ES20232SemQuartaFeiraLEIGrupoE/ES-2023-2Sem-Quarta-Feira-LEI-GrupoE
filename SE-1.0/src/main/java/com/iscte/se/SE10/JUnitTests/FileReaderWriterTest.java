@@ -1,8 +1,8 @@
-package JUnitTests;
+package com.iscte.se.SE10.JUnitTests;
 
-import model.Block;
+import com.iscte.se.SE10.model.Block;
+import com.iscte.se.SE10.utils.FileReaderWriter;
 import org.junit.jupiter.api.Test;
-import utils.FileReaderWriter;
 
 import java.io.*;
 import java.nio.file.Files;

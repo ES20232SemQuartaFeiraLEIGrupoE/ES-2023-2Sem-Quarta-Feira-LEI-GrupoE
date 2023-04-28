@@ -1,6 +1,6 @@
-package JUnitTests;
+package com.iscte.se.SE10.JUnitTests;
 
-import model.Block;
+import com.iscte.se.SE10.model.Block;
 import org.junit.jupiter.api.Test;
 
 import java.time.DayOfWeek;

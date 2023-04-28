@@ -1,4 +1,4 @@
-package model;
+package com.iscte.se.SE10.model;
 
 import java.lang.reflect.Field;
 import java.time.DayOfWeek;
