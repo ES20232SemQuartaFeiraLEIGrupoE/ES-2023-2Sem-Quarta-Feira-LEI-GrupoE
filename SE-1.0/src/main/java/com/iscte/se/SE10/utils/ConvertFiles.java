@@ -2,24 +2,27 @@ package com.iscte.se.SE10.utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import com.aspose.cells.LoadFormat;
-import com.aspose.cells.Workbook;
-import com.aspose.cells.TxtLoadOptions;
+import com.aspose.cells.*;
 import com.iscte.se.SE10.model.Block;
 import org.apache.commons.io.FilenameUtils;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 
-
+/**
+ * Classe para guardar e converter ficheiros
+ * @author Grupo E
+ * @version 1.0
+ */
 public class ConvertFiles {
+
+	/**
+	 * Função que converte um ficheiro .csv para .json
+	 * @param csv_file ficheiro .csv a converter
+	 * @param path path para onde queremos guardar o ficheiro convertido
+	 */
 
 	public static void csvToJson(File csv_file, String path) {
 		try {
@@ -29,30 +32,47 @@ public class ConvertFiles {
 			Workbook workbook = new Workbook(csv_file.getPath(), loadOptions);
 			workbook.save(path.substring(0, path.lastIndexOf('\\')) + "\\" + FilenameUtils.getBaseName(name) + ".json");
 		} catch (Exception e) {
-			e.printStackTrace();
 			System.out.println("Ficheiro nao encontrado");
 		}
 	}
 
 
+
+	/**
+	 * Função que converte um ficheiro .csv para .json
+	 * @param json_file ficheiro .json a converter
+	 * @param path path para onde queremos guardar o ficheiro convertido
+	 */
 	public static void jsonToCsv(File json_file, String path) {
 		try {
 			String name = path.substring(path.lastIndexOf('\\'));
+			TxtSaveOptions saveOptions = new TxtSaveOptions(SaveFormat.CSV);
+			saveOptions.setSeparator(';');
 			Workbook workbook = new Workbook(json_file.getPath());
-			workbook.save(path.substring(0, path.lastIndexOf('\\')) + "\\" + FilenameUtils.getBaseName(name) + ".csv");
+			workbook.save(path.substring(0, path.lastIndexOf('\\')) + "\\" + FilenameUtils.getBaseName(name) + ".csv", saveOptions);
+
 		} catch (Exception e) {
 			System.out.println("Ficheiro nao encontrado");
 		}
 	}
 
-	public static List<Block> csvToArray() {
-		File csv_file = FileReaderWriter.uploadFile();
+
+	/**
+	 * Função que passa um ficheiro .csv para uma lista
+	 * @param csv_file ficheiro .csv que queremos passar para uma lista
+	 * @return retorna uma lista com os blocks criados através dos campos do ficheiro .csv recebido como parâmetro
+	 */
+	public static List<Block> csvToArray(File csv_file) {
+
 		List<Block> result = new ArrayList<>();
 		try {
 			Scanner scanner = new Scanner(csv_file);
 			while (scanner.hasNext()) {
-				String[] data = scanner.nextLine().split(";");
-				Block block = new Block(data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8], data[9], data[10]);
+
+				List<String> data = List.of(scanner.nextLine().split(";"));
+				Block block = new Block();
+				for (int i = 0; i< data.size(); i++) block.setAttribute(i , data.get(i));
+
 				result.add(block);
 			}
 			scanner.close();
@@ -62,35 +82,16 @@ public class ConvertFiles {
 		return result;
 	}
 
-	public static List<Block> jsonToArrayList() {
-		File json_file = FileReaderWriter.uploadFile();
-		List<Block> list = new ArrayList<>();
-		JSONParser parser = new JSONParser();
-		try {
-			JSONArray jsonArray = (JSONArray) parser.parse(new FileReader(json_file));
-			for (Object o : jsonArray) {
-				JSONObject jsonObject = (JSONObject) o;
-				String course = (String) jsonObject.get("Curso");
-				String curricular_unit = (String) jsonObject.get("Unidade Curricular");
-				String shift = (String) jsonObject.get("Turno");
-				String team = (String) jsonObject.get("Turma");
-				String number_of_subscribers = Long.toString((Long)jsonObject.get("Inscritos no turno"));
-				String day_of_week = (String) jsonObject.get("Dia da semana");
-				String hour_begin = (String) jsonObject.get("Hora inicio da aula");
-				String hour_end = (String) jsonObject.get("Hora fim da aula");
-				String date = (String) jsonObject.get("Data da aula");
-				String room = (String) jsonObject.get("Sala atribuida a aula");
-				String size_room = Long.toString((Long)jsonObject.get("Lotacao da sala"));
-				Block block = new Block(course, curricular_unit, shift, team, number_of_subscribers, day_of_week, hour_begin, hour_end, date, room, size_room);
-				list.add(block);
-			}
-		} catch (FileNotFoundException e) {
-			System.out.println("Ficheiro nao encontrado");
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		return list;
+
+	/**
+	 * Função que carrega um ficheiro .json, converte para csv e passa para uma lista de blocks
+	 * @return retorna uma lista de blocks criados com os campos do ficheiro .json convertido para .csv
+	 */
+	public static List<Block> jsonToArrayList(File json_file) {
+		jsonToCsv(json_file,json_file.getPath());
+		File csv_file = new File(json_file.getPath().replace(".json",".csv"));
+		return csvToArray(csv_file);
 	}
+
+
 }
