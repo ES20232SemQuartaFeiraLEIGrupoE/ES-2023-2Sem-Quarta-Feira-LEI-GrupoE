@@ -117,6 +117,22 @@ function saveBlocksToApi() {
   });
 }
 
+// Tarefa 24
+function checkBlocksOverlap(block1, block2) {
+  if (block1["start"] === block2["start"] &&
+      block1["Curso"] === block2["Curso"] &&
+      block1["Dia da semana"] === block2["Dia da semana"] &&
+      block1["Sala atribuída à aula"] === block2["Sala atribuída à aula"]) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// Tarefa 25
+function checkLotacion(block){
+    return block["Lotação da sala"] < block["Inscritos no turno"]
+}
 
 function drawCalendar(events) {
     // Inicializar o
@@ -146,6 +162,8 @@ function drawCalendar(events) {
     element.find('.fc-title').append(detailsButton);
     // Definir o título no elemento do evento
     element.find('.fc-title').text(title);
+    if(checkLotacion(event))
+        element.css('background-color', 'red');
     },
 
     eventClick: function(event) {
