@@ -23,14 +23,18 @@ btnLoadFile.addEventListener('click', function() {
     }
     populateCoursesDropdown(courses)
     blocks = data
+    drawCalendar(blocks);
   });
 });
 
 function populateCoursesDropdown(courses) {
     console.log(courses)
     var uniqueCourses = [...new Set(courses)];
+    var option = document.createElement("option");
+    option.text = "All";
+    coursesDropdown.add(option);
 
-  for (var i = -1; i < uniqueCourses.length; i++) {
+  for (var i = 0; i < uniqueCourses.length; i++) {
     var option = document.createElement("option");
     option.text = uniqueCourses[i];
     coursesDropdown.add(option);
@@ -40,9 +44,12 @@ function populateCoursesDropdown(courses) {
 function selectCourse(blocks) {
    selectedCourse = coursesDropdown.value;
 
+    if("All" == selectedCourse){
+        drawCalendar(blocks);
+    }else{
    selectedBlocks = blocks.filter((block) => block["Curso"] === selectedCourse);
     drawCalendar(selectedBlocks);
-   // coursesDropdown.classList.add("hide");
+    }
 };
 
 coursesDropdown.addEventListener("change", function() {
