@@ -23,6 +23,7 @@ btnLoadFile.addEventListener('click', function() {
     }
     populateCoursesDropdown(courses)
     blocks = data
+    populateSubjectChecklist(blocks)
     drawCalendar(blocks);
   });
 });
@@ -45,10 +46,12 @@ function selectCourse(blocks) {
    selectedCourse = coursesDropdown.value;
 
     if("All" == selectedCourse){
+        populateSubjectChecklist(blocks)
         drawCalendar(blocks);
     }else{
-   selectedBlocks = blocks.filter((block) => block["Curso"] === selectedCourse);
-    drawCalendar(selectedBlocks);
+       selectedBlocks = blocks.filter((block) => block["Curso"] === selectedCourse);
+       populateSubjectChecklist(selectedBlocks)
+       drawCalendar(selectedBlocks);
     }
 };
 
@@ -56,11 +59,46 @@ coursesDropdown.addEventListener("change", function() {
    selectCourse(blocks);
 });
 
+// Tarefe 22
+ const subjectSelector = document.getElementById("subjectSelector");
+
+function populateSubjectChecklist(blocks) {
+    console.log(blocks)
+    console.log(blocks[0]["Unidade Curricular"])
+  subjectSelector.innerHTML = ""; // clear existing checkboxes
+  const subjects = new Set(blocks.map(block => block["Unidade Curricular"])); // get unique subjects
+  console.log(subjects)
+  for (const subject of subjects) {
+    const li = document.createElement("li");
+    const label = document.createElement("label");
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.name = subject;
+    checkbox.value = subject;
+    checkbox.checked = true;
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(subject));
+    li.appendChild(label);
+    subjectSelector.appendChild(li);
+  }
+}
+
+subjectSelector.addEventListener("change", () => {
+    const selectedCheckboxes = Array.from(subjectSelector.querySelectorAll("input[type=checkbox]:checked"));
+    const selectedSubjects = selectedCheckboxes.map(checkbox => checkbox.value);
+    if (selectedSubjects.length === 0) {
+      drawCalendar([]); // No checkboxes are selected, draw all blocks
+    } else {
+      const selectedBlocks = blocks.filter(block => selectedSubjects.includes(block["Unidade Curricular"]));
+      drawCalendar(selectedBlocks); // Draw selected blocks only
+    }
+    });
 
 
 
 function drawCalendar(events) {
-    // Inicializar o FullCalendar
+    // Inicializar o
+    currentView = $('#calendar').fullCalendar('getView').name;
     $('#calendar').fullCalendar('destroy');
     $('#calendar').fullCalendar({
     header: {
@@ -70,7 +108,7 @@ function drawCalendar(events) {
     },
     height: 'auto', // Ajustar automaticamente a altura ao número de eventos
     contentHeight: 'auto', // Ajustar a altura do conteúdo do calendário para que caiba todos os eventos
-    defaultView: 'agendaWeek',
+    defaultView: currentView ,
     minTime: '08:00:00', // Hora de início do horário
     maxTime: '20:30:00', // Hora de término do horário
     slotDuration: '00:30:00', // Duração de cada slot de tempo (30 minutos)

@@ -29,6 +29,10 @@ public class CalendarController {
                 "<input class=\"custom-select\" type=\"file\" id=\"file-input\">" +
                 "<button class=\"custom-select btn-load-file\">Load file</button>" +
                 "\n" +
+                "<ul id=\"subjectSelector\">" +
+
+                "</ul>" +
+
                 "<body>\n" +
                 "  <div id=\"calendar\"></div>\n" +
                 "  <script defer src=\"script.js\"></script>\n" +
