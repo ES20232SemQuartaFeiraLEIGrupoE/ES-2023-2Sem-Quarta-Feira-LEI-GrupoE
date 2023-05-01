@@ -1,7 +1,30 @@
-console.log("V25 ")
+console.log("V36 ")
 var blocks = [];
 
-var coursesDropdown = document.getElementById("coursesDropdown");
+const coursesDropdown = document.getElementById("coursesDropdown");
+const btnLoadFile = document.querySelector(".btn-load-file");
+const fileInput = document.getElementById('file-input');
+
+btnLoadFile.addEventListener('click', function() {
+  const file = fileInput.files[0];
+  const formData = new FormData();
+  formData.append('file', file);
+  blocks = [];
+  fetch('/api/blocks', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+    var courses = new Set();
+    for (var i = 0; i < data.length; i++) {
+      courses.add(data[i]["Curso"]);
+    }
+    populateCoursesDropdown(courses)
+    blocks = data
+  });
+});
 
 function populateCoursesDropdown(courses) {
     console.log(courses)
@@ -17,7 +40,7 @@ function populateCoursesDropdown(courses) {
 function selectCourse(blocks) {
    selectedCourse = coursesDropdown.value;
 
-   selectedBlocks = blocks.filter((block) => block.course === selectedCourse);
+   selectedBlocks = blocks.filter((block) => block["Curso"] === selectedCourse);
     drawCalendar(selectedBlocks);
    // coursesDropdown.classList.add("hide");
 };
@@ -27,17 +50,7 @@ coursesDropdown.addEventListener("change", function() {
 });
 
 
-fetch('/api/blocks')
-  .then(response => response.json())
-  .then(data => {
 
-  var courses = new Set();
-    for (var i = 0; i < data.length; i++) {
-      courses.add(data[i].course);
-    }
-    populateCoursesDropdown(courses)
-    blocks = data
-});
 
 function drawCalendar(events) {
     // Inicializar o FullCalendar
@@ -60,7 +73,7 @@ function drawCalendar(events) {
 
     eventRender: function(event, element) {
     // Montar o título do evento com o nome da disciplina e a sala
-    var title = event.title + ' - Sala ' + event.room;
+    var title = event["Unidade Curricular"] + ' - Sala ' + event["Sala atribuída à aula"];
     // Adicionar um botão para ver mais detalhes
     var detailsButton = $('<button>').addClass('btn btn-sm btn-info').text('Ver detalhes');
     element.find('.fc-title').append(detailsButton);
@@ -78,8 +91,8 @@ function drawCalendar(events) {
     var modal = $('<div>').addClass('modal fade').attr('id', 'event-details-modal');
     var modalDialog = $('<div>').addClass('modal-dialog');
     var modalContent = $('<div>').addClass('modal-content');
-    var modalHeader = $('<div>').addClass('modal-header').html('<h5 class="modal-title">' + event.title);
-    var modalBody = $('<div>').addClass('modal-body').html('Professor: ' + event.prof + '<br>Número de inscrições: ' + event.numeroInsc + '<br>Tamanho da sala: ' + event.sizeRoom);
+    var modalHeader = $('<div>').addClass('modal-header').html('<h5 class="modal-title">' + event["Unidade Curricular"]);
+    var modalBody = $('<div>').addClass('modal-body').html('<br>Número de inscrições: ' + event["Inscritos no turno"] + '<br>Tamanho da sala: ' + event["Lotação da sala"] );
     modalContent.append(modalHeader, modalBody);
     modalDialog.append(modalContent);
     modal.append(modalDialog);

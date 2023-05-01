@@ -26,6 +26,8 @@ public class CalendarController {
                 "</head>\n" +
                 "\n" +
                 "<select id=\"coursesDropdown\" class=\"custom-select\"></select>\n" +
+                "<input class=\"custom-select\" type=\"file\" id=\"file-input\">" +
+                "<button class=\"custom-select btn-load-file\">Load file</button>" +
                 "\n" +
                 "<body>\n" +
                 "  <div id=\"calendar\"></div>\n" +
