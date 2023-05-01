@@ -1,7 +1,7 @@
-package com.iscte.se.SE10.JUnitTests;
+package iscte.se.SE10.JUnitTests;
 
-import com.iscte.se.SE10.model.Block;
-import com.iscte.se.SE10.utils.ConvertFiles;
+import iscte.se.SE10.model.Block;
+import iscte.se.SE10.utils.ConvertFiles;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

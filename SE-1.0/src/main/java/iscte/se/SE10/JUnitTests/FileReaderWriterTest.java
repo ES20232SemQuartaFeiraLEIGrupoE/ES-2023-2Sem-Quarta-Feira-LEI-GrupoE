@@ -1,15 +1,13 @@
-package com.iscte.se.SE10.JUnitTests;
+package iscte.se.SE10.JUnitTests;
 
-import com.iscte.se.SE10.model.Block;
-import com.iscte.se.SE10.utils.FileReaderWriter;
+import iscte.se.SE10.model.Block;
+import iscte.se.SE10.utils.FileReaderWriter;
 import org.junit.jupiter.api.Test;
 
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.time.DayOfWeek;
-import java.time.LocalTime;
 import java.util.Arrays;
 import java.util.List;
 

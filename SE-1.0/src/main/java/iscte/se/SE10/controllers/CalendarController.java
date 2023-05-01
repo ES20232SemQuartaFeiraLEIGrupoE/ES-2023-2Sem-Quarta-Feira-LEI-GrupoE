@@ -1,4 +1,4 @@
-package com.iscte.se.SE10.controllers;
+package iscte.se.SE10.controllers;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

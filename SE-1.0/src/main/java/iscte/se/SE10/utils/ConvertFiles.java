@@ -1,4 +1,4 @@
-package com.iscte.se.SE10.utils;
+package iscte.se.SE10.utils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import com.aspose.cells.*;
-import com.iscte.se.SE10.model.Block;
+import iscte.se.SE10.model.Block;
 import org.apache.commons.io.FilenameUtils;
 
 

@@ -1,6 +1,6 @@
-package com.iscte.se.SE10.JUnitTests;
+package iscte.se.SE10.JUnitTests;
 
-import com.iscte.se.SE10.utils.Main;
+import iscte.se.SE10.utils.Main;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
