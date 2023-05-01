@@ -29,6 +29,7 @@ public class CalendarController {
                 "<input class=\"custom-select\" type=\"file\" id=\"file-input\">" +
                 "<button class=\"custom-select btn-load-file\">Load file</button>" +
                 "\n" +
+                "<button onclick=\"saveBlocksToApi()\">Save Blocks to API</button>" +
                 "<ul id=\"subjectSelector\">" +
 
                 "</ul>" +
