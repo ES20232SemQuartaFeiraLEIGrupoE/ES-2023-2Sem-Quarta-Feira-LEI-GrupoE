@@ -1,10 +1,47 @@
-console.log("V36 ")
+console.log("V99 ")
 var blocks = [];
 
 const coursesDropdown = document.getElementById("coursesDropdown");
 const btnLoadFile = document.querySelector(".btn-load-file");
 const fileInput = document.getElementById('file-input');
 
+// Tarefa 26
+let superlotacion = 0;
+const counter = document.querySelector(".counter");
+
+const setCounter = function (val) {
+  counter.textContent = "" + val;
+};
+
+function countOverlap(blocks) {
+  let overlapCount = 0;
+    // missing Logic
+    ///////////
+    ///////////
+    ////////////
+    ////////////
+  return overlapCount;
+}
+
+function checkSuperlotacion(blocks){
+    let superlotacionCount = 0;
+    for (let block of blocks) {
+       // Replace checkLotacion with your own function to check lotacion
+       if (checkLotacion(block)) {
+            superlotacionCount++;
+       }
+    }
+    return superlotacionCount;
+}
+
+function updateCount(blocks){
+    const overlap = countOverlap(blocks);
+    const lotated = checkSuperlotacion(blocks);
+    const total = overlap + lotated;
+    setCounter(total);
+}
+
+//Tarefa 20
 btnLoadFile.addEventListener('click', function() {
   const file = fileInput.files[0];
   const formData = new FormData();
@@ -23,6 +60,7 @@ btnLoadFile.addEventListener('click', function() {
     }
     populateCoursesDropdown(courses)
     blocks = data
+    updateCount(blocks);
     populateSubjectChecklist(blocks)
     drawCalendar(blocks);
   });
@@ -47,10 +85,12 @@ function selectCourse(blocks) {
     selectedCourse.innerHTML = "";
     if("All" == selectedCourse){
         populateSubjectChecklist(blocks)
+        updateCount(blocks);
         drawCalendar(blocks);
     }else{
        selectedBlocks = blocks.filter((block) => block["Curso"] === selectedCourse);
        populateSubjectChecklist(selectedBlocks)
+       updateCount(selectedBlocks);
        drawCalendar(selectedBlocks);
     }
 };
@@ -117,22 +157,13 @@ function saveBlocksToApi() {
   });
 }
 
-// Tarefa 24
-function checkBlocksOverlap(block1, block2) {
-  if (block1["start"] === block2["start"] &&
-      block1["Curso"] === block2["Curso"] &&
-      block1["Dia da semana"] === block2["Dia da semana"] &&
-      block1["Sala atribuída à aula"] === block2["Sala atribuída à aula"]) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
 // Tarefa 25
 function checkLotacion(block){
     return block["Lotação da sala"] < block["Inscritos no turno"]
 }
+
+
+
 
 function drawCalendar(events) {
     // Inicializar o
@@ -164,6 +195,26 @@ function drawCalendar(events) {
     element.find('.fc-title').text(title);
     if(checkLotacion(event))
         element.css('background-color', 'red');
+
+  // Check if this event overlaps with any other events tarefa 24
+  var overlaps = false;
+  $('#calendar').fullCalendar('clientEvents', function(existingEvent) {
+    if (event._id !== existingEvent._id) {
+      var eventStart = moment(existingEvent.start);
+      var eventEnd = moment(existingEvent.end);
+      var thisStart = moment(event.start);
+      var thisEnd = moment(event.end);
+      if ((thisStart >= eventStart && thisStart < eventEnd) || (thisEnd > eventStart && thisEnd <= eventEnd) || (thisStart <= eventStart && thisEnd >= eventEnd)) {
+        overlaps = true;
+        return false; // break out of the loop
+      }
+    }
+  });
+
+  // If the event overlaps with another event, change the background color to red
+  if (overlaps) {
+    element.css('background-color', 'purple');
+  }
     },
 
     eventClick: function(event) {

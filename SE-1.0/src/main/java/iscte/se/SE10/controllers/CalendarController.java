@@ -33,7 +33,7 @@ public class CalendarController {
                 "<ul id=\"subjectSelector\">" +
 
                 "</ul>" +
-
+                " <div class=\"counter\">0</div>" +
                 "<body>\n" +
                 "  <div id=\"calendar\"></div>\n" +
                 "  <script defer src=\"script.js\"></script>\n" +
