@@ -1,5 +1,6 @@
-package com.iscte.se.SE10.model;
+package iscte.se.SE10.model;
 
+import java.io.Serializable;
 import java.lang.reflect.Field;
 
 import java.time.DayOfWeek;
@@ -12,7 +13,7 @@ import java.time.LocalTime;
  * @version 1.0
  *
  */
-public class Block {
+public class Block implements Serializable {
 	
 	public String course;
 	public String curricular_unit;
@@ -208,5 +209,16 @@ public class Block {
 				this.day_of_week, this.hour_begin, this.hour_end, this.date, this.room, this.size_room);
 	}
 
-   
+
+	public String getNumber_of_subscribers() {
+		return number_of_subscribers;
+	}
+
+	public String getDay_of_week() {
+		return day_of_week;
+	}
+
+	public String getSize_room() {
+		return size_room;
+	}
 }

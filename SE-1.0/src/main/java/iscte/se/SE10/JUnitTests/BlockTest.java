@@ -1,12 +1,12 @@
-package com.iscte.se.SE10.JUnitTests;
+package iscte.se.SE10.JUnitTests;
 
-import com.iscte.se.SE10.model.Block;
+import iscte.se.SE10.model.Block;
 import org.junit.jupiter.api.Test;
 
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BlockTest {
 

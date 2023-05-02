@@ -1,4 +1,4 @@
-package com.iscte.se.SE10;
+package iscte.se.SE10;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.iscte.se.SE10.controllers;
+package iscte.se.SE10.controllers;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -26,7 +26,14 @@ public class CalendarController {
                 "</head>\n" +
                 "\n" +
                 "<select id=\"coursesDropdown\" class=\"custom-select\"></select>\n" +
+                "<input class=\"custom-select\" type=\"file\" id=\"file-input\">" +
+                "<button class=\"custom-select btn-load-file\">Load file</button>" +
                 "\n" +
+                "<button onclick=\"saveBlocksToApi()\">Save Blocks to API</button>" +
+                "<ul id=\"subjectSelector\">" +
+
+                "</ul>" +
+                " <div class=\"counter\">0</div>" +
                 "<body>\n" +
                 "  <div id=\"calendar\"></div>\n" +
                 "  <script defer src=\"script.js\"></script>\n" +

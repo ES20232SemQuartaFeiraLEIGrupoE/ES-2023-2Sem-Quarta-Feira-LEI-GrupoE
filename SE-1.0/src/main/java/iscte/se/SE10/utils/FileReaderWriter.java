@@ -1,28 +1,21 @@
-package com.iscte.se.SE10.utils;
+package iscte.se.SE10.utils;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.awt.Desktop;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 import javax.swing.JFileChooser;
 
-import com.iscte.se.SE10.model.Block;
+import iscte.se.SE10.model.Block;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
 import org.apache.commons.io.FilenameUtils;
 import java.net.URL;
 import org.json.simple.JSONObject;
-import org.junit.jupiter.params.shadow.com.univocity.parsers.csv.CsvFormat;
-import org.junit.jupiter.params.shadow.com.univocity.parsers.csv.CsvWriter;
 
 /**
  * Classe para ler e escrever em ficheiros

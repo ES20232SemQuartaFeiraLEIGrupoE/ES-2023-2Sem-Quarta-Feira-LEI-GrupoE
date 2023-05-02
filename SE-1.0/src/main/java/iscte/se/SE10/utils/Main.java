@@ -1,4 +1,4 @@
-package com.iscte.se.SE10.utils;
+package iscte.se.SE10.utils;
 
 
 import java.io.*;

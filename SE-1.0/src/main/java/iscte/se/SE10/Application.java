@@ -1,4 +1,4 @@
-package com.iscte.se.SE10;
+package iscte.se.SE10;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
