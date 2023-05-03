@@ -19,11 +19,18 @@ import java.util.Map;
 
 import static iscte.se.SE10.utils.ConvertFiles.csvToJson2;
 
+/**
+ *
+ * @author Grupo E
+ * @version 1.0
+ */
+
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api")
 public class Api {
 
+    
     @PostMapping("/blocks")
     public String getBlocks(@RequestParam("file") MultipartFile file) throws IOException {
         System.out.println(file.getOriginalFilename());
