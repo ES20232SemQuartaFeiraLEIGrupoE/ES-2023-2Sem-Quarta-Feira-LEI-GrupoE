@@ -30,7 +30,7 @@ import static iscte.se.SE10.utils.ConvertFiles.csvToJson2;
 @RequestMapping("/api")
 public class Api {
 
-    
+    // Lê csv e retorna um json. Falta ler json
     @PostMapping("/blocks")
     public String getBlocks(@RequestParam("file") MultipartFile file) throws IOException {
         System.out.println(file.getOriginalFilename());
@@ -40,6 +40,7 @@ public class Api {
         return json;
     }
 
+    // grava localmente
     @PostMapping("/save")
     public String saveLocal(@RequestParam("file") MultipartFile file) throws IOException {
         System.out.println(file.getOriginalFilename());
