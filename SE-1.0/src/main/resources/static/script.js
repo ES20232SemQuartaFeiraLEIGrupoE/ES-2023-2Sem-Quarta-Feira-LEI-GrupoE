@@ -226,7 +226,7 @@ function drawCalendar(events) {
     // Criar o modal com as informações do evento
     var modal = $('<div>').addClass('modal fade').attr('id', 'event-details-modal');
     var modalDialog = $('<div>').addClass('modal-dialog');
-    var modalContent = $('<div>').addClass('modal-content');
+    var modalContent = $('<div>').addClass('modal-content custom-style');
     var modalHeader = $('<div>').addClass('modal-header').html('<h5 class="modal-title">' + event["Unidade Curricular"]);
     var modalBody = $('<div>').addClass('modal-body').html('<br>Número de inscrições: ' + event["Inscritos no turno"] + '<br>Tamanho da sala: ' + event["Lotação da sala"] );
     modalContent.append(modalHeader, modalBody);
