@@ -39,6 +39,11 @@ public class ConvertFiles {
 
     // 2023-05-01T09:00:00
 
+    /**
+     * Funcão que converte um ficheiro CSV vindo do servidor num ficheiro JSON
+     * @param inputStream
+     * @return devolve o ficheiro convertido ao servidor
+     */
     public static String csvToJson2(InputStream inputStream) {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));

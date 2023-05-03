@@ -195,6 +195,10 @@ public class Block implements Serializable {
         return header.toString();
     }
 
+	/**
+	 *
+	 * @return retorna um string com os diferentes campos do horário separados por virgula
+	 */
 	@Override
     public String toString() {
 
@@ -203,21 +207,36 @@ public class Block implements Serializable {
                 this.day_of_week, this.hour_begin, this.hour_end, this.date, this.room, this.size_room);
     }
 
+	/**
+	 *
+	 * @return retorna um string com os diferentes campos do horário separados por virgula
+	 */
 	public String toStringColumn() {
 		return String.format("%s;%s;%s;%s;%s;%s;%s;%s;%s;%s;%s\n",
 				this.course, this.curricular_unit, this.shift, this.team, this.number_of_subscribers,
 				this.day_of_week, this.hour_begin, this.hour_end, this.date, this.room, this.size_room);
 	}
 
-
+	/**
+	 *
+	 * @return retorna o númereo de subscritos
+	 */
 	public String getNumber_of_subscribers() {
 		return number_of_subscribers;
 	}
 
+	/**
+	 *
+	 * @return retorna o dia da semana
+	 */
 	public String getDay_of_week() {
 		return day_of_week;
 	}
 
+	/**
+	 *
+	 * @return retorna o tamanho da sala
+	 */
 	public String getSize_room() {
 		return size_room;
 	}
