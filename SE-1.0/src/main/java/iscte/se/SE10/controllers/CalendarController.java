@@ -36,7 +36,7 @@ public class CalendarController {
 
                 "</ul>" +
                 " <div> <t class=\"countertxt\">Quantidade de Superlotações = </t> <t class=\"counter\">0 </t></div>\n" +
-                " <div> <t class=\"counterptxt\">Quantidade de Sobreposições = </t> <t class=\"counterp\">0 </t></div>" +
+                " <div> <t class=\"counterotxt\">Quantidade de Sobreposições = </t> <t class=\"countero\">0 </t></div>" +
                 "<body>\n" +
                 "  <div id=\"calendar\"></div>\n" +
                 "  <script defer src=\"script.js\"></script>\n" +
