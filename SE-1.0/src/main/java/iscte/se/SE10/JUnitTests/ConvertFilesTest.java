@@ -132,4 +132,23 @@ class ConvertFilesTest {
         String convertedJson = csvToJson2(inputStream);
         assertEquals(resultJson, convertedJson);
     }
+    
+    @Test
+    public void validCSV(){
+        InputStream inputStream = new ByteArrayInputStream(csv_data.getBytes());
+        String jsonResult = "[{" +
+                "\"Inscritos no turno\":\"30\"," +
+                "\"Turma\":\"MEA1\"," +
+                "\"Turno\":\"01789TP01\"," +
+                "\"Hora inicio da aula\":\"13:00:00\"," +
+                "\"Lotacao da sala\":\"34\"," +
+                "\"start\":\"2022-12-02T\"," +
+                "\"end\":\"2022-12-02T14:30:00\"," +
+                "\"Curso\":\"ME\"," +
+                "\"Unidade Curricular\":\"Teoria dos Jogos e dos Contratos\"," +
+                "\"Dia da semana\":\"Sex\"," +
+                "\"Sala atribuida a aula\":\"AA2.25\"}]";
+        String convertedFile = csvToJson2(inputStream);
+        assertEquals(jsonResult, convertedFile);
+    }
 }
