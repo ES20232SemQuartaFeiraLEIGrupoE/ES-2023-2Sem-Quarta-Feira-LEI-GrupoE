@@ -12,6 +12,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.util.List;
 
+import static iscte.se.SE10.utils.ConvertFiles.csvToJson2;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ConvertFilesTest {
@@ -109,5 +110,26 @@ class ConvertFilesTest {
         assertEquals("MEA1", b1.team);
         assertEquals("30", b1.number_of_subscribers);
         
+    }
+
+    @Test
+    public void invalidCSV(){
+        String csv = "\"course\";\"curricular_unit\";\"shift\";\"team\";\"number_of_subscribers\";\"day_of_week\";" +
+                "\"hour_begin\";\"hour_end\";\"date\";\"room\";\"size_room\"\n" +
+                "\"LEI\";\"PCD\";\"01789TP01\";\"MEA1\";\"30\";\"Sex\"" +
+                "\"13:00:00\";\"14:30:00\";\"02/12/2022\";\"AA2.25\";\"34\"\n";
+        InputStream inputStream = new ByteArrayInputStream(csv.getBytes());
+        String jsonResult = "FFFFFFFFFFFFFFFF";
+        String convertedFile = csvToJson2(inputStream);
+        assertEquals(jsonResult, convertedFile);
+    }
+
+    @Test
+    public void emptyCsv() {
+        String csv = "";
+        InputStream inputStream = new ByteArrayInputStream(csv.getBytes());
+        String resultJson = "FFFFFFFFFFFFFFFF";
+        String convertedJson = csvToJson2(inputStream);
+        assertEquals(resultJson, convertedJson);
     }
 }
