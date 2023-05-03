@@ -25,12 +25,13 @@ public class CalendarController {
                 "  <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n" +
                 "</head>\n" +
                 "\n" +
-                "<select id=\"coursesDropdown\" class=\"custom-select\"></select>\n" +
                 "<input class=\"custom-select\" type=\"file\" id=\"file-input\">" +
                 "<t>      </t>" +
                 "<button class=\" btn-load-file\">Load file</button>" +
                 "\n" +
-                "<button onclick=\"saveBlocksToApi()\">Save Blocks to API</button>" +
+                "<button class=\" btn-load-file\" onclick=\"saveBlocksToApi()\">Save Blocks to API</button>" +
+                "<t>      </t>" +
+                "<select id=\"coursesDropdown\" class=\"custom-select\"></select>\n" +
                 "<ul id=\"subjectSelector\">" +
 
                 "</ul>" +
