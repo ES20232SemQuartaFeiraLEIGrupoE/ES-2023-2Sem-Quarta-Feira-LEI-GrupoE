@@ -39,7 +39,7 @@ public class Main {
 //		}
 		
 		try {
-			FileReaderWriter.icsToBlockList(new URI("https://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=afcma2@iscte.pt&password=pGpQwoXWCT1cOtbKarRT9OCTomd3y8NXgpU2yXyvdksPTMK9yjR3LHKMvmRwi5gPC66nWbFuWUOJPUIeI9UAN5qws59Ry94vLoprF809oIn1FRzKwSA4CKWS1VpoZY7B"));
+			FileReaderWriter.icsToBlockList(new URI("webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=afcma2@iscte.pt&password=pGpQwoXWCT1cOtbKarRT9OCTomd3y8NXgpU2yXyvdksPTMK9yjR3LHKMvmRwi5gPC66nWbFuWUOJPUIeI9UAN5qws59Ry94vLoprF809oIn1FRzKwSA4CKWS1VpoZY7B"));
 		} catch (URISyntaxException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

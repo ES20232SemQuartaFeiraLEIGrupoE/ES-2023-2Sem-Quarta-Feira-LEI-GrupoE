@@ -224,7 +224,7 @@ public class FileReaderWriter {
 
 	public static String icsToBlockList(URI uri) {
 		String URI = uri.toString();
-		String httpsURI = "https" + URI.split(":")[1];
+		String httpsURI = "https:" + URI.split(":")[1];
 		File csv = new File("");
 		String course;
 		String curricular_unit;
@@ -280,7 +280,7 @@ public class FileReaderWriter {
 				}
 				blockList.add(new Block(course, curricular_unit, shift, team, number_of_subscribers,day_of_week, hour_begin, hour_end, date, room, size_room));
 			}
-			csv= scheduleToCsv(blockList);
+			csv = scheduleToCsv(blockList);
 			return ConvertFiles.csvToJson2(null);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -289,7 +289,7 @@ public class FileReaderWriter {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		return csv.toString();
+		return ConvertFiles.csvToJson2(null);
 
 	}
 
