@@ -223,6 +223,8 @@ public class FileReaderWriter {
 	 */
 
 	public static String icsToBlockList(URI uri) {
+		String URI = uri.toString();
+		String httpsURI = "https" + URI.split(":")[1];
 		File csv = new File("");
 		String course;
 		String curricular_unit;
@@ -244,7 +246,7 @@ public class FileReaderWriter {
 		File f = new File("temp");
 		try {
 			// fazer download do ficheiro ics para um ficheiro temporário f
-			FileUtils.copyURLToFile(new URL(uri.toString()), f);
+			FileUtils.copyURLToFile(new URL(httpsURI), f);
 			// converter o ficherio no tipo ICalendar da biblioteca Biweekly
 			ICalendar ical = Biweekly.parse(f).first();
 			List<VEvent> events = ical.getEvents();
