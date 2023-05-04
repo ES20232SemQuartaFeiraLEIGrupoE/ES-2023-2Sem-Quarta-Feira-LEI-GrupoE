@@ -160,7 +160,7 @@ function checkLotacion(block){
 
 
 function drawCalendar(events) {
-    let overlapc = 0;
+    overlapc = 0;
     updateCountO(overlapc);
     // Inicializar o
     currentView = $('#calendar').fullCalendar('getView').name;
