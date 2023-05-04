@@ -83,27 +83,25 @@ public class Block implements Serializable {
 	 * Função get hora de inicio
 	 * @return retorna a hora de inicio de um block
 	 */
-	public LocalTime getHour_begin(){
-		LocalTime hour = LocalTime.parse(hour_begin);
-		return hour;
+	public String getHour_begin(){
+		
+		return hour_begin;
 	}
 
 	/**
 	 * Função get hora de fim
 	 * @return retorna a hora de fim de um block
 	 */
-	public LocalTime getHour_end() {
-		LocalTime hour = LocalTime.parse(hour_end);
-		return hour;
+	public String getHour_end() {
+		return hour_end;
 	}
 
 	/**
 	 * Função get dia de semana
 	 * @return retorna o dia de semana de um block
 	 */
-	public DayOfWeek getDayOfWeek() {
-		DayOfWeek day = DayOfWeek.valueOf(day_of_week.toUpperCase());
-		return day;
+	public String getDayOfWeek() {
+		return day_of_week;
 	}
 
 	/**

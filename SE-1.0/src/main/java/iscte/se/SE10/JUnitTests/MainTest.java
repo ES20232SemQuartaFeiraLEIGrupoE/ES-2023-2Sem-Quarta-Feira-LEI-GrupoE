@@ -15,7 +15,7 @@ class MainTest {
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
 
-        Main.textMainInterface();
+        //Main.textMainInterface();
 
         String expectedOutput = "-------------- Demo --------------\n" +
                 "1. Convert File\n" +

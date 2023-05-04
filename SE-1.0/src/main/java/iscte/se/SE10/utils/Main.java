@@ -2,10 +2,16 @@ package iscte.se.SE10.utils;
 
 
 import java.io.*;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.List;
 import java.util.Scanner;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+
+import org.apache.http.client.ClientProtocolException;
 
 
 
@@ -20,29 +26,47 @@ public class Main {
 	 * @param args array de strings
 	 */
 	public static void main(String[] args) {
-
-		//Changes the look of the File chooser
-
+		
+//		try {
+//			FileReaderWriter.copyURLToFile(new URL("https://github.com/AlexandreCubo/testeficheiro/blob/main/horario_exemplo_1.csv"),new File("output22"));
+//			System.out.println("CopyURLToFile 1 Done!");
+//		} catch (MalformedURLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		
 		try {
-			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
-				| UnsupportedLookAndFeelException e) {
+			FileReaderWriter.icsToBlockList(new URI("https://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=afcma2@iscte.pt&password=pGpQwoXWCT1cOtbKarRT9OCTomd3y8NXgpU2yXyvdksPTMK9yjR3LHKMvmRwi5gPC66nWbFuWUOJPUIeI9UAN5qws59Ry94vLoprF809oIn1FRzKwSA4CKWS1VpoZY7B"));
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		//Changes the look of the File chooser
 
-
-		// DEMO
-		textMainInterface();
-//		options();
-
-
-	}
-
-	public static void textMainInterface (){
-		System.out.print("-------------- Demo --------------\n");
-		System.out.print("1. Convert File\n");
-		System.out.print("2. Show Gui\n");
-		System.out.print("Insert Option: ");
+//		try {
+//			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+//		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+//				| UnsupportedLookAndFeelException e) {
+//			e.printStackTrace();
+//		}
+//
+//
+//		// DEMO
+//		textMainInterface();
+////		options();
+//
+//
+//	}
+//
+//	public static void textMainInterface (){
+//		System.out.print("-------------- Demo --------------\n");
+//		System.out.print("1. Convert File\n");
+//		System.out.print("2. Show Gui\n");
+//		System.out.print("Insert Option: ");
 	}
 
 //	public static void options(){
