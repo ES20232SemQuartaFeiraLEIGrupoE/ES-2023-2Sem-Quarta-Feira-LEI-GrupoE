@@ -25,15 +25,18 @@ public class CalendarController {
                 "  <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n" +
                 "</head>\n" +
                 "\n" +
-                "<select id=\"coursesDropdown\" class=\"custom-select\"></select>\n" +
                 "<input class=\"custom-select\" type=\"file\" id=\"file-input\">" +
-                "<button class=\"custom-select btn-load-file\">Load file</button>" +
+                "<t>      </t>" +
+                "<button class=\" btn-load-file\">Load file</button>" +
                 "\n" +
-                "<button onclick=\"saveBlocksToApi()\">Save Blocks to API</button>" +
+                "<button class=\" btn-load-file\" onclick=\"saveBlocksToApi()\">Save Blocks to API</button>" +
+                "<t>      </t>" +
+                "<select id=\"coursesDropdown\" class=\"custom-select\"></select>\n" +
                 "<ul id=\"subjectSelector\">" +
 
                 "</ul>" +
-                " <div class=\"counter\">0</div>" +
+                " <div> <t class=\"countertxt\">Quantidade de Superlotações = </t> <t class=\"counter\">0 </t></div>\n" +
+                " <div> <t class=\"counterotxt\">Quantidade de Sobreposições = </t> <t class=\"countero\">0 </t></div>" +
                 "<body>\n" +
                 "  <div id=\"calendar\"></div>\n" +
                 "  <script defer src=\"script.js\"></script>\n" +

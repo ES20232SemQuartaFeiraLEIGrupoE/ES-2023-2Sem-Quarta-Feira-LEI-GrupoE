@@ -7,20 +7,16 @@ const fileInput = document.getElementById('file-input');
 
 // Tarefa 26
 let superlotacion = 0;
+let overlapc = 0;
 const counter = document.querySelector(".counter");
+const countero = document.querySelector(".countero");
 
 const setCounter = function (val) {
   counter.textContent = "" + val;
 };
 
-function countOverlap(blocks) {
-  let overlapCount = 0;
-    // missing Logic
-    ///////////
-    ///////////
-    ////////////
-    ////////////
-  return overlapCount;
+function updateCountO(val) {
+  countero.textContent = "" + val;
 }
 
 function checkSuperlotacion(blocks){
@@ -35,10 +31,8 @@ function checkSuperlotacion(blocks){
 }
 
 function updateCount(blocks){
-    const overlap = countOverlap(blocks);
     const lotated = checkSuperlotacion(blocks);
-    const total = overlap + lotated;
-    setCounter(total);
+    setCounter(lotated);
 }
 
 //Tarefa 20
@@ -166,6 +160,8 @@ function checkLotacion(block){
 
 
 function drawCalendar(events) {
+    overlapc = 0;
+    updateCountO(overlapc);
     // Inicializar o
     currentView = $('#calendar').fullCalendar('getView').name;
     $('#calendar').fullCalendar('destroy');
@@ -214,6 +210,8 @@ function drawCalendar(events) {
   // If the event overlaps with another event, change the background color to red
   if (overlaps) {
     element.css('background-color', 'purple');
+    overlapc += 1;
+    updateCountO(overlapc);
   }
     },
 
@@ -226,7 +224,7 @@ function drawCalendar(events) {
     // Criar o modal com as informações do evento
     var modal = $('<div>').addClass('modal fade').attr('id', 'event-details-modal');
     var modalDialog = $('<div>').addClass('modal-dialog');
-    var modalContent = $('<div>').addClass('modal-content');
+    var modalContent = $('<div>').addClass('modal-content custom-style');
     var modalHeader = $('<div>').addClass('modal-header').html('<h5 class="modal-title">' + event["Unidade Curricular"]);
     var modalBody = $('<div>').addClass('modal-body').html('<br>Número de inscrições: ' + event["Inscritos no turno"] + '<br>Tamanho da sala: ' + event["Lotação da sala"] );
     modalContent.append(modalHeader, modalBody);
