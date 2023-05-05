@@ -20,7 +20,6 @@ import static iscte.se.SE10.utils.FileReader.readJson;
 
 /**
  * Classe para ler e escrever em ficheiros
- *
  * @author Grupo E
  * @version 1.0
  */
@@ -29,7 +28,6 @@ public class FileWriter {
 
     /**
      * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro CSV
-     *
      * @param data lista de blocks
      */
     public static void saveInCSV(List<Block> data) {
