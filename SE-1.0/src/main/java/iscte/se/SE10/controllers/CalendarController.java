@@ -14,34 +14,56 @@ public class CalendarController {
     @GetMapping(value = "/calendar", produces = MediaType.TEXT_HTML_VALUE)
     @ResponseBody
     public ResponseEntity<String> getCalendar() {
-        String html = "<!DOCTYPE html>\n" +
-                "<html>\n" +
-                "<head>\n" +
-                "  <meta charset=\"utf-8\">\n" +
-                "  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css\" />\n" +
-                "  <script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"></script>\n" +
-                "  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js\"></script>\n" +
-                "  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js\"></script>\n" +
-                "  <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n" +
-                "</head>\n" +
-                "\n" +
-                "<input class=\"custom-select\" type=\"file\" id=\"file-input\">" +
-                "<t>      </t>" +
-                "<button class=\" btn-load-file\">Load file</button>" +
-                "\n" +
-                "<button class=\" btn-load-file\" onclick=\"saveBlocksToApi()\">Save Blocks to API</button>" +
-                "<t>      </t>" +
-                "<select id=\"coursesDropdown\" class=\"custom-select\"></select>\n" +
-                "<ul id=\"subjectSelector\">" +
-
-                "</ul>" +
-                " <div> <t class=\"countertxt\">Quantidade de Superlotações = </t> <t class=\"counter\">0 </t></div>\n" +
-                " <div> <t class=\"counterotxt\">Quantidade de Sobreposições = </t> <t class=\"countero\">0 </t></div>" +
-                "<body>\n" +
-                "  <div id=\"calendar\"></div>\n" +
-                "  <script defer src=\"script.js\"></script>\n" +
-                "</body>\n" +
-                "</html>";
+        String html = "<!DOCTYPE html>\n"
+                + "<html>\n"
+                + "<head>\n"
+                + "  <meta charset=\"utf-8\">\n"
+                + "  <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css\" />\n"
+                + "  <script src=\"https://code.jquery.com/jquery-3.6.0.min.js\"></script>\n"
+                + "  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js\"></script>\n"
+                + "  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js\"></script>\n"
+                + "  <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">\n"
+                + "</head>\n"
+                + "<body>\n"
+                + "<div class=\"rift\">\n"
+                + "        <div class=\"top\">\n"
+                + "            <h2>Load Scheduel</h2>\n"
+                + "            <div class=\"flex-c\">\n"
+                + "                <input class=\"support\" type=\"file\" id=\"file-input\">\n"
+                + "                <button class=\" btn-load-file\">Load file</button>\n"
+                + "            </div>\n"
+                + "            <h3>Save Configuration</h3>\n"
+                + "            <button class=\" btn-load-file\" onclick=\"saveToCSV()\">Save to CSV</button>\n"
+                + "            <button class=\" btn-load-file\" onclick=\"saveToJson()\">Save to Json</button>\n"
+                + "        </div>\n"
+                + "        <div class=\"jungle\">\n"
+                + "            <h2>Select Course :</h2>\n"
+                + "            <select id=\"coursesDropdown\" class=\"\"></select>\n"
+                + "        </div>\n"
+                + "        <div class=\"mid\">\n"
+                + "            <h2>Info</h2>\n"
+                + "            <div> \n"
+                + "                <h3 class=\"countertxt\">Quantidade de Superlotações</h3> \n"
+                + "                <h3 class=\"counter\">0 </h3>\n"
+                + "            </div>\n"
+                + "            <div> \n"
+                + "                <h3 class=\"counterotxt\">Quantidade de Sobreposições</h3> \n"
+                + "                <h3 class=\"countero\">0 </h3>\n"
+                + "            </div>\n"
+                + "        </div>\n"
+                + "    </div>\n"
+                + "    <div class=\"adc\">\n"
+                + "        <h3>Select Disciplines</h3>\n"
+                + "        <ul id=\"subjectSelector\"></ul>\n"
+                + "    </div>\n"
+                + "    <div class=\"calendar\">\n"
+                + "\n"
+                + "<div class=\"adc\">\n"
+                + "  <div id=\"calendar\"></div>\n"
+                + "  <script defer src=\"script.js\"></script>\n"
+                + "    </div>\n"
+                + "</body>\n"
+                + "</html>";
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.TEXT_HTML);
