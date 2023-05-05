@@ -60,6 +60,54 @@ btnLoadFile.addEventListener('click', function() {
   });
 });
 
+//Tarefa 21
+const urlForm = document.getElementById('url-form');
+
+urlForm.addEventListener('submit', function(event) {
+  blocks = [];
+  fetch("/api/web", {
+    method: 'POST',
+    body: urlForm
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+    var courses = new Set();
+    for (var i = 0; i < data.length; i++) {
+      courses.add(data[i]["Curso"]);
+    }
+    populateCoursesDropdown(courses)
+    blocks = data
+    updateCount(blocks);
+    populateSubjectChecklist(blocks)
+    drawCalendar(blocks);
+  });
+});
+
+btnLoadFile.addEventListener('click', function() {
+  const file = fileInput.files[0];
+  const formData = new FormData();
+  formData.append('file', file);
+  blocks = [];
+  fetch('/api/blocks', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+    var courses = new Set();
+    for (var i = 0; i < data.length; i++) {
+      courses.add(data[i]["Curso"]);
+    }
+    populateCoursesDropdown(courses)
+    blocks = data
+    updateCount(blocks);
+    populateSubjectChecklist(blocks)
+    drawCalendar(blocks);
+  });
+});
+
 function populateCoursesDropdown(courses) {
    // console.log(courses)
     var uniqueCourses = [...new Set(courses)];

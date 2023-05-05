@@ -23,14 +23,14 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 
-		try {
-			List<Block> teste = FileReader.icsToBlockList(new URI(
-					"webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=afcma2@iscte.pt&password=pGpQwoXWCT1cOtbKarRT9OCTomd3y8NXgpU2yXyvdksPTMK9yjR3LHKMvmRwi5gPC66nWbFuWUOJPUIeI9UAN5qws59Ry94vLoprF809oIn1FRzKwSA4CKWS1VpoZY7B"));
-			FileWriter.saveInCSV(teste);
-		} catch (URISyntaxException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			List<Block> teste = FileReader.icsToBlockList(new URI(
+//					"webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=afcma2@iscte.pt&password=pGpQwoXWCT1cOtbKarRT9OCTomd3y8NXgpU2yXyvdksPTMK9yjR3LHKMvmRwi5gPC66nWbFuWUOJPUIeI9UAN5qws59Ry94vLoprF809oIn1FRzKwSA4CKWS1VpoZY7B"));
+//			FileWriter.saveInCSV(teste);
+//		} catch (URISyntaxException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 
 		// Changes the look of the File chooser
 

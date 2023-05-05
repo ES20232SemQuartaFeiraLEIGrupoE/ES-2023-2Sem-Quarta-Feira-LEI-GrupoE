@@ -1,12 +1,20 @@
 package iscte.se.SE10.model;
 
+import biweekly.component.VEvent;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
+import java.io.IOException;
 import java.io.Serializable;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.format.TextStyle;
 import java.util.*;
 
+import static iscte.se.SE10.utils.FileReader.readIcs;
 import static iscte.se.SE10.utils.utils.*;
 
 /**
@@ -19,9 +27,10 @@ import static iscte.se.SE10.utils.utils.*;
 public class Block implements Serializable {
 
     public static final String[] keys = {"Curso", "Unidade Curricular", "Turno", "Turma", "Inscritos no turno", "Dia da semana", "Hora início da aula", "Hora fim da aula", "Data da aula", "Sala atribuída à aula", "Lotação da sala"};
+
     private Map<String, String> data;
 
-    public Block(Map<String, String> data){
+    public Block(Map<String, String> data) {
         this.data = data;
     }
 
@@ -49,6 +58,26 @@ public class Block implements Serializable {
         return new Block(data);
     }
 
+    public static void main(String[] args) {
+        readIcs("webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=jccoa@iscte.pt&password=vYq1j6K7UgV2NQk1K9uYYvviw8U346HtmgC5ZG8CGw2RdBkZfPTWKZ1xz8378TfuOu9M3xORnkVqmW7pAjNhXgtdLpMpBiooBsz0NHhGNGyMDbdEbDtoJmDJLN0uK1sz");
+    }
+
+    public static Block createFromWebCalaendar(Map<String, String> webInfo) {
+        Map<String, String> blocks = new LinkedHashMap<>();
+
+        for(String key : keys){
+            blocks.put(key, "null");
+        } // {Turno=PISIDPL03, Unidade de execução=Projeto de Integração de Sistemas de Informação Distribuídos, Fim=2023-05-09 14:30, Início=2023-05-09 13:00}
+
+        blocks.put("Turno", webInfo.get("Turno"));
+        blocks.put("Unidade Curricular", webInfo.get("Unidade de execução"));
+        blocks.put("Hora início da aula", formatIcsHourToLocal(webInfo.get("Início")));
+        blocks.put("Hora fim da aula", formatIcsHourToLocal(webInfo.get("Fim")));
+        blocks.put("Data da aula", formatIcsDateToLocal(webInfo.get("Início")));
+        System.out.println(blocks);
+        return new Block(blocks);
+    }
+
     /**
      * Função que devolve o header do block
      *
@@ -58,7 +87,7 @@ public class Block implements Serializable {
         return String.join(";", Block.keys);
     }
 
-    private List<Map<String, String>> getAsList(){
+    private List<Map<String, String>> getAsList() {
         List<Map<String, String>> list = new ArrayList<>();
         for (Map.Entry<String, String> entry : data.entrySet()) {
             Map<String, String> map = new HashMap<>();
