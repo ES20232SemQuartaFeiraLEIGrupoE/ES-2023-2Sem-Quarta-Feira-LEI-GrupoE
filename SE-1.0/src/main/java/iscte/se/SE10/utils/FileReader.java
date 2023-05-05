@@ -76,6 +76,12 @@ public class FileReader {
 		return blocks;
 	}
 
+	/**
+	 * Função que através de um ficheiro remoto cria uma lista do objetos Block
+	 * @param uri endereço do ficheiro remoto
+	 * @return retorna uma lista de objetos Block
+	 */
+
 	public static List<Block> icsToBlockList(URI uri) {
 		String URI = uri.toString();
 		//Converter de webcal: para htpps:
