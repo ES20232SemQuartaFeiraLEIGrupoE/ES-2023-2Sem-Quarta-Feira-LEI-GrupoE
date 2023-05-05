@@ -87,6 +87,7 @@ public class Block implements Serializable {
         copyData.put("end", formatDateToWeb(classDate, endHour));
         return copyData;
     }
+    //easter egg
 
 
 }
