@@ -28,7 +28,7 @@ import static iscte.se.SE10.utils.FileReader.readJson;
 public class FileWriter {
 
     /**
-     * Função que recebe o nome para um ficheiro que será criado através de uma lista de blocks
+     * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro CSV
      *
      * @param data lista de blocks
      */
@@ -45,7 +45,10 @@ public class FileWriter {
         }
     }
 
-
+    /**
+     * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro JSON
+     * @param data lista de blocks
+     */
     public static void saveInJson(List<Block> data) {
         try {
             PrintWriter writer = new PrintWriter("schedule.json");
@@ -82,7 +85,7 @@ public class FileWriter {
             result.add(block.getAsScheduleFormat());
         }
         Gson gson = new Gson();
-        String json = gson.toJson(result);
-        return json;
+//        String json = gson.toJson(result);
+        return gson.toJson(result);
     }
 }
