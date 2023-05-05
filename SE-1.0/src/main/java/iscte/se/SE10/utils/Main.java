@@ -1,13 +1,14 @@
 package iscte.se.SE10.utils;
 
-
 import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Scanner;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-
+import iscte.se.SE10.model.Block;
 
 /**
  * @author Grupo E
@@ -17,28 +18,38 @@ public class Main {
 
 	/**
 	 * Função main
+	 * 
 	 * @param args array de strings
 	 */
 	public static void main(String[] args) {
 
-		//Changes the look of the File chooser
-
 		try {
-			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
-				| UnsupportedLookAndFeelException e) {
+			List<Block> teste = FileReader.icsToBlockList(new URI(
+					"webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=afcma2@iscte.pt&password=pGpQwoXWCT1cOtbKarRT9OCTomd3y8NXgpU2yXyvdksPTMK9yjR3LHKMvmRwi5gPC66nWbFuWUOJPUIeI9UAN5qws59Ry94vLoprF809oIn1FRzKwSA4CKWS1VpoZY7B"));
+			FileWriter.saveInCSV(teste);
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
+		// Changes the look of the File chooser
 
-		// DEMO
-		textMainInterface();
-//		options();
-
+//		try {
+//			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+//		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException
+//				| UnsupportedLookAndFeelException e) {
+//			e.printStackTrace();
+//		}
+//
+//
+//		// DEMO
+//		textMainInterface();
+////		options();
+//
 
 	}
 
-	public static void textMainInterface (){
+	public static void textMainInterface() {
 		System.out.print("-------------- Demo --------------\n");
 		System.out.print("1. Convert File\n");
 		System.out.print("2. Show Gui\n");
@@ -74,6 +85,4 @@ public class Main {
 //						FileReaderWriter.saveFileLocal(file);
 //				}
 //		}
-	}
-
-
+}
