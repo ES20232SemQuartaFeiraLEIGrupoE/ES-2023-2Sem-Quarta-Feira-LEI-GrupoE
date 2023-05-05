@@ -1,0 +1,365 @@
+Curso;Unidade Curricular;Turno;Turma;Inscritos no turno;Dia da semana;Hora início da aula;Hora fim da aula;Data da aula;Sala atribuída à aula;Lotação da sala
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;10/03/2023;C6.07,;30; DIAMTP01;SEX
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;09/05/2023;C4.06,;30; PISIDPL03;TER
+null;Engenharia de Software;null;0;13:00:00;13:00:00;20/03/2023;Auditório;30; EngST01;SEG
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;22/09/2022;C5.01,;30; 03708TP20;QUI
+null;Processamento de Informação;null;0;16:00:00;16:00:00;30/11/2022;Auditório;30; L0779T01;QUA
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;28/11/2022;Auditório;30; 03727T02;SEG
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;13/04/2023;C5.07,;30; L5316TP05;QUI
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;29/11/2022;0S01,;30; L5096TP04;TER
+null;Agentes Autónomos;null;0;14:30:00;14:30:00;30/11/2022;0S02,;30; 03727PL06;QUA
+null;Engenharia de Software;null;0;16:00:00;16:00:00;29/03/2023;D1.09,;30; EngSTP02;QUA
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;09/05/2023;C6.07,;30; DIAMTP01;TER
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;09/02/2023;0S08,;30; DIAMTP01;QUI
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;16/03/2023;D1.05,;30; DIAMTP01;QUI
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;03/03/2023;C6.07,;30; DIAMTP01;SEX
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;28/11/2022;Auditório;30; L5096T03;SEG
+null;Processamento de Informação;null;0;14:30:00;14:30:00;11/11/2022;Auditório;30; L0779TP02;SEX
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;29/11/2022;C6.08,;30; 03744;TER
+null;Engenharia de Software;null;0;13:00:00;13:00:00;27/03/2023;Auditório;30; EngST01;SEG
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;06/03/2023;Auditório;30; PISIDT01;SEG
+null;Engenharia de Software;null;0;16:00:00;16:00:00;13/02/2023;C6.10,;30; EngST01;SEG
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;21/09/2022;C5.06,;30; 03708TP20;QUA
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;17/02/2023;C6.10,;30; L5316T02;SEX
+null;Programação Concorrente e Distribuída;null;0;09:30:00;09:30:00;06/12/2022;D1.05,;30; L5096TP04;TER
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;11/10/2022;C6.08,;30; 03744;TER
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;23/03/2023;C5.07,;30; L5316TP05;QUI
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;18/10/2022;C6.08,;30; 03744;TER
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;13/02/2023;Auditório;30; PISIDT01;SEG
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;13/10/2022;C7.06,;30; 03708PL02;QUI
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;14/12/2022;C5.06,;30; 03708TP20;QUA
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;04/10/2022;C6.08,;30; 03744;TER
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;28/03/2023;C5.08,;30; PISIDTP02;TER
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;04/10/2022;C6.07,;30; 03744;TER
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;10/11/2022;C7.06,;30; 03708PL02;QUI
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;22/03/2023;D1.03,;30; 03583TP05;QUA
+null;Engenharia de Software;null;0;16:00:00;16:00:00;22/03/2023;D1.09,;30; EngSTP02;QUA
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;14/03/2023;C5.08,;30; PISIDTP02;TER
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;27/09/2022;C6.07,;30; 03744;TER
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;14/02/2023;C6.07,;30; DIAMTP01;TER
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;20/09/2022;0S01,;30; L5096TP04;TER
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;02/05/2023;C4.06,;30; PISIDPL03;TER
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;12/12/2022;Auditório;30; 03727T02;SEG
+null;Agentes Autónomos;null;0;14:30:00;14:30:00;23/11/2022;0S02,;30; 03727PL06;QUA
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;21/03/2023;C4.06,;30; PISIDPL03;TER
+null;Processamento de Informação;null;0;14:30:00;14:30:00;23/09/2022;Auditório;30; L0779TP02;SEX
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;26/10/2022;C5.06,;30; 03708TP20;QUA
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;07/03/2023;C5.08,;30; PISIDTP02;TER
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;03/11/2022;C7.06,;30; 03708PL02;QUI
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;14/11/2022;Auditório;30; 03708T02;SEG
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;17/03/2023;C6.10,;30; L5316T02;SEX
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;18/04/2023;C6.07,;30; DIAMTP01;TER
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;04/05/2023;C5.07,;30; L5316TP05;QUI
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;16/05/2023;C6.07,;30; DIAMTP01;TER
+null;Processamento de Informação;null;0;16:00:00;16:00:00;02/12/2022;Auditório;30; L0779TP02;SEX
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;28/09/2022;C5.06,;30; 03708TP20;QUA
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;24/05/2023;C6.08,;30; DIAMTP01;QUA
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;17/11/2022;C7.06,;30; 03708PL02;QUI
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;15/05/2023;Auditório;30; PISIDT01;SEG
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;07/12/2022;C7.06,;30; 03708PL02;QUA
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;18/10/2022;0S01,;30; L5096TP04;TER
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;15/11/2022;C6.08,;30; 03744;TER
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;19/04/2023;D1.03,;30; 03583TP05;QUA
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;21/11/2022;Auditório;30; L5096T03;SEG
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;12/10/2022;C5.06,;30; 03708TP20;QUA
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;02/05/2023;C5.08,;30; PISIDTP02;TER
+null;Agentes Autónomos;null;0;14:30:00;14:30:00;12/10/2022;0S02,;30; 03727PL06;QUA
+null;Engenharia de Software;null;0;13:00:00;13:00:00;08/05/2023;Auditório;30; EngST01;SEG
+null;Engenharia de Software;null;0;14:30:00;14:30:00;29/03/2023;D1.09,;30; EngSTP02;QUA
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;07/11/2022;Auditório;30; 03708T02;SEG
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;10/10/2022;Auditório;30; 03727T02;SEG
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;04/05/2023;C5.07,;30; L5316TP05;QUI
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;16/05/2023;C5.08,;30; PISIDTP02;TER
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;28/02/2023;C6.07,;30; DIAMTP01;TER
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;24/03/2023;C6.07,;30; DIAMTP01;SEX
+null;Agentes Autónomos;null;0;14:30:00;14:30:00;21/09/2022;0S02,;30; 03727PL06;QUA
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;03/10/2022;Auditório;30; 03708T02;SEG
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;20/04/2023;D1.05,;30; DIAMTP01;QUI
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;29/11/2022;C6.08,;30; 03744;TER
+null;Engenharia de Software;null;0;16:00:00;16:00:00;08/02/2023;0S02,;30; EngSTP02;QUA
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;25/10/2022;0S01,;30; L5096TP04;TER
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;24/04/2023;Auditório;30; PISIDT01;SEG
+null;Processamento de Informação;null;0;14:30:00;14:30:00;07/10/2022;Auditório;30; L0779TP02;SEX
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;30/03/2023;D1.03,;30; 03583TP05;QUI
+null;Programação Concorrente e Distribuída;null;0;11:00:00;11:00:00;06/12/2022;D1.05,;30; L5096TP04;TER
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;31/10/2022;Auditório;30; 03708T02;SEG
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;06/02/2023;Auditório;30; PISIDT01;SEG
+null;Engenharia de Software;null;0;16:00:00;16:00:00;01/03/2023;D1.09,;30; EngSTP02;QUA
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;06/12/2022;D1.06,;30; L5096TP04;TER
+null;Engenharia de Software;null;0;14:30:00;14:30:00;10/05/2023;C4.01,;30; EngSTP02;QUA
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;26/09/2022;Auditório;30; 03708T02;SEG
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;05/12/2022;Auditório;30; 03708T02;SEG
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;15/09/2022;C5.01,;30; 03708TP20;QUI
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;26/05/2023;Auditório;30; L5316T02;SEX
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;25/05/2023;C5.07,;30; L5316TP05;QUI
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;23/03/2023;C5.07,;30; L5316TP05;QUI
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;15/02/2023;D1.03,;30; 03583TP05;QUA
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;29/03/2023;D1.03,;30; 03583TP05;QUA
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;16/02/2023;D1.03,;30; 03583TP05;QUI
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;17/04/2023;Auditório;30; PISIDT01;SEG
+null;Engenharia de Software;null;0;09:30:00;09:30:00;08/03/2023;D1.02,;30; EngSTP02;QUA
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;02/03/2023;Auditório;30; L5316TP05;QUI
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;31/03/2023;C6.10,;30; L5316T02;SEX
+null;Introdução à Ciência de Dados;null;0;11:00:00;11:00:00;25/03/2023;D1.09,;30; 03583TP05;SÁB
+null;Engenharia de Software;null;0;16:00:00;16:00:00;03/05/2023;D1.09,;30; EngSTP02;QUA
+null;Engenharia de Software;null;0;10:30:00;10:30:00;07/02/2023;Auditório;30; EngST01;TER
+null;Processamento de Informação;null;0;16:00:00;16:00:00;21/09/2022;Auditório;30; L0779T01;QUA
+null;Processamento de Informação;null;0;16:00:00;16:00:00;23/11/2022;Auditório;30; L0779T01;QUA
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;17/10/2022;Auditório;30; L5096T03;SEG
+null;Engenharia de Software;null;0;14:30:00;14:30:00;12/04/2023;D1.09,;30; EngSTP02;QUA
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;19/10/2022;C5.06,;30; 03708TP20;QUA
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;16/05/2023;C4.06,;30; PISIDPL03;TER
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;06/12/2022;C6.08,;30; 03744;TER
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;06/12/2022;C5.08,;30; 03727TP04;TER
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;18/10/2022;C5.08,;30; 03727TP04;TER
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;16/02/2023;Auditório;30; L5316TP05;QUI
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;08/02/2023;D1.03,;30; 03583TP05;QUA
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;04/10/2022;0S01,;30; L5096TP04;TER
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;13/09/2022;0S01,;30; L5096TP04;TER
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;15/11/2022;D1.09,;30; 03727TP04;TER
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;24/10/2022;Auditório;30; 03727T02;SEG
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;14/11/2022;Auditório;30; 03727T02;SEG
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;13/09/2022;C6.07,;30; 03744;TER
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;15/11/2022;0S01,;30; L5096TP04;TER
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;10/10/2022;Auditório;30; L5096T03;SEG
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;20/04/2023;D1.03,;30; 03583TP05;QUI
+null;Processamento de Informação;null;0;16:00:00;16:00:00;09/11/2022;Auditório;30; L0779T01;QUA
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;14/04/2023;C6.10,;30; L5316T02;SEX
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;27/02/2023;Auditório;30; PISIDT01;SEG
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;17/03/2023;C6.07,;30; DIAMTP01;SEX
+null;Processamento de Informação;null;0;16:00:00;16:00:00;23/09/2022;Auditório;30; L0779TP02;SEX
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;21/03/2023;C6.07,;30; DIAMTP01;TER
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;01/03/2023;D1.03,;30; 03583TP05;QUA
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;11/10/2022;C6.08,;30; 03744;TER
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;25/05/2023;C5.07,;30; L5316TP05;QUI
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;24/10/2022;Auditório;30; L5096T03;SEG
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;10/02/2023;C6.07,;30; DIAMTP01;SEX
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;12/05/2023;Auditório;30; L5316T02;SEX
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;07/02/2023;C5.08,;30; PISIDTP02;TER
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;14/02/2023;C5.08,;30; PISIDTP02;TER
+null;Processamento de Informação;null;0;14:30:00;14:30:00;14/10/2022;Auditório;30; L0779TP02;SEX
+null;Processamento de Informação;null;0;16:00:00;16:00:00;14/10/2022;Auditório;30; L0779TP02;SEX
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;13/03/2023;Auditório;30; PISIDT01;SEG
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;25/10/2022;C6.08,;30; 03744;TER
+null;Engenharia de Software;null;0;14:30:00;14:30:00;03/05/2023;D1.09,;30; EngSTP02;QUA
+null;Engenharia de Software;null;0;13:00:00;13:00:00;13/03/2023;Auditório;30; EngST01;SEG
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;29/11/2022;D1.09,;30; 03727TP04;TER
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;09/05/2023;C5.08,;30; PISIDTP02;TER
+null;Engenharia de Software;null;0;16:00:00;16:00:00;10/05/2023;C4.01,;30; EngSTP02;QUA
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;18/05/2023;C5.07,;30; L5316TP05;QUI
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;16/02/2023;C6.07,;30; DIAMTP01;QUI
+null;Engenharia de Software;null;0;13:00:00;13:00:00;19/04/2023;D1.09,;30; EngSTP02;QUA
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;18/10/2022;0S01,;30; L5096TP04;TER
+null;Agentes Autónomos;null;0;14:30:00;14:30:00;19/10/2022;C5.08,;30; 03727PL06;QUA
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;17/10/2022;Auditório;30; 03727T02;SEG
+null;Processamento de Informação;null;0;14:30:00;14:30:00;16/09/2022;Auditório;30; L0779TP02;SEX
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;14/03/2023;C4.06,;30; PISIDPL03;TER
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;05/05/2023;C6.10,;30; L5316T02;SEX
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;03/10/2022;Auditório;30; L5096T03;SEG
+null;Introdução à Ciência de Dados;null;0;09:30:00;09:30:00;25/03/2023;D1.09,;30; 03583TP05;SÁB
+null;Processamento de Informação;null;0;16:00:00;16:00:00;16/09/2022;Auditório;30; L0779TP02;SEX
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;28/03/2023;C4.06,;30; PISIDPL03;TER
+null;Processamento de Informação;null;0;16:00:00;16:00:00;04/11/2022;Auditório;30; L0779TP02;SEX
+null;Processamento de Informação;null;0;14:30:00;14:30:00;18/11/2022;Auditório;30; L0779TP02;SEX
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;23/03/2023;D1.03,;30; 03583TP05;QUI
+null;Processamento de Informação;null;0;14:30:00;14:30:00;25/11/2022;Auditório;30; L0779TP02;SEX
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;11/05/2023;C5.07,;30; L5316TP05;QUI
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;22/11/2022;C6.08,;30; 03744;TER
+null;Processamento de Informação;null;0;16:00:00;16:00:00;12/10/2022;Auditório;30; L0779T01;QUA
+null;Engenharia de Software;null;0;14:30:00;14:30:00;22/03/2023;D1.09,;30; EngSTP02;QUA
+null;Engenharia de Software;null;0;13:00:00;13:00:00;24/04/2023;Auditório;30; EngST01;SEG
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;30/03/2023;C5.07,;30; L5316TP05;QUI
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;27/03/2023;Auditório;30; PISIDT01;SEG
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;20/03/2023;Auditório;30; PISIDT01;SEG
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;21/11/2022;Auditório;30; 03708T02;SEG
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;18/04/2023;C5.08,;30; PISIDTP02;TER
+null;Engenharia de Software;null;0;14:30:00;14:30:00;15/03/2023;D1.09,;30; EngSTP02;QUA
+null;Engenharia de Software;null;0;14:30:00;14:30:00;19/04/2023;D1.09,;30; EngSTP02;QUA
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;21/04/2023;C6.07,;30; DIAMTP01;SEX
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;08/11/2022;0S01,;30; L5096TP04;TER
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;21/04/2023;Auditório;30; L5316T02;SEX
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;15/11/2022;C6.08,;30; 03744;TER
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;13/12/2022;0S02,;30; L5096TP04;TER
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;23/05/2023;C4.08,;30; DIAMTP01;TER
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;28/04/2023;C6.07,;30; DIAMTP01;SEX
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;04/10/2022;0S01,;30; L5096TP04;TER
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;15/12/2022;C7.06,;30; 03708PL02;QUI
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;28/03/2023;C6.07,;30; DIAMTP01;TER
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;30/03/2023;C6.07,;30; DIAMTP01;QUI
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;27/09/2022;C5.08,;30; 03727TP04;TER
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;11/10/2022;0S01,;30; L5096TP04;TER
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;27/09/2022;0S01,;30; L5096TP04;TER
+null;Processamento de Informação;null;0;16:00:00;16:00:00;14/09/2022;Auditório;30; L0779T01;QUA
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;25/10/2022;0S01,;30; L5096TP04;TER
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;13/09/2022;0S01,;30; L5096TP04;TER
+null;Programação Concorrente e Distribuída;null;0;09:30:00;09:30:00;15/12/2022;0S02,;30; L5096TP04;QUI
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;30/11/2022;C5.06,;30; 03708TP20;QUA
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;16/03/2023;C5.07,;30; L5316TP05;QUI
+null;Processamento de Informação;null;0;16:00:00;16:00:00;07/12/2022;Auditório;30; L0779T01;QUA
+null;Processamento de Informação;null;0;16:00:00;16:00:00;02/11/2022;Auditório;30; L0779T01;QUA
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;21/03/2023;C5.08,;30; PISIDTP02;TER
+null;Engenharia de Software;null;0;16:00:00;16:00:00;06/02/2023;C6.10,;30; EngST01;SEG
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;07/03/2023;C6.07,;30; DIAMTP01;TER
+null;Engenharia de Software;null;0;13:00:00;13:00:00;17/04/2023;Auditório;30; EngST01;SEG
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;27/09/2022;0S01,;30; L5096TP04;TER
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;12/12/2022;Auditório;30; L5096T03;SEG
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;08/11/2022;D1.09,;30; 03727TP04;TER
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;18/04/2023;C4.06,;30; PISIDPL03;TER
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;14/03/2023;C6.07,;30; DIAMTP01;TER
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;17/10/2022;Auditório;30; 03708T02;SEG
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;19/09/2022;Auditório;30; 03727T02;SEG
+null;Processamento de Informação;null;0;14:30:00;14:30:00;28/10/2022;Auditório;30; L0779TP02;SEX
+null;Processamento de Informação;null;0;16:00:00;16:00:00;07/10/2022;Auditório;30; L0779TP02;SEX
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;14/02/2023;0S02,;30; PISIDPL03;TER
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;24/10/2022;Auditório;30; 03708T02;SEG
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;04/10/2022;C5.08,;30; 03727TP04;TER
+null;Processamento de Informação;null;0;16:00:00;16:00:00;25/11/2022;Auditório;30; L0779TP02;SEX
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;28/02/2023;D1.09,;30; PISIDPL03;TER
+null;Processamento de Informação;null;0;14:30:00;14:30:00;02/12/2022;Auditório;30; L0779TP02;SEX
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;09/11/2022;C5.06,;30; 03708TP20;QUA
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;24/11/2022;C7.06,;30; 03708PL02;QUI
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;13/09/2022;C5.08,;30; 03727TP04;TER
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;06/12/2022;C6.08,;30; 03744;TER
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;15/03/2023;D1.03,;30; 03583TP05;QUA
+null;Processamento de Informação;null;0;16:00:00;16:00:00;30/09/2022;Auditório;30; L0779TP02;SEX
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;19/09/2022;Auditório;30; 03708T02;SEG
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;06/10/2022;Auditório;30; 03708TP20;QUI
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;14:30:00;14:30:00;11/05/2023;0S08,;30; DIAMTP01;QUI
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;28/02/2023;C5.08,;30; PISIDTP02;TER
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;20/09/2022;C6.07,;30; 03744;TER
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;11/05/2023;C5.07,;30; L5316TP05;QUI
+null;Engenharia de Software;null;0;16:00:00;16:00:00;27/02/2023;C6.10,;30; EngST01;SEG
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;22/05/2023;Auditório;30; PISIDT01;SEG
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;27/09/2022;C6.07,;30; 03744;TER
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;05/12/2022;Auditório;30; 03727T02;SEG
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;18/05/2023;C5.07,;30; L5316TP05;QUI
+null;Engenharia de Software;null;0;16:00:00;16:00:00;15/03/2023;D1.09,;30; EngSTP02;QUA
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;02/03/2023;D1.05,;30; DIAMTP01;QUI
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;26/09/2022;Auditório;30; 03727T02;SEG
+null;Processamento de Informação;null;0;16:00:00;16:00:00;19/10/2022;Auditório;30; L0779T01;QUA
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;15/11/2022;0S01,;30; L5096TP04;TER
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;23/11/2022;C5.06,;30; 03708TP20;QUA
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;27/04/2023;Auditório;30; L5316TP05;QUI
+null;Agentes Autónomos;null;0;14:30:00;14:30:00;16/11/2022;0S02,;30; 03727PL06;QUA
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;02/03/2023;D1.03,;30; 03583TP05;QUI
+null;Engenharia de Software;null;0;13:00:00;13:00:00;06/03/2023;Auditório;30; EngST01;SEG
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;03/10/2022;Auditório;30; 03727T02;SEG
+null;Processamento de Informação;null;0;16:00:00;16:00:00;28/10/2022;Auditório;30; L0779TP02;SEX
+null;Engenharia de Software;null;0;13:00:00;13:00:00;10/05/2023;C4.01,;30; EngSTP02;QUA
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;20/09/2022;C6.07,;30; 03744;TER
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;29/11/2022;0S01,;30; L5096TP04;TER
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;12/05/2023;C6.08,;30; DIAMTP01;SEX
+null;Processamento de Informação;null;0;16:00:00;16:00:00;18/11/2022;Auditório;30; L0779TP02;SEX
+null;Processamento de Informação;null;0;16:00:00;16:00:00;16/11/2022;Auditório;30; L0779T01;QUA
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;13/04/2023;C5.07,;30; L5316TP05;QUI
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;26/09/2022;Auditório;30; L5096T03;SEG
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;22/11/2022;C6.08,;30; 03744;TER
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;07/11/2022;Auditório;30; 03727T02;SEG
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;12/09/2022;Auditório;30; 03708T02;SEG
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;10/10/2022;Auditório;30; 03708T02;SEG
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;27/04/2023;D1.05,;30; DIAMTP01;QUI
+null;Agentes Autónomos;null;0;14:30:00;14:30:00;07/12/2022;C5.08,;30; 03727PL06;QUA
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;16/02/2023;Auditório;30; L5316TP05;QUI
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;22/11/2022;D1.09,;30; 03727TP04;TER
+null;Engenharia de Software;null;0;14:30:00;14:30:00;01/03/2023;D1.09,;30; EngSTP02;QUA
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;29/09/2022;C7.06,;30; 03708PL02;QUI
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;20/09/2022;C5.08,;30; 03727TP04;TER
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;23/03/2023;D1.05,;30; DIAMTP01;QUI
+null;Engenharia de Software;null;0;13:00:00;13:00:00;15/05/2023;Auditório;30; EngST01;SEG
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;08/11/2022;C6.08,;30; 03744;TER
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;28/04/2023;C6.10,;30; L5316T02;SEX
+null;Agentes Autónomos;null;0;14:30:00;14:30:00;09/11/2022;C5.08,;30; 03727PL06;QUA
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;30/03/2023;C5.07,;30; L5316TP05;QUI
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;13/12/2022;0S02,;30; L5096TP04;TER
+null;Interacção Pessoa-Máquina;null;0;13:00:00;13:00:00;20/04/2023;C5.07,;30; L5316TP05;QUI
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;14/09/2022;C5.06,;30; 03708TP20;QUA
+null;Agentes Autónomos;null;0;14:30:00;14:30:00;28/09/2022;C5.08,;30; 03727PL06;QUA
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;14/11/2022;Auditório;30; L5096T03;SEG
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;13/09/2022;2E02,;30; 03744;TER
+null;Programação Concorrente e Distribuída;null;0;10:00:00;10:00:00;02/11/2022;0S01,;30; L5096TP04;QUA
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;31/03/2023;C6.07,;30; DIAMTP01;SEX
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;11/04/2023;C4.06,;30; PISIDPL03;TER
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;08/11/2022;0S01,;30; L5096TP04;TER
+null;Processamento de Informação;null;0;14:30:00;14:30:00;04/11/2022;Auditório;30; L0779TP02;SEX
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;12/09/2022;Auditório;30; 03727T02;SEG
+null;Processamento de Informação;null;0;16:00:00;16:00:00;28/09/2022;Auditório;30; L0779T01;QUA
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;12/09/2022;Auditório;30; L5096T03;SEG
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;07/11/2022;Auditório;30; L5096T03;SEG
+null;Engenharia de Software;null;0;14:30:00;14:30:00;08/02/2023;0S02,;30; EngSTP02;QUA
+null;Programação Concorrente e Distribuída;null;0;16:00:00;16:00:00;19/09/2022;Auditório;30; L5096T03;SEG
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;18/10/2022;C6.08,;30; 03744;TER
+null;Engenharia de Software;null;0;16:00:00;16:00:00;15/02/2023;D1.09,;30; EngSTP02;QUA
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;11/10/2022;C5.08,;30; 03727TP04;TER
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;19/05/2023;Auditório;30; L5316T02;SEX
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;14:30:00;14:30:00;18/05/2023;D1.05,;30; DIAMTP01;QUI
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;11/10/2022;0S01,;30; L5096TP04;TER
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;09/02/2023;D1.03,;30; 03583TP05;QUI
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;07/02/2023;C6.07,;30; DIAMTP01;TER
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;16/03/2023;C5.07,;30; L5316TP05;QUI
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;03/03/2023;C6.10,;30; L5316T02;SEX
+null;Engenharia de Software;null;0;14:30:00;14:30:00;15/02/2023;D1.09,;30; EngSTP02;QUA
+null;Arquitetura de Redes;null;0;13:00:00;13:00:00;16/11/2022;C5.06,;30; 03708TP20;QUA
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;20/04/2023;C5.07,;30; L5316TP05;QUI
+null;Introdução à Ciência de Dados;null;0;18:00:00;18:00:00;16/03/2023;D1.03,;30; 03583TP05;QUI
+null;Engenharia de Software;null;0;11:00:00;11:00:00;08/03/2023;D1.02,;30; EngSTP02;QUA
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:00:00;11:00:00;25/10/2022;C6.08,;30; 03744;TER
+null;Processamento de Informação;null;0;16:00:00;16:00:00;21/10/2022;Auditório;30; L0779TP02;SEX
+null;Engenharia de Software;null;0;16:00:00;16:00:00;12/04/2023;D1.09,;30; EngSTP02;QUA
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;21/11/2022;Auditório;30; 03727T02;SEG
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;08/05/2023;Auditório;30; PISIDT01;SEG
+null;Processamento de Informação;null;0;14:30:00;14:30:00;30/09/2022;Auditório;30; L0779TP02;SEX
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;04/05/2023;D1.05,;30; DIAMTP01;QUI
+null;Processamento de Informação;null;0;16:00:00;16:00:00;26/10/2022;Auditório;30; L0779T01;QUA
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;27/04/2023;Auditório;30; L5316TP05;QUI
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;27/10/2022;C7.06,;30; 03708PL02;QUI
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;05/05/2023;C6.07,;30; DIAMTP01;SEX
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;31/10/2022;Auditório;30; 03727T02;SEG
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;07/03/2023;C4.06,;30; PISIDPL03;TER
+null;Engenharia de Software;null;0;16:00:00;16:00:00;19/04/2023;D1.09,;30; EngSTP02;QUA
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;24/03/2023;C6.10,;30; L5316T02;SEX
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;17/02/2023;C6.07,;30; DIAMTP01;SEX
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;10/02/2023;C6.10,;30; L5316T02;SEX
+null;Interacção Pessoa-Máquina;null;0;14:30:00;14:30:00;02/03/2023;Auditório;30; L5316TP05;QUI
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;14:30:00;14:30:00;11/04/2023;C5.08,;30; PISIDTP02;TER
+null;Processamento de Informação;null;0;14:30:00;14:30:00;21/10/2022;Auditório;30; L0779TP02;SEX
+null;Agentes Autónomos;null;0;14:30:00;14:30:00;14/09/2022;C5.08,;30; 03727PL06;QUA
+null;Programação Concorrente e Distribuída;null;0;14:30:00;14:30:00;20/09/2022;0S01,;30; L5096TP04;TER
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;09:30:00;09:30:00;08/11/2022;C6.08,;30; 03744;TER
+null;Engenharia de Software;null;0;14:30:00;14:30:00;26/04/2023;D1.09,;30; EngSTP02;QUA
+null;Engenharia de Software;null;0;16:00:00;16:00:00;26/04/2023;D1.09,;30; EngSTP02;QUA
+null;Arquitetura de Redes;null;0;14:30:00;14:30:00;20/10/2022;C7.06,;30; 03708PL02;QUI
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;13:00:00;13:00:00;07/02/2023;0S02,;30; PISIDPL03;TER
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;16:00:00;16:00:00;02/05/2023;C6.07,;30; DIAMTP01;TER
+null;Agentes Autónomos;null;0;13:00:00;13:00:00;25/10/2022;C5.08,;30; 03727TP04;TER
+null;Processamento de Informação;null;0;16:00:00;16:00:00;11/11/2022;Auditório;30; L0779TP02;SEX
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;14:30:00;14:30:00;17/05/2023;C5.07,;30; DIAMTP01;QUA
+null;Interacção Pessoa-Máquina;null;0;15:00:00;15:00:00;26/06/2023;Auditório;30; Exame - 2.ª Época;SEG
+null;Interacção Pessoa-Máquina;null;0;11:30:00;11:30:00;01/06/2023;Auditório;30; Exame - 1.ª Época;QUI
+null;Interacção Pessoa-Máquina;null;0;08:00:00;08:00:00;14/07/2023;AA3.23;30; Exame Época Especial;SEX
+null;Arquitetura de Redes;null;0;10:00:00;10:00:00;29/10/2022;Auditório;30; Teste 1;SÁB
+null;Arquitetura de Redes;null;0;08:00:00;08:00:00;11/07/2023;;30; Exame Época Especial;TER
+null;Arquitetura de Redes;null;0;18:30:00;18:30:00;04/01/2023;Auditório;30; Exame - 1.ª Época;QUA
+null;Arquitetura de Redes;null;0;15:00:00;15:00:00;23/01/2023;Auditório;30; Exame - 2.ª Época;SEG
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;15:00:00;15:00:00;14/06/2023;Auditório;30; Exame - 1.ª Época;QUA
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;11:30:00;11:30:00;30/06/2023;Auditório;30; Exame - 2.ª Época;SEX
+null;Desenvolvimento para A Internet e Aplicações Móveis;null;0;18:30:00;18:30:00;14/07/2023;AA3.23;30; Exame - Época Especial;SEX
+null;Engenharia de Software;null;0;15:00:00;15:00:00;12/06/2023;Auditório;30; Exame - 1.ª Época;SEG
+null;Engenharia de Software;null;0;15:00:00;15:00:00;27/06/2023;Auditório;30; Exame - 2.ª Época;TER
+null;Engenharia de Software;null;0;08:00:00;08:00:00;12/07/2023;AA3.23;30; Exame - Época Especial;QUA
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;08:00:00;08:00:00;13/07/2023;AA3.28;30; Exame - Época Especial;QUI
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;15:00:00;15:00:00;29/06/2023;Auditório;30; Exame - 2.ª Época;QUI
+null;Projeto de Integração de Sistemas de Informação Distribuídos;null;0;11:30:00;11:30:00;06/06/2023;B2.01,;30; Exame - 1.ª Época;TER
+null;Programação Concorrente e Distribuída;null;0;11:30:00;11:30:00;16/01/2023;Auditório;30; Exame - 1.ª Época;SEG
+null;Programação Concorrente e Distribuída;null;0;15:00:00;15:00:00;28/01/2023;Auditório;30; Exame - 2.ª Época;SÁB
+null;Programação Concorrente e Distribuída;null;0;08:00:00;08:00:00;10/07/2023;;30; Exame Época Especial;SEG
+null;Agentes Autónomos;null;0;09:30:00;09:30:00;05/11/2022;2E02,;30; 1ª Avaliação Intercalar;SÁB
+null;Agentes Autónomos;null;0;09:30:00;09:30:00;10/12/2022;Auditório;30; 2ª Avaliação Intercalar;SÁB
+null;Agentes Autónomos;null;0;15:00:00;15:00:00;11/07/2023;;30; Exame Época Especial;TER
+null;Agentes Autónomos;null;0;15:00:00;15:00:00;24/01/2023;Auditório;30; Exame - 2.ª Época;TER
+null;Agentes Autónomos;null;0;15:00:00;15:00:00;09/01/2023;Auditório;30; Exame - 1.ª Época;SEG
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;11:30:00;11:30:00;09/01/2023;Auditório;30; Exame - 1.ª Época;SEG
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;18:30:00;18:30:00;11/07/2023;Auditório;30; Exame - Época Especial;TER
+null;Sistemas de Data Warehouse e Business Intelligence;null;0;18:30:00;18:30:00;24/01/2023;Auditório;30; Exame - 2.ª Época;TER
+null;Processamento de Informação;null;0;15:00:00;15:00:00;26/01/2023;Auditório;30; Exame - 2.ª Época;QUI
+null;Processamento de Informação;null;0;18:30:00;18:30:00;12/01/2023;2E02,;30; Exame - 1.ª Época;QUI
+null;Processamento de Informação;null;0;15:00:00;15:00:00;13/07/2023;;30; Exame Época Especial;QUI
