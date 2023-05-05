@@ -31,6 +31,12 @@ import org.apache.commons.io.FileUtils;
 
 public class FileReader {
 
+	/**
+	 * Função que lê um CSV através de um objeto InputStream e cria uma lista de objetos Block
+	 * @param inputStream objeto inputStream
+	 * @return retorna uma lista de blocks
+	 */
+
 	public static List<Block> readCSV(InputStream inputStream) {
 		List<Block> blocks = new ArrayList<>();
 		try {
@@ -46,6 +52,13 @@ public class FileReader {
 		}
 		return blocks;
 	}
+
+	/**
+	 * Função que lê um CSV através de um objeto InputStream e cria uma lista de objetos Block
+	 * @param inputStream objeto inputStream
+	 * @param type String que identifica o formato do ficheiro
+	 * @return lista de objetos Block
+	 */
 
 	public static List<Block> readJson(InputStream inputStream, String type) {
 		List<Block> blocks = new ArrayList<>();
@@ -149,6 +162,5 @@ public class FileReader {
 		}
 		temp.delete();
 		return blockList;
-
 	}
 }

@@ -28,7 +28,7 @@ public class FileWriter {
 
     /**
      * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro CSV
-     * @param data lista de blocks
+     * @param data lista de objetos Block
      */
     public static void saveInCSV(List<Block> data) {
         try {
@@ -45,7 +45,7 @@ public class FileWriter {
 
     /**
      * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro JSON
-     * @param data lista de blocks
+     * @param data lista de objetos Block
      */
     public static void saveInJson(List<Block> data) {
         try {
@@ -59,10 +59,18 @@ public class FileWriter {
         }
     }
 
+    /**
+     * Função que guarda o conteúdo do objeto MultipartFile num ficheiro JSON ou CSV
+     * @param file objeto MultipartFile que é o arquivo que queremos guardar
+     * @param extension string que define o formato do ficheiro que iremos guardar
+     * @return retorna uma string indicativa de que o ficheiro foi guardado
+     * @throws IOException Input/Output exception
+     */
+
     public static String save(MultipartFile file, String extension) throws IOException {
-        System.out.println(file.getOriginalFilename());
-        System.out.println("File name: " + file.getOriginalFilename());
-        System.out.println("File size: " + file.getSize() + " bytes");
+//        System.out.println(file.getOriginalFilename());
+//        System.out.println("File name: " + file.getOriginalFilename());
+//        System.out.println("File size: " + file.getSize() + " bytes");
 
         // parse the info
         List<Block> data = readJson(file.getInputStream(), "web");
@@ -77,6 +85,11 @@ public class FileWriter {
         return "File saved ";
     }
 
+    /**
+     * Função que muda o formato dos blocks e passa para uma String JSON
+     * @param data lista de blocks
+     * @return retorna uma String JSON
+     */
     public static String formatToWeb(List<Block> data) {
         List<Map<String, String>> result = new ArrayList<>();
         for (Block block : data) {
