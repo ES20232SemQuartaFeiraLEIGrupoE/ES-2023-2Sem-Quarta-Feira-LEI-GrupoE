@@ -61,7 +61,7 @@ btnLoadFile.addEventListener('click', function() {
 });
 
 function populateCoursesDropdown(courses) {
-    console.log(courses)
+   // console.log(courses)
     var uniqueCourses = [...new Set(courses)];
     var option = document.createElement("option");
     option.text = "All";
@@ -97,11 +97,11 @@ coursesDropdown.addEventListener("change", function() {
  const subjectSelector = document.getElementById("subjectSelector");
 
 function populateSubjectChecklist(blocks) {
-    console.log(blocks)
-    console.log(blocks[0]["Unidade Curricular"])
+   // console.log(blocks)
+   // console.log(blocks[0]["Unidade Curricular"])
   subjectSelector.innerHTML = ""; // clear existing checkboxes
   const subjects = new Set(blocks.map(block => block["Unidade Curricular"])); // get unique subjects
-  console.log(subjects)
+  // console.log(subjects)
   for (const subject of subjects) {
     const li = document.createElement("li");
     const label = document.createElement("label");
@@ -129,13 +129,13 @@ subjectSelector.addEventListener("change", () => {
     });
 
 // Tarefa 23
-function saveBlocksToApi() {
-  const apiUrl = '/api/save'; // URL of the API endpoint to save blocks
+function saveToCSV() {
+  const apiUrl = '/api/savecsv'; // URL of the API endpoint to save blocks
   const formData = new FormData(); // Create a new form data object
   const blocksJson = JSON.stringify(blocks); // Convert the blocks array to a JSON string
   const blocksBlob = new Blob([blocksJson], { type: 'application/json' }); // Create a new Blob object from the JSON string
   formData.append('file', blocksBlob, 'blocks.json'); // Add the Blob object to the form data with a filename of 'blocks.json'
-  console.log(blocksJson); // Log the JSON string to the console for debugging purposes
+  // console.log(blocksJson); // Log the JSON string to the console for debugging purposes
   fetch(apiUrl, {
     method: 'POST', // Use the HTTP POST method to send data to the API
     body: formData // Set the body of the request to the form data object containing the JSON file
@@ -144,10 +144,32 @@ function saveBlocksToApi() {
     if (!response.ok) { // If the response from the API is not successful
       throw new Error('Failed to save blocks to API'); // Throw an error with a message indicating the save failed
     }
-    console.log('Blocks saved to API successfully'); // Log a success message to the console
+    //  console.log('Blocks saved to API successfully'); // Log a success message to the console
   })
   .catch(error => {
-    console.error(error); // If an error occurs, log it to the console
+    // console.error(error); // If an error occurs, log it to the console
+  });
+}
+
+function saveToJson() {
+  const apiUrl = '/api/savejson'; // URL of the API endpoint to save blocks
+  const formData = new FormData(); // Create a new form data object
+  const blocksJson = JSON.stringify(blocks); // Convert the blocks array to a JSON string
+  const blocksBlob = new Blob([blocksJson], { type: 'application/json' }); // Create a new Blob object from the JSON string
+  formData.append('file', blocksBlob, 'blocks.json'); // Add the Blob object to the form data with a filename of 'blocks.json'
+  // console.log(blocksJson); // Log the JSON string to the console for debugging purposes
+  fetch(apiUrl, {
+    method: 'POST', // Use the HTTP POST method to send data to the API
+    body: formData // Set the body of the request to the form data object containing the JSON file
+  })
+  .then(response => {
+    if (!response.ok) { // If the response from the API is not successful
+      throw new Error('Failed to save blocks to API'); // Throw an error with a message indicating the save failed
+    }
+    //  console.log('Blocks saved to API successfully'); // Log a success message to the console
+  })
+  .catch(error => {
+    // console.error(error); // If an error occurs, log it to the console
   });
 }
 
@@ -162,6 +184,9 @@ function checkLotacion(block){
 function drawCalendar(events) {
     overlapc = 0;
     updateCountO(overlapc);
+    console.log("Events")
+    console.log(events)
+
     // Inicializar o
     currentView = $('#calendar').fullCalendar('getView').name;
     $('#calendar').fullCalendar('destroy');

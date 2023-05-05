@@ -4,6 +4,57 @@ body {
   background-color: #f7f7f7;
   margin: 0;
   padding: 0;
+
+
+}
+
+.rift{
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 64px;
+}
+
+.flex-c{
+  display: flex;
+  flex-direction: column;
+  gap:16px
+}
+
+.adc , .aram{
+  padding: 0px 64px;
+  padding-bottom: 32px;
+}
+
+.mid, .mid div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mid div{
+  align-items: center;
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #007bff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+.support{
+  border-style: solid;
+  border-color: #333;
+  border-radius: 10px;
+  padding: 8px;
 }
 
 .container {
@@ -12,91 +63,35 @@ body {
   padding: 1.25rem;
 }
 
-.custom-select {
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Select some files';
   display: inline-block;
-  position: relative;
-  font-family: Arial, sans-serif;
-  font-size: 1rem;
-  color: #333;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.25rem;
-  padding: 0.625rem 2.5rem 0.625rem 1.25rem;
-  background-color: #fff;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
   cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 
-.custom-select select {
-  display: none;
+ul{
+  display: grid;
+  grid-template-columns: repeat( 5, 1fr) ;
 }
-
-.custom-select:after {
-  content: "\25BC";
-  font-size: 1rem;
-  color: #999;
-  position: absolute;
-  top: 50%;
-  right: 0.625rem;
-  transform: translateY(-50%);
-}
-
-.custom-select:hover:after {
-  color: #555;
-}
-
-.custom-select.open:after {
-  content: "\25B2";
-}
-
-.custom-select.open {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.custom-select.open ul {
-  display: block;
-}
-
-.custom-select ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  border: 0.0625rem solid #ccc;
-  border-top: none;
-  border-radius: 0 0 0.25rem 0.25rem;
-  background-color: #fff;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-
-.custom-select li {
-  padding: 0.625rem 1.25rem;
-  cursor: pointer;
-}
-
-.custom-select li:hover {
-  background-color: #f5f5f5;
-}
-
-.custom-select.selected {
-  background-color: #f5f5f5;
-}
-
-.custom-select.disabled {
-  background-color: #f0f0f0;
-  color: #999;
-  cursor: not-allowed;
-}
-
-.custom-select.disabled:hover {
-  background-color: #f0f0f0;
-  color: #999;
-}
-
 
 /* Estilos para o seletor de cursos */
 #coursesDropdown {
@@ -143,12 +138,7 @@ body {
   font-size: 1rem; /* 16px / 16px = 1rem */
 }
 
-/* Estilos para o contador */
-.countertxt, .counterotxt {
-  font-size: 1.5rem; /* 24px / 16px = 1.5rem */
-  color: #494c4e;
-  font-weight: bold;
-  margin-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
+n-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
 }
 
 .counter, .countero {
