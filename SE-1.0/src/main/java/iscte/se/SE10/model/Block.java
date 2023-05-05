@@ -1,10 +1,7 @@
 package iscte.se.SE10.model;
 
 import com.google.gson.Gson;
-
 import java.io.Serializable;
-
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 import static iscte.se.SE10.utils.utils.*;
@@ -21,9 +18,19 @@ public class Block implements Serializable {
     public static final String[] keys = {"Curso", "Unidade Curricular", "Turno", "Turma", "Inscritos no turno", "Dia da semana", "Hora início da aula", "Hora fim da aula", "Data da aula", "Sala atribuída à aula", "Lotação da sala"};
     private Map<String, String> data;
 
+    /**
+     * Construtor de um objeto Block dado um Map<String, String>
+     * @param data Map<String, String>
+     */
     public Block(Map<String, String> data){
         this.data = data;
     }
+
+    /**
+     * Função que cria instãncias Block a partir de uma String CSV
+     * @param data String CSV
+     * @return retorna uma nova instãncia do objeto Block
+     */
 
     public static Block createFromCSV(String data) {
         String[] keys = Block.keys;
@@ -40,6 +47,12 @@ public class Block implements Serializable {
         return new Block(block);
     }
 
+    /**
+     * Método que recebe um Map<String, String> e inicializa um objeto Block
+     * @param data Map de Strings
+     * @return retorna um objeto Block inicializado com o conteúdo do Map
+     */
+
     public static Block createFromScheduleFormat(Map<String, String> data) {
         String start = data.remove("start");
         String end = data.remove("end");
@@ -50,14 +63,17 @@ public class Block implements Serializable {
     }
 
     /**
-     * Função que devolve o header do block
-     *
+     * Método que devolve o header do objeto Block
      * @return retorna o header
      */
     public static String getCSVHeader() {
         return String.join(";", Block.keys);
     }
 
+    /**
+     * Método que devolve a conversão do atributo Map do objeto Block numa lista de Map
+     * @return retorna uma lista de objetos Blocko atributo Map da classe Block
+     */
     private List<Map<String, String>> getAsList(){
         List<Map<String, String>> list = new ArrayList<>();
         for (Map.Entry<String, String> entry : data.entrySet()) {
@@ -68,14 +84,18 @@ public class Block implements Serializable {
         return list;
     }
 
+    /**
+     * Método que devolve uma String CSV com os values do atributo Map de um objeto Block
+     * @return retorna uma String CSV
+     */
     public String getAsCsv() {
         return String.join(";", data.values());
     }
 
     public String getAsJson() {
         Gson gson = new Gson();
-        String json = gson.toJson(this.getAsList());
-        return json;
+//        String json = gson.toJson(this.getAsList());
+        return gson.toJson(this.getAsList());
     }
 
     public Map<String, String> getAsScheduleFormat() {
