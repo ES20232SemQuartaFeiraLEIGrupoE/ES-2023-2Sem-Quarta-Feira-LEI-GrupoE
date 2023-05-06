@@ -73,7 +73,7 @@ public class FileReader {
             ical = Biweekly.parse(temp).first();
             List<VEvent> events = ical.getEvents(); //Lista dos eventos
             for (VEvent e : events) {
-                Block b = Block.createFromWebCalaendar(ConvertFiles.getRelevantInfo(e));
+                Block b = Block.createFromWebCalendar(ConvertFiles.getRelevantInfo(e));
                 blocks.add(b);
             }
         } catch (IOException ex) {

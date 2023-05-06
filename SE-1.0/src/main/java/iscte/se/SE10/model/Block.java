@@ -62,7 +62,7 @@ public class Block implements Serializable {
         readIcs("webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=jccoa@iscte.pt&password=vYq1j6K7UgV2NQk1K9uYYvviw8U346HtmgC5ZG8CGw2RdBkZfPTWKZ1xz8378TfuOu9M3xORnkVqmW7pAjNhXgtdLpMpBiooBsz0NHhGNGyMDbdEbDtoJmDJLN0uK1sz");
     }
 
-    public static Block createFromWebCalaendar(Map<String, String> webInfo) {
+    public static Block createFromWebCalendar(Map<String, String> webInfo) {
         Map<String, String> blocks = new LinkedHashMap<>();
 
         for(String key : keys){
