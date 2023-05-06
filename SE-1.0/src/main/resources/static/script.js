@@ -1,4 +1,4 @@
-console.log("V99 ")
+console.log("V101")
 var blocks = [];
 
 const coursesDropdown = document.getElementById("coursesDropdown");
@@ -81,7 +81,7 @@ btnLoadFile.addEventListener('click', function() {
     }
     populateCoursesDropdown(courses)
     blocks = data
-    updateCount(blocks);
+    //updateCount(blocks);
     populateSubjectChecklist(blocks)
     drawCalendar(blocks);
   });
@@ -89,6 +89,8 @@ btnLoadFile.addEventListener('click', function() {
 
 function populateCoursesDropdown(courses) {
    // console.log(courses)
+    coursesDropdown.innerHTML = "";
+
     var uniqueCourses = [...new Set(courses)];
     var option = document.createElement("option");
     option.text = "All";
@@ -214,7 +216,10 @@ function drawCalendar(events) {
     console.log("Events")
     console.log(events)
 
-    // Inicializar o
+    var currentView = $('#calendar').fullCalendar('getView');
+    var currentDate = $('#calendar').fullCalendar('getDate');
+
+
     currentView = $('#calendar').fullCalendar('getView').name;
     $('#calendar').fullCalendar('destroy');
     $('#calendar').fullCalendar({
@@ -225,7 +230,8 @@ function drawCalendar(events) {
     },
     height: 'auto', // Ajustar automaticamente a altura ao número de eventos
     contentHeight: 'auto', // Ajustar a altura do conteúdo do calendário para que caiba todos os eventos
-    defaultView: currentView ,
+    defaultView: currentView,
+    defaultDate : currentDate,
     minTime: '08:00:00', // Hora de início do horário
     maxTime: '20:30:00', // Hora de término do horário
     slotDuration: '00:30:00', // Duração de cada slot de tempo (30 minutos)

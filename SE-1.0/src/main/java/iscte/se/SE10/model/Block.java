@@ -1,12 +1,15 @@
 package iscte.se.SE10.model;
 
 import biweekly.component.VEvent;
+import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
 
 import java.io.IOException;
 import java.io.Serializable;
 
+import java.lang.reflect.Modifier;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.DayOfWeek;
@@ -54,13 +57,14 @@ public class Block implements Serializable {
         String[] keys = Block.keys;
         String[] values = data.split(";");
 
-        if (values.length != keys.length)
+        if (values.length > keys.length)
             throw new RuntimeException("Quantidade de atributos invalida");
 
         Map<String, String> block = new LinkedHashMap<>();
 
-        for (int i = 0; i < values.length; i++)
-            block.put(keys[i], values[i]);
+        for (int i = 0; i < keys.length; i++)
+            if(i >= values.length) block.put(keys[i], "Indefinido");
+            else block.put(keys[i], values[i]);
 
         return new Block(block);
     }
@@ -112,7 +116,7 @@ public class Block implements Serializable {
 
     /**
      * Método que devolve a conversão do atributo Map do objeto Block numa lista de Map
-     * @return retorna uma lista de objetos Blocko atributo Map da classe Block
+     * @return retorna uma lista de objetos Block atributo Map da classe Block
      */
     private List<Map<String, String>> getAsList(){
         List<Map<String, String>> list = new ArrayList<>();
@@ -137,8 +141,21 @@ public class Block implements Serializable {
      * @return retorna uma String CSV
      */
     public String getAsJson() {
-        Gson gson = new Gson();
-        return gson.toJson(this.getAsList());
+        JsonObject jsonObject = new JsonObject();
+        jsonObject.addProperty("Curso", this.data.get("Curso"));
+        jsonObject.addProperty("Unidade Curricular", this.data.get("Unidade Curricular"));
+        jsonObject.addProperty("Turno", this.data.get("Turno"));
+        jsonObject.addProperty("Turma", this.data.get("Turma"));
+        jsonObject.addProperty("Inscritos no turno", this.data.get("Inscritos no turno"));
+        jsonObject.addProperty("Dia da semana", this.data.get("Dia da semana"));
+        jsonObject.addProperty("Hora início da aula", this.data.get("Hora início da aula"));
+        jsonObject.addProperty("Hora fim da aula", this.data.get("Hora fim da aula"));
+        jsonObject.addProperty("Data da aula", this.data.get("Data da aula"));
+        jsonObject.addProperty("Sala atribuída à aula", this.data.get("Sala atribuída à aula"));
+        jsonObject.addProperty("Lotação da sala", this.data.get("Lotação da sala"));
+
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        return gson.toJson(jsonObject);
     }
 
     /**

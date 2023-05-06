@@ -68,6 +68,7 @@ public class FileReader {
             Gson gson = new Gson();
             List<Map<String, String>> data = gson.fromJson(reader, new TypeToken<List<Map<String, String>>>() {
             }.getType());
+
             for (Map<String, String> map : data) {
                 Block block = ("web".equals(type)) ? Block.createFromScheduleFormat(map) : new Block(map);
                 blocks.add(block);
