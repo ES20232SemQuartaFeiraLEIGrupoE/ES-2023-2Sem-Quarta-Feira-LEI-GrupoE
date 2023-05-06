@@ -15,6 +15,7 @@ import java.time.format.TextStyle;
 import java.util.*;
 
 import static iscte.se.SE10.utils.FileReader.readIcs;
+import static iscte.se.SE10.utils.FileWriter.formatToWeb;
 import static iscte.se.SE10.utils.utils.*;
 
 /**
@@ -25,6 +26,7 @@ import static iscte.se.SE10.utils.utils.*;
  * @version 1.0
  */
 public class Block implements Serializable {
+
     /**
      * Array de String que representa as keys da classe Block
      */

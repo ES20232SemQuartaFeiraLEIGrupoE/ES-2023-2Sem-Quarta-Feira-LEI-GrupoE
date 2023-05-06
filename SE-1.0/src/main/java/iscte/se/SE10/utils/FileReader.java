@@ -96,8 +96,12 @@ public class FileReader {
             ical = Biweekly.parse(temp).first();
             List<VEvent> events = ical.getEvents(); //Lista dos eventos
             for (VEvent e : events) {
+                try{
                 Block b = Block.createFromWebCalendar(ConvertFiles.getRelevantInfo(e));
                 blocks.add(b);
+                }catch (Exception ex){
+                    //ex.printStackTrace();
+                }
             }
         } catch (IOException ex) {
             throw new RuntimeException(ex);

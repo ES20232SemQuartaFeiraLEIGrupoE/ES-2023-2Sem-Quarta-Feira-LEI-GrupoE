@@ -1,4 +1,4 @@
-console.log("V99 ")
+console.log("V113 ")
 var blocks = [];
 
 const coursesDropdown = document.getElementById("coursesDropdown");
@@ -43,10 +43,12 @@ btnLoadFile.addEventListener('click', function() {
 const urlForm = document.getElementById('url-form');
 
 urlForm.addEventListener('submit', function(event) {
+  event.preventDefault();
   blocks = [];
+  const formData = new FormData(urlForm);
   fetch("/api/web", {
     method: 'POST',
-    body: urlForm
+    body: formData
   })
   .then(response => response.json())
   .then(data => {
@@ -57,7 +59,6 @@ urlForm.addEventListener('submit', function(event) {
     }
     populateCoursesDropdown(courses)
     blocks = data
-    updateCount(blocks);
     populateSubjectChecklist(blocks)
     drawCalendar(blocks);
   });
