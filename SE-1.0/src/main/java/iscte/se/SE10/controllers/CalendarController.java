@@ -8,6 +8,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * Classe em java spring que fornece uma resposta HTML para uma solicitação do calendário
+ * @author Grupo E
+ * @version 1.0
+ */
+
 @Controller
 public class CalendarController {
 

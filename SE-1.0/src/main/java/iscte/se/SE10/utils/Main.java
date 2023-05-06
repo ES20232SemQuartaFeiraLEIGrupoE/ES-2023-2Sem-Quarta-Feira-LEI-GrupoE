@@ -18,7 +18,6 @@ public class Main {
 
 	/**
 	 * Função main
-	 * 
 	 * @param args array de strings
 	 */
 	public static void main(String[] args) {
