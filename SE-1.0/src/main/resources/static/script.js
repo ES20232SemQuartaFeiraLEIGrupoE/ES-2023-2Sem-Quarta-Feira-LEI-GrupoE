@@ -105,7 +105,7 @@ function populateCoursesDropdown(courses) {
 
 function selectCourse(blocks) {
    selectedCourse = coursesDropdown.value;
-    selectedCourse.innerHTML = "";
+   selectedCourse.innerHTML = "";
     if("All" == selectedCourse){
         populateSubjectChecklist(blocks)
         drawCalendar(blocks);
