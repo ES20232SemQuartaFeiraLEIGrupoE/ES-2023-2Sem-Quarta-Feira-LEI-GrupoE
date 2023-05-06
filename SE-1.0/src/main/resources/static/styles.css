@@ -7,6 +7,10 @@ body {
 
 
 }
+.hide {
+  display: none;
+  visibility: hidden;
+}
 
 .rift{
   display: flex;
@@ -138,8 +142,6 @@ ul{
   font-size: 1rem; /* 16px / 16px = 1rem */
 }
 
-n-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
-}
 
 .counter, .countero {
   font-size: 1.5rem; /* 24px / 16px = 1.5rem */

@@ -1,5 +1,6 @@
 console.log("V113 ")
 var blocks = [];
+var selectedblocks = [];
 
 const coursesDropdown = document.getElementById("coursesDropdown");
 const btnLoadFile = document.querySelector(".btn-load-file");
@@ -35,6 +36,7 @@ btnLoadFile.addEventListener('click', function() {
     populateCoursesDropdown(courses)
     blocks = data
     populateSubjectChecklist(blocks)
+      coursesDropdown.classList.remove("hide")
     drawCalendar(blocks);
   });
 });
@@ -60,34 +62,12 @@ urlForm.addEventListener('submit', function(event) {
     populateCoursesDropdown(courses)
     blocks = data
     populateSubjectChecklist(blocks)
+      coursesDropdown.classList.add("hide")
     drawCalendar(blocks);
   });
 });
 
-btnLoadFile.addEventListener('click', function() {
-  const file = fileInput.files[0];
-  const formData = new FormData();
-  formData.append('file', file);
-  blocks = [];
-  fetch('/api/blocks', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log(data)
-    var courses = new Set();
-    for (var i = 0; i < data.length; i++) {
-      courses.add(data[i]["Curso"]);
-    }
-    populateCoursesDropdown(courses)
-    blocks = data
-    updateCount(blocks);
-    populateSubjectChecklist(blocks)
-    drawCalendar(blocks);
-  });
-});
-
+// Popular menu de cursos
 function populateCoursesDropdown(courses) {
    // console.log(courses)
    coursesDropdown.innerHTML="";
