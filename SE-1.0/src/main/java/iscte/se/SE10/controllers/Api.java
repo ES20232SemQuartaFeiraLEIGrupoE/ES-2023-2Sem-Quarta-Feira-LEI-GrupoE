@@ -24,6 +24,10 @@ import static iscte.se.SE10.utils.FileWriter.*;
 public class Api {
 
     /**
+     * Construtor default
+     */
+    public Api(){}
+    /**
      * Método que lê o objeto MultipartFile e consoante o formato de defenido devolve uma String nesse formato
      * @param file MultipartFile que é o arquivo que queremos guardar
      * @return retorna uma String num formato CSV ou JSON consoante o formato lido no objeto MultipartFile

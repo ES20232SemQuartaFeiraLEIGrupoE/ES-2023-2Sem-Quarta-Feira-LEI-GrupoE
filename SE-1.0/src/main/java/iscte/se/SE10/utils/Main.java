@@ -11,6 +11,7 @@ import javax.swing.UnsupportedLookAndFeelException;
 import iscte.se.SE10.model.Block;
 
 /**
+ * Classe Main
  * @author Grupo E
  * @version 1.0
  */
