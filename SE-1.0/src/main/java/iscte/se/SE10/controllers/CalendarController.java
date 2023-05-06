@@ -17,6 +17,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class CalendarController {
 
+    /**
+     * Construtor default
+     */
+    public CalendarController(){}
+
+    /**
+     * Método que controla as solicitações HTTP GET e retorna uma página HTML
+     * @return retorna uma String com o código HTML, os cabeçalhos da resposta e o HttpStatus.OK
+     */
     @GetMapping(value = "/calendar", produces = MediaType.TEXT_HTML_VALUE)
     @ResponseBody
     public ResponseEntity<String> getCalendar() {

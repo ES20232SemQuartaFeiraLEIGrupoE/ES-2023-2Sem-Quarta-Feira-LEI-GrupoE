@@ -15,6 +15,11 @@ import java.net.URL;
 public class utils {
 
     /**
+     * Construtor default
+     */
+    public utils(){}
+
+    /**
      * Método que reorganiza uma String para um formato pretendido
      * @param date String que representa uma data
      * @param hour String que representa uma hora
