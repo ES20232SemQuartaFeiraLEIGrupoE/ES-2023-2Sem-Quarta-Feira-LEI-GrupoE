@@ -16,7 +16,7 @@ import static iscte.se.SE10.utils.utils.*;
 public class Block implements Serializable {
 
     public static final String[] keys = {"Curso", "Unidade Curricular", "Turno", "Turma", "Inscritos no turno", "Dia da semana", "Hora início da aula", "Hora fim da aula", "Data da aula", "Sala atribuída à aula", "Lotação da sala"};
-    private Map<String, String> data;
+    private final Map<String, String> data;
 
     /**
      * Construtor de um objeto Block dado um Map<String, String>
