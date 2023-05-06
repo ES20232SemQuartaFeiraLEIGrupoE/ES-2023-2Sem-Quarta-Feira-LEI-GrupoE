@@ -31,14 +31,14 @@ public class Block implements Serializable {
     public static final String[] keys = {"Curso", "Unidade Curricular", "Turno", "Turma", "Inscritos no turno", "Dia da semana", "Hora início da aula", "Hora fim da aula", "Data da aula", "Sala atribuída à aula", "Lotação da sala"};
 
     /**
-     * Map<String, String> que ser]a utilizado para associar as keys aos valores atribuídos
+     * Map que será utilizado para associar as keys aos valores atribuídos
      */
     private Map<String, String> data;
 
 
     /**
-     * Construtor de um objeto Block dado um Map<String, String>
-     * @param data Map<String, String>
+     * Construtor de um objeto Block dado um Map
+     * @param data Map
      */
     public Block(Map<String, String> data){
         this.data = data;
@@ -66,7 +66,7 @@ public class Block implements Serializable {
     }
 
     /**
-     * Método que recebe um Map<String, String> e inicializa um objeto Block
+     * Método que recebe um Map e inicializa um objeto Block
      * @param data Map de Strings
      * @return retorna um objeto Block inicializado com o conteúdo do Map
      */
@@ -80,6 +80,11 @@ public class Block implements Serializable {
         return new Block(data);
     }
 
+    /**
+     * Método que recebe um Map com a informação de um horário WEB e cria instâncias do objeto Block
+     * @param webInfo Map com a informação de um calendário WEB
+     * @return retorna instâncias do objeto Block
+     */
     public static Block createFromWebCalendar(Map<String, String> webInfo) {
         Map<String, String> blocks = new LinkedHashMap<>();
 
@@ -137,8 +142,8 @@ public class Block implements Serializable {
     }
 
     /**
-     * Método que copia o atributo Map da classe Block e devolve um linkedHashMap<String, String> num formato WEB
-     * @return retorna um linkedHashMap<String, String> num formato WEB
+     * Método que copia o atributo Map da classe Block e devolve um LinkedHashMap num formato WEB
+     * @return retorna um LinkedHashMap num formato WEB
      */
 
     public Map<String, String> getAsScheduleFormat() {
