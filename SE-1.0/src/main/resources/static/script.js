@@ -90,6 +90,8 @@ btnLoadFile.addEventListener('click', function() {
 
 function populateCoursesDropdown(courses) {
    // console.log(courses)
+   coursesDropdown.innerHTML="";
+
     var uniqueCourses = [...new Set(courses)];
     var option = document.createElement("option");
     option.text = "All";
