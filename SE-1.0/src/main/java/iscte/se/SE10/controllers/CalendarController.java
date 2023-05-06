@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Classe em java spring que fornece uma resposta HTML para uma solicitação do calendário
+ *
  * @author Grupo E
  * @version 1.0
  */
@@ -20,10 +21,12 @@ public class CalendarController {
     /**
      * Construtor default
      */
-    public CalendarController(){}
+    public CalendarController() {
+    }
 
     /**
      * Método que controla as solicitações HTTP GET e retorna uma página HTML
+     *
      * @return retorna uma String com o código HTML, os cabeçalhos da resposta e o HttpStatus.OK
      */
     @GetMapping(value = "/calendar", produces = MediaType.TEXT_HTML_VALUE)
@@ -42,36 +45,38 @@ public class CalendarController {
                 + "<body>\n"
                 + "<div class=\"rift\">\n"
                 + "        <div class=\"top\">\n"
-                + "            <h2>Load Scheduel</h2>\n"
                 + "            <div class=\"flex-c\">\n"
+                + "                <h2>Load Local File</h2>\n"
                 + "                <input class=\"support\" type=\"file\" id=\"file-input\">\n"
                 + "                <button class=\" btn-load-file\">Load file</button>\n"
-                + "            </div>\n"
-                + "            <h3>Save Configuration</h3>\n"
-                + "            <button class=\" btn-load-file\" onclick=\"saveToCSV()\">Save to CSV</button>\n"
-                + "            <button class=\" btn-load-file\" onclick=\"saveToJson()\">Save to Json</button>\n"
-                + "        </div>\n"
-                + "        <div class=\"jungle\">\n"
-                + "            <h2>Select Course :</h2>\n"
-                + "            <select id=\"coursesDropdown\" class=\"\"></select>\n"
+                + "                <h2>Load WebCal</h2>\n"
                 + "                 <form id=\"url-form\">\n"
                 + "                   <input type=\"text\" id=\"uri\" name=\"uri\">\n"
                 + "                   <button type=\"submit\" class=\"btn-load-file\">Carregar Ficheiro</button>\n"
                 + "                 </form>\n"
+                + "            </div><br>\n"
+                + "            <h2>Save Calendar</h2>\n"
+                + "            <button class=\" btn-load-file\" onclick=\"saveToCSV()\">Save to CSV</button>\n"
+                + "            <button class=\" btn-load-file\" onclick=\"saveToJson()\">Save to Json</button>\n"
+                + "        </div>\n"
+                + "        <div>\n"
+                + "            <h2>Select Course</h2>\n"
+                + "            <select id=\"coursesDropdown\" class=\"\"></select>\n"
                 + "        </div>\n"
                 + "        <div class=\"mid\">\n"
                 + "            <h2>Info</h2>\n"
                 + "            <div> \n"
-                + "                <h3 class=\"countertxt\">Quantidade de Superlotações</h3> \n"
+                + "                <h3 class=\"countertxt\">Number Of Overcrowdings</h3> \n"
                 + "                <h3 class=\"counter\">0 </h3>\n"
                 + "            </div>\n"
                 + "            <div> \n"
-                + "                <h3 class=\"counterotxt\">Quantidade de Sobreposições</h3> \n"
+                + "                <h3 class=\"counterotxt\">Number Of Overlays</h3> \n"
                 + "                <h3 class=\"countero\">0 </h3>\n"
                 + "            </div>\n"
                 + "        </div>\n"
                 + "    </div>\n"
                 + "    <div class=\"adc\">\n"
+                + "        <h1> App Calendar </h1> "
                 + "        <h3>Select Disciplines</h3>\n"
                 + "        <ul id=\"subjectSelector\"></ul>\n"
                 + "    </div>\n"
