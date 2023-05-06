@@ -13,6 +13,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Application {
 
 	/**
+	 * Construtor default
+	 */
+	public Application(){}
+
+	/**
 	 * Método main
 	 * @param args Array de String
 	 */
