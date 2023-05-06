@@ -26,7 +26,11 @@ import org.apache.commons.io.FileUtils;
 
 import static iscte.se.SE10.utils.utils.DownloadWebCall;
 
-
+/**
+ * Classe utilizada para ler ficheiros
+ * @author Grupo E
+ * @version 1.0
+ */
 public class FileReader {
 
 	/**

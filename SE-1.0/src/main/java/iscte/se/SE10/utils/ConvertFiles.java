@@ -17,9 +17,13 @@ public class ConvertFiles {
     public static final String[] webKeys = {"Unidade de execução", "Turno", "Início", "Fim"};
 
     /**
-     * Método que extrai os campos de um evento do calendário e devolve num Map<String, String>
+     * Construtor default
+     */
+    public ConvertFiles(){}
+    /**
+     * Método que extrai os campos de um evento do calendário e devolve num Map
      * @param e recebe um evento de calendário
-     * @return retorna um Map<String, String> com as informações extraídas do evento do calendário
+     * @return retorna um Map com as informações extraídas do evento do calendário
      */
     public static Map<String, String> getRelevantInfo(VEvent e) {
         Map<String, String> webInfo = new HashMap<>();

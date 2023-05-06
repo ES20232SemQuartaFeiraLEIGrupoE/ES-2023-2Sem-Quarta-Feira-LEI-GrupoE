@@ -18,6 +18,11 @@ import iscte.se.SE10.model.Block;
 public class Main {
 
 	/**
+	 * Construtor default
+	 */
+	public Main(){}
+
+	/**
 	 * Função main
 	 * @param args array de strings
 	 */
@@ -49,6 +54,9 @@ public class Main {
 
 	}
 
+	/**
+	 * Interface de texto
+	 */
 	public static void textMainInterface() {
 		System.out.print("-------------- Demo --------------\n");
 		System.out.print("1. Convert File\n");
