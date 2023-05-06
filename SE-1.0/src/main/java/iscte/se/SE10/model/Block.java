@@ -30,9 +30,20 @@ public class Block implements Serializable {
 
     private Map<String, String> data;
 
-    public Block(Map<String, String> data) {
+
+    /**
+     * Construtor de um objeto Block dado um Map<String, String>
+     * @param data Map<String, String>
+     */
+    public Block(Map<String, String> data){
         this.data = data;
     }
+
+    /**
+     * Função que cria instãncias Block a partir de uma String CSV
+     * @param data String CSV
+     * @return retorna uma nova instãncia do objeto Block
+     */
 
     public static Block createFromCSV(String data) {
         String[] keys = Block.keys;
@@ -49,6 +60,12 @@ public class Block implements Serializable {
         return new Block(block);
     }
 
+    /**
+     * Método que recebe um Map<String, String> e inicializa um objeto Block
+     * @param data Map de Strings
+     * @return retorna um objeto Block inicializado com o conteúdo do Map
+     */
+
     public static Block createFromScheduleFormat(Map<String, String> data) {
         String start = data.remove("start");
         String end = data.remove("end");
@@ -56,10 +73,6 @@ public class Block implements Serializable {
         data.put("Hora fim da aula", formatHourToLocal(end));
         data.put("Data da aula", formatDateToLocal(start));
         return new Block(data);
-    }
-
-    public static void main(String[] args) {
-        readIcs("webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=jccoa@iscte.pt&password=vYq1j6K7UgV2NQk1K9uYYvviw8U346HtmgC5ZG8CGw2RdBkZfPTWKZ1xz8378TfuOu9M3xORnkVqmW7pAjNhXgtdLpMpBiooBsz0NHhGNGyMDbdEbDtoJmDJLN0uK1sz");
     }
 
     public static Block createFromWebCalendar(Map<String, String> webInfo) {
@@ -79,15 +92,19 @@ public class Block implements Serializable {
     }
 
     /**
-     * Função que devolve o header do block
-     *
+     * Método que devolve o header do objeto Block
      * @return retorna o header
      */
     public static String getCSVHeader() {
         return String.join(";", Block.keys);
     }
 
-    private List<Map<String, String>> getAsList() {
+
+    /**
+     * Método que devolve a conversão do atributo Map do objeto Block numa lista de Map
+     * @return retorna uma lista de objetos Blocko atributo Map da classe Block
+     */
+    private List<Map<String, String>> getAsList(){
         List<Map<String, String>> list = new ArrayList<>();
         for (Map.Entry<String, String> entry : data.entrySet()) {
             Map<String, String> map = new HashMap<>();
@@ -97,14 +114,18 @@ public class Block implements Serializable {
         return list;
     }
 
+    /**
+     * Método que devolve uma String CSV com os values do atributo Map de um objeto Block
+     * @return retorna uma String CSV
+     */
     public String getAsCsv() {
         return String.join(";", data.values());
     }
 
     public String getAsJson() {
         Gson gson = new Gson();
-        String json = gson.toJson(this.getAsList());
-        return json;
+//        String json = gson.toJson(this.getAsList());
+        return gson.toJson(this.getAsList());
     }
 
     public Map<String, String> getAsScheduleFormat() {
@@ -116,6 +137,7 @@ public class Block implements Serializable {
         copyData.put("end", formatDateToWeb(classDate, endHour));
         return copyData;
     }
+    //easter egg
 
 
 }

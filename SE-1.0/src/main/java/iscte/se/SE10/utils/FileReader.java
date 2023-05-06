@@ -13,41 +13,50 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.URI;
-import java.net.URL;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.format.TextStyle;
+
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
+
 import java.util.List;
-import java.util.Locale;
+
 import java.util.Map;
-import java.util.TimeZone;
+
 
 import org.apache.commons.io.FileUtils;
 
+
 import static iscte.se.SE10.utils.utils.DownloadWebCall;
+
 
 public class FileReader {
 
-    public static List<Block> readCSV(InputStream inputStream) {
-        List<Block> blocks = new ArrayList<>();
-        try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-            reader.readLine();
-            String line;
-            while ((line = reader.readLine()) != null) {
-                Block block = Block.createFromCSV(line);
-                blocks.add(block);
-            }
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        return blocks;
-    }
+	/**
+	 * Função que lê um CSV através de um objeto InputStream e cria uma lista de objetos Block
+	 * @param inputStream objeto inputStream
+	 * @return retorna uma lista de blocks
+	 */
+
+	public static List<Block> readCSV(InputStream inputStream) {
+		List<Block> blocks = new ArrayList<>();
+		try {
+			BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+			reader.readLine();
+			String line;
+			while ((line = reader.readLine()) != null) {
+				Block block = Block.createFromCSV(line);
+				blocks.add(block);
+			}
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
+		return blocks;
+	}
+
+	/**
+	 * Função que lê um CSV através de um objeto InputStream e cria uma lista de objetos Block
+	 * @param inputStream objeto inputStream
+	 * @param type String que identifica o formato do ficheiro
+	 * @return lista de objetos Block
+	 */
 
     public static List<Block> readJson(InputStream inputStream, String type) {
         List<Block> blocks = new ArrayList<>();
@@ -65,6 +74,11 @@ public class FileReader {
         return blocks;
     }
 
+	/**
+	 * Função que através de um ficheiro remoto cria uma lista do objetos Block
+	 * @param uri endereço do ficheiro remoto
+	 * @return retorna uma lista de objetos Block
+	 */
     public static List<Block> readIcs(String uri) {
         File temp = DownloadWebCall(uri);
         List<Block> blocks = new ArrayList<>();
@@ -81,4 +95,5 @@ public class FileReader {
         }
         return blocks;
     }
+
 }
