@@ -25,9 +25,14 @@ import static iscte.se.SE10.utils.utils.*;
  * @version 1.0
  */
 public class Block implements Serializable {
-
+    /**
+     * Array de String que representa as keys da classe Block
+     */
     public static final String[] keys = {"Curso", "Unidade Curricular", "Turno", "Turma", "Inscritos no turno", "Dia da semana", "Hora início da aula", "Hora fim da aula", "Data da aula", "Sala atribuída à aula", "Lotação da sala"};
 
+    /**
+     * Map<String, String> que ser]a utilizado para associar as keys aos valores atribuídos
+     */
     private Map<String, String> data;
 
 
@@ -122,11 +127,19 @@ public class Block implements Serializable {
         return String.join(";", data.values());
     }
 
+    /**
+     * Método que devolve uma String JSON com os values do atributo Map de um objeto Block
+     * @return retorna uma String CSV
+     */
     public String getAsJson() {
         Gson gson = new Gson();
-//        String json = gson.toJson(this.getAsList());
         return gson.toJson(this.getAsList());
     }
+
+    /**
+     * Método que copia o atributo Map da classe Block e devolve um linkedHashMap<String, String> num formato WEB
+     * @return retorna um linkedHashMap<String, String> num formato WEB
+     */
 
     public Map<String, String> getAsScheduleFormat() {
         Map<String, String> copyData = new LinkedHashMap<>(data);
