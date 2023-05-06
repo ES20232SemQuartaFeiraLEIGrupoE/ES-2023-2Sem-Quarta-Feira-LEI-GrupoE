@@ -27,6 +27,11 @@ import static iscte.se.SE10.utils.FileReader.readJson;
 public class FileWriter {
 
     /**
+     * Construtor default
+     */
+    public FileWriter(){}
+
+    /**
      * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro CSV
      * @param data lista de objetos Block
      */

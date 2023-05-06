@@ -11,14 +11,19 @@ import javax.swing.UnsupportedLookAndFeelException;
 import iscte.se.SE10.model.Block;
 
 /**
+ * Classe Main
  * @author Grupo E
  * @version 1.0
  */
 public class Main {
 
 	/**
+	 * Construtor default
+	 */
+	public Main(){}
+
+	/**
 	 * Função main
-	 * 
 	 * @param args array de strings
 	 */
 	public static void main(String[] args) {
@@ -49,6 +54,9 @@ public class Main {
 
 	}
 
+	/**
+	 * Interface de texto
+	 */
 	public static void textMainInterface() {
 		System.out.print("-------------- Demo --------------\n");
 		System.out.print("1. Convert File\n");

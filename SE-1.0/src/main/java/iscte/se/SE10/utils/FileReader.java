@@ -26,8 +26,17 @@ import org.apache.commons.io.FileUtils;
 
 import static iscte.se.SE10.utils.utils.DownloadWebCall;
 
-
+/**
+ * Classe utilizada para ler ficheiros
+ * @author Grupo E
+ * @version 1.0
+ */
 public class FileReader {
+
+    /**
+     * Construtor default
+     */
+    public FileReader(){}
 
 	/**
 	 * Função que lê um CSV através de um objeto InputStream e cria uma lista de objetos Block

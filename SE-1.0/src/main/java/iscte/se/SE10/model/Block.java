@@ -27,18 +27,20 @@ import static iscte.se.SE10.utils.utils.*;
  */
 public class Block implements Serializable {
 
-    public static void main(String[] args) {
-        formatToWeb(readIcs("webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=tpbba@iscte.pt&password=KslsHdONYQqWJKdMse5rqh7p0kD8C91iZ8omnHEDpS5qgEGXb3khkeSKaXCUpDhmzTONGVM3IYU4dNuvQkftyfa8DstavuauoXMqrYqdByavW9Juyz1aIjHcrDmebCAS"));
-    }
-
+    /**
+     * Array de String que representa as keys da classe Block
+     */
     public static final String[] keys = {"Curso", "Unidade Curricular", "Turno", "Turma", "Inscritos no turno", "Dia da semana", "Hora início da aula", "Hora fim da aula", "Data da aula", "Sala atribuída à aula", "Lotação da sala"};
 
+    /**
+     * Map que será utilizado para associar as keys aos valores atribuídos
+     */
     private Map<String, String> data;
 
 
     /**
-     * Construtor de um objeto Block dado um Map<String, String>
-     * @param data Map<String, String>
+     * Construtor de um objeto Block dado um Map
+     * @param data Map
      */
     public Block(Map<String, String> data){
         this.data = data;
@@ -66,7 +68,7 @@ public class Block implements Serializable {
     }
 
     /**
-     * Método que recebe um Map<String, String> e inicializa um objeto Block
+     * Método que recebe um Map e inicializa um objeto Block
      * @param data Map de Strings
      * @return retorna um objeto Block inicializado com o conteúdo do Map
      */
@@ -80,6 +82,11 @@ public class Block implements Serializable {
         return new Block(data);
     }
 
+    /**
+     * Método que recebe um Map com a informação de um horário WEB e cria instâncias do objeto Block
+     * @param webInfo Map com a informação de um calendário WEB
+     * @return retorna instâncias do objeto Block
+     */
     public static Block createFromWebCalendar(Map<String, String> webInfo) {
         Map<String, String> blocks = new LinkedHashMap<>();
 
@@ -127,11 +134,19 @@ public class Block implements Serializable {
         return String.join(";", data.values());
     }
 
+    /**
+     * Método que devolve uma String JSON com os values do atributo Map de um objeto Block
+     * @return retorna uma String CSV
+     */
     public String getAsJson() {
         Gson gson = new Gson();
-//        String json = gson.toJson(this.getAsList());
         return gson.toJson(this.getAsList());
     }
+
+    /**
+     * Método que copia o atributo Map da classe Block e devolve um LinkedHashMap num formato WEB
+     * @return retorna um LinkedHashMap num formato WEB
+     */
 
     public Map<String, String> getAsScheduleFormat() {
         Map<String, String> copyData = new LinkedHashMap<>(data);
