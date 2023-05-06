@@ -1,5 +1,6 @@
 console.log("V113 ")
 var blocks = [];
+var selectedBlocks = [];
 
 const coursesDropdown = document.getElementById("coursesDropdown");
 const btnLoadFile = document.querySelector(".btn-load-file");
@@ -35,6 +36,7 @@ btnLoadFile.addEventListener('click', function() {
     populateCoursesDropdown(courses)
     blocks = data
     populateSubjectChecklist(blocks)
+      coursesDropdown.classList.remove("hide")
     drawCalendar(blocks);
   });
 });
@@ -60,34 +62,12 @@ urlForm.addEventListener('submit', function(event) {
     populateCoursesDropdown(courses)
     blocks = data
     populateSubjectChecklist(blocks)
+      coursesDropdown.classList.add("hide")
     drawCalendar(blocks);
   });
 });
 
-btnLoadFile.addEventListener('click', function() {
-  const file = fileInput.files[0];
-  const formData = new FormData();
-  formData.append('file', file);
-  blocks = [];
-  fetch('/api/blocks', {
-    method: 'POST',
-    body: formData
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log(data)
-    var courses = new Set();
-    for (var i = 0; i < data.length; i++) {
-      courses.add(data[i]["Curso"]);
-    }
-    populateCoursesDropdown(courses)
-    blocks = data
-    updateCount(blocks);
-    populateSubjectChecklist(blocks)
-    drawCalendar(blocks);
-  });
-});
-
+// Popular menu de cursos
 function populateCoursesDropdown(courses) {
    // console.log(courses)
    coursesDropdown.innerHTML="";
@@ -110,6 +90,7 @@ function selectCourse(blocks) {
     if("All" == selectedCourse){
         populateSubjectChecklist(blocks)
         drawCalendar(blocks);
+        selectedBlocks = blocks;
     }else{
        selectedBlocks = blocks.filter((block) => block["Curso"] === selectedCourse);
        populateSubjectChecklist(selectedBlocks)
@@ -118,18 +99,15 @@ function selectCourse(blocks) {
 };
 
 coursesDropdown.addEventListener("change", function() {
-   selectCourse(blocks);
+    selectCourse(blocks);
 });
 
 // Tarefe 22
  const subjectSelector = document.getElementById("subjectSelector");
-
+// Popular menu de cadeiras
 function populateSubjectChecklist(blocks) {
-   // console.log(blocks)
-   // console.log(blocks[0]["Unidade Curricular"])
-  subjectSelector.innerHTML = ""; // clear existing checkboxes
-  const subjects = new Set(blocks.map(block => block["Unidade Curricular"])); // get unique subjects
-  // console.log(subjects)
+  subjectSelector.innerHTML = "";
+  const subjects = new Set(blocks.map(block => block["Unidade Curricular"]));
   for (const subject of subjects) {
     const li = document.createElement("li");
     const label = document.createElement("label");
@@ -151,7 +129,7 @@ subjectSelector.addEventListener("change", () => {
     if (selectedSubjects.length === 0) {
       drawCalendar([]); // No checkboxes are selected, draw all blocks
     } else {
-      const selectedBlocks = blocks.filter(block => selectedSubjects.includes(block["Unidade Curricular"]));
+        selectedBlocks = blocks.filter(block => selectedSubjects.includes(block["Unidade Curricular"]));
       drawCalendar(selectedBlocks); // Draw selected blocks only
     }
     });
@@ -160,7 +138,8 @@ subjectSelector.addEventListener("change", () => {
 function saveToCSV() {
   const apiUrl = '/api/savecsv'; // URL of the API endpoint to save blocks
   const formData = new FormData(); // Create a new form data object
-  const blocksJson = JSON.stringify(blocks); // Convert the blocks array to a JSON string
+    console.log(selectedBlocks);
+  const blocksJson = JSON.stringify(selectedBlocks); // Convert the blocks array to a JSON string
   const blocksBlob = new Blob([blocksJson], { type: 'application/json' }); // Create a new Blob object from the JSON string
   formData.append('file', blocksBlob, 'blocks.json'); // Add the Blob object to the form data with a filename of 'blocks.json'
   // console.log(blocksJson); // Log the JSON string to the console for debugging purposes
@@ -182,7 +161,7 @@ function saveToCSV() {
 function saveToJson() {
   const apiUrl = '/api/savejson'; // URL of the API endpoint to save blocks
   const formData = new FormData(); // Create a new form data object
-  const blocksJson = JSON.stringify(blocks); // Convert the blocks array to a JSON string
+  const blocksJson = JSON.stringify(selectedBlocks); // Convert the blocks array to a JSON string
   const blocksBlob = new Blob([blocksJson], { type: 'application/json' }); // Create a new Blob object from the JSON string
   formData.append('file', blocksBlob, 'blocks.json'); // Add the Blob object to the form data with a filename of 'blocks.json'
   // console.log(blocksJson); // Log the JSON string to the console for debugging purposes
@@ -214,11 +193,11 @@ function drawCalendar(events) {
     var overlapcount = 0;
     var lotacioncount = 0;
     updateCounters(overlapcount, lotacioncount);
-    console.log("Events")
-    console.log(events)
 
     // Inicializar o
     currentView = $('#calendar').fullCalendar('getView').name;
+    var currentDate = $('#calendar').fullCalendar('getDate');
+
     $('#calendar').fullCalendar('destroy');
     $('#calendar').fullCalendar({
     header: {
@@ -229,6 +208,7 @@ function drawCalendar(events) {
     height: 'auto', // Ajustar automaticamente a altura ao número de eventos
     contentHeight: 'auto', // Ajustar a altura do conteúdo do calendário para que caiba todos os eventos
     defaultView: currentView ,
+    defaultDate: currentDate,
     minTime: '08:00:00', // Hora de início do horário
     maxTime: '20:30:00', // Hora de término do horário
     slotDuration: '00:30:00', // Duração de cada slot de tempo (30 minutos)
@@ -238,10 +218,10 @@ function drawCalendar(events) {
 
     eventRender: function(event, element) {
     // Montar o título do evento com o nome da disciplina e a sala
-    var title = event["Unidade Curricular"] + ' - Sala ' + event["Sala atribuída à aula"];
+    var title = event["Unidade Curricular"];
     // Adicionar um botão para ver mais detalhes
-    var detailsButton = $('<button>').addClass('btn btn-sm btn-info').text('Ver detalhes');
-    element.find('.fc-title').append(detailsButton);
+    //var detailsButton = $('<button>').addClass('btn btn-sm btn-info').text('Ver detalhes');
+    //element.find('.fc-title').append(detailsButton);
     // Definir o título no elemento do evento
     element.find('.fc-title').text(title);
     if(checkLotacion(event)){
@@ -290,8 +270,10 @@ function drawCalendar(events) {
     // Adicionar o modal ao corpo da página e exibi-lo
     $('body').append(modal);
     modal.addClass('show');
+
+        $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
     }
-    });
+     });
 
     if(aux == 0)    updateCounters(overlapcount, lotacioncount);
     aux = 1;

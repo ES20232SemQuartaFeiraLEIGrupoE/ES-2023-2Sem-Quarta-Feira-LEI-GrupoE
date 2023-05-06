@@ -55,9 +55,12 @@ public class FileWriter {
     public static void saveInJson(List<Block> data) {
         try {
             PrintWriter writer = new PrintWriter("schedule.json");
-            for (Block block : data) {
-                writer.println(block.getAsJson());
+            writer.println('[');
+            for (int i = 0; i<data.size() -1 ; i++) {
+                writer.println(data.get(i).getAsJson() + ',');
             }
+            writer.println(data.get(data.size()-1).getAsJson());
+            writer.println(']');
             writer.close();
         } catch (IOException e) {
             System.out.println("Error saving data to file: " + e.getMessage());

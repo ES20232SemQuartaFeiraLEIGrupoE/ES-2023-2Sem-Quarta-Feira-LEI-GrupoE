@@ -1,6 +1,28 @@
-[{"Curso":"ME"},{"Unidade Curricular":"Teoria dos Jogos e dos Contratos"},{"Turno":"01789TP01"},{"Turma":"MEA1"},{"Inscritos no turno":"30"},{"Dia da semana":"Sex"},{"Sala atribuída à aula":"AA2.25"},{"Lotação da sala":"34"},{"Hora início da aula":"13:00:00"},{"Hora fim da aula":"14:30:00"},{"Data da aula":"01/05/2023"}]
-[{"Curso":"ME"},{"Unidade Curricular":"Teoria dos Jogos e dos Contratos"},{"Turno":"01789TP01"},{"Turma":"MEA1"},{"Inscritos no turno":"30"},{"Dia da semana":"Qua"},{"Sala atribuída à aula":"AA2.25"},{"Lotação da sala":"34"},{"Hora início da aula":"13:00:00"},{"Hora fim da aula":"14:30:00"},{"Data da aula":"01/05/2023"}]
-[{"Curso":"MEI"},{"Unidade Curricular":"Teoria dos Jogos e dos Contratos"},{"Turno":"01789TP01"},{"Turma":"MEA1"},{"Inscritos no turno":"30"},{"Dia da semana":"Qua"},{"Sala atribuída à aula":"AA2.25"},{"Lotação da sala":"34"},{"Hora início da aula":"13:00:00"},{"Hora fim da aula":"14:30:00"},{"Data da aula":"03/05/2023"}]
-[{"Curso":"ME"},{"Unidade Curricular":"Teoria dos Jogos"},{"Turno":"01789TP01"},{"Turma":"MEA1"},{"Inscritos no turno":"50"},{"Dia da semana":"Sex"},{"Sala atribuída à aula":"AA2.25"},{"Lotação da sala":"34"},{"Hora início da aula":"15:00:00"},{"Hora fim da aula":"16:30:00"},{"Data da aula":"01/05/2023"}]
-[{"Curso":"ME"},{"Unidade Curricular":"Teoria dos Jogos"},{"Turno":"01789TP01"},{"Turma":"MEA1"},{"Inscritos no turno":"30"},{"Dia da semana":"Qua"},{"Sala atribuída à aula":"AA2.25"},{"Lotação da sala":"34"},{"Hora início da aula":"15:00:00"},{"Hora fim da aula":"16:30:00"},{"Data da aula":"02/05/2023"}]
-[{"Curso":"MEI"},{"Unidade Curricular":"Teoria dos Jogos 233"},{"Turno":"01789TP01"},{"Turma":"MEA1"},{"Inscritos no turno":"30"},{"Dia da semana":"Qua"},{"Sala atribuída à aula":"AA2.25"},{"Lotação da sala":"34"},{"Hora início da aula":"15:00:00"},{"Hora fim da aula":"18:30:00"},{"Data da aula":"03/05/2023"}]
+[
+{
+  "Curso": "ME",
+  "Unidade Curricular": "Teoria dos Jogos",
+  "Turno": "01789TP01",
+  "Turma": "MEA1",
+  "Inscritos no turno": "50",
+  "Dia da semana": "Sex",
+  "Hora início da aula": "15:00:00",
+  "Hora fim da aula": "16:30:00",
+  "Data da aula": "01/05/2023",
+  "Sala atribuída à aula": "AA2.25",
+  "Lotação da sala": "34"
+},
+{
+  "Curso": "ME",
+  "Unidade Curricular": "Teoria dos Jogos",
+  "Turno": "01789TP01",
+  "Turma": "MEA1",
+  "Inscritos no turno": "30",
+  "Dia da semana": "Qua",
+  "Hora início da aula": "15:00:00",
+  "Hora fim da aula": "16:30:00",
+  "Data da aula": "02/05/2023",
+  "Sala atribuída à aula": "AA2.25",
+  "Lotação da sala": "34"
+}
+]

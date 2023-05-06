@@ -4,8 +4,14 @@ body {
   background-color: #f7f7f7;
   margin: 0;
   padding: 0;
+}
 
-
+h1{
+  color: #007bff;
+}
+.hide {
+  display: none;
+  visibility: hidden;
 }
 
 .rift{
@@ -138,8 +144,6 @@ ul{
   font-size: 1rem; /* 16px / 16px = 1rem */
 }
 
-n-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
-}
 
 .counter, .countero {
   font-size: 1.5rem; /* 24px / 16px = 1.5rem */
@@ -147,6 +151,7 @@ n-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
   font-weight: bold;
   margin-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
 }
+
 
 /* Estilos para o calendário */
 #calendar {
@@ -251,5 +256,16 @@ n-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
 /* Estilização para o conteúdo dentro do modal */
 .custom-style {
   background-color: #fff;
+}
+
+.webcalform {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 0.625rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
