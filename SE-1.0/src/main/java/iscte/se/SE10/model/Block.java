@@ -15,6 +15,7 @@ import java.time.format.TextStyle;
 import java.util.*;
 
 import static iscte.se.SE10.utils.FileReader.readIcs;
+import static iscte.se.SE10.utils.FileWriter.formatToWeb;
 import static iscte.se.SE10.utils.utils.*;
 
 /**
@@ -25,6 +26,10 @@ import static iscte.se.SE10.utils.utils.*;
  * @version 1.0
  */
 public class Block implements Serializable {
+
+    public static void main(String[] args) {
+        formatToWeb(readIcs("webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar.do?method=iCalendar&username=tpbba@iscte.pt&password=KslsHdONYQqWJKdMse5rqh7p0kD8C91iZ8omnHEDpS5qgEGXb3khkeSKaXCUpDhmzTONGVM3IYU4dNuvQkftyfa8DstavuauoXMqrYqdByavW9Juyz1aIjHcrDmebCAS"));
+    }
 
     public static final String[] keys = {"Curso", "Unidade Curricular", "Turno", "Turma", "Inscritos no turno", "Dia da semana", "Hora início da aula", "Hora fim da aula", "Data da aula", "Sala atribuída à aula", "Lotação da sala"};
 

@@ -26,11 +26,15 @@ public class ConvertFiles {
         for (String s : description) {
             if("\r".equals(s))
                 continue;
+            try{
             String key = s.substring(0, s.indexOf(":"));
             String value = s.substring(s.indexOf(":") + 2).strip();
+
             for (String webKey : webKeys) {
                 if (key.contains(webKey))
                     webInfo.put(key, value);
+            }}catch (Exception ex){
+                //ex.printStackTrace();
             }
         }
 
