@@ -193,8 +193,6 @@ function drawCalendar(events) {
     var overlapcount = 0;
     var lotacioncount = 0;
     updateCounters(overlapcount, lotacioncount);
-    console.log("Events")
-    console.log(events)
 
     // Inicializar o
     currentView = $('#calendar').fullCalendar('getView').name;
@@ -220,10 +218,10 @@ function drawCalendar(events) {
 
     eventRender: function(event, element) {
     // Montar o título do evento com o nome da disciplina e a sala
-    var title = event["Unidade Curricular"] + ' - Sala ' + event["Sala atribuída à aula"];
+    var title = event["Unidade Curricular"];
     // Adicionar um botão para ver mais detalhes
-    var detailsButton = $('<button>').addClass('btn btn-sm btn-info').text('Ver detalhes');
-    element.find('.fc-title').append(detailsButton);
+    //var detailsButton = $('<button>').addClass('btn btn-sm btn-info').text('Ver detalhes');
+    //element.find('.fc-title').append(detailsButton);
     // Definir o título no elemento do evento
     element.find('.fc-title').text(title);
     if(checkLotacion(event)){
@@ -272,8 +270,10 @@ function drawCalendar(events) {
     // Adicionar o modal ao corpo da página e exibi-lo
     $('body').append(modal);
     modal.addClass('show');
+
+        $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
     }
-    });
+     });
 
     if(aux == 0)    updateCounters(overlapcount, lotacioncount);
     aux = 1;
