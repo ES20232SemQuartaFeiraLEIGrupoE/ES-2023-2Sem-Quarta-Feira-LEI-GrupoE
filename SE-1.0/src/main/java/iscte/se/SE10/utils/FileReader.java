@@ -33,6 +33,11 @@ import static iscte.se.SE10.utils.utils.DownloadWebCall;
  */
 public class FileReader {
 
+    /**
+     * Construtor default
+     */
+    public FileReader(){}
+
 	/**
 	 * Função que lê um CSV através de um objeto InputStream e cria uma lista de objetos Block
 	 * @param inputStream objeto inputStream
