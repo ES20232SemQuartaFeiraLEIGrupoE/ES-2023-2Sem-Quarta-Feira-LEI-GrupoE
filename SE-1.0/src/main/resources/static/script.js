@@ -43,24 +43,25 @@ btnLoadFile.addEventListener('click', function() {
 const urlForm = document.getElementById('url-form');
 
 urlForm.addEventListener('submit', function(event) {
-  blocks = [];
-  fetch("/api/web", {
-    method: 'POST',
-    body: urlForm
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log(data)
-    var courses = new Set();
-    for (var i = 0; i < data.length; i++) {
-      courses.add(data[i]["Curso"]);
-    }
-    populateCoursesDropdown(courses)
-    blocks = data
-    updateCount(blocks);
-    populateSubjectChecklist(blocks)
-    drawCalendar(blocks);
-  });
+    event.preventDefault();
+    blocks = [];
+    const formData = new FormData(urlForm);
+    fetch("/api/web", {
+        method: 'POST',
+        body: formData
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+            var courses = new Set();
+            for (var i = 0; i < data.length; i++) {
+                courses.add(data[i]["Curso"]);
+            }
+            populateCoursesDropdown(courses)
+            blocks = data
+            populateSubjectChecklist(blocks)
+            drawCalendar(blocks);
+        });
 });
 
 btnLoadFile.addEventListener('click', function() {
