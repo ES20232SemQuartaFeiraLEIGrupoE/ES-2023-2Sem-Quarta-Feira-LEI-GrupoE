@@ -36,7 +36,6 @@ public class Api {
      */
     @PostMapping("/blocks")
     public String getBlocks(@RequestParam("file") MultipartFile file) throws IOException {
-        System.out.println("I was callledddd");
         String fileName = file.getOriginalFilename();
         String extension = fileName.substring(fileName.lastIndexOf(".") + 1);
 
@@ -57,7 +56,6 @@ public class Api {
      */
     @PostMapping("/web")
     public String getBlocks2(@RequestParam String uri) throws IOException {
-        System.out.println("I was callllllledddd");
         return formatToWeb(readIcs(uri));
     }
 

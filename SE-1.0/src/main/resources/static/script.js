@@ -1,6 +1,6 @@
 console.log("V113 ")
 var blocks = [];
-var selectedblocks = [];
+var selectedBlocks = [];
 
 const coursesDropdown = document.getElementById("coursesDropdown");
 const btnLoadFile = document.querySelector(".btn-load-file");
@@ -90,6 +90,7 @@ function selectCourse(blocks) {
     if("All" == selectedCourse){
         populateSubjectChecklist(blocks)
         drawCalendar(blocks);
+        selectedBlocks = blocks;
     }else{
        selectedBlocks = blocks.filter((block) => block["Curso"] === selectedCourse);
        populateSubjectChecklist(selectedBlocks)
@@ -98,18 +99,15 @@ function selectCourse(blocks) {
 };
 
 coursesDropdown.addEventListener("change", function() {
-   selectCourse(blocks);
+    selectCourse(blocks);
 });
 
 // Tarefe 22
  const subjectSelector = document.getElementById("subjectSelector");
-
+// Popular menu de cadeiras
 function populateSubjectChecklist(blocks) {
-   // console.log(blocks)
-   // console.log(blocks[0]["Unidade Curricular"])
-  subjectSelector.innerHTML = ""; // clear existing checkboxes
-  const subjects = new Set(blocks.map(block => block["Unidade Curricular"])); // get unique subjects
-  // console.log(subjects)
+  subjectSelector.innerHTML = "";
+  const subjects = new Set(blocks.map(block => block["Unidade Curricular"]));
   for (const subject of subjects) {
     const li = document.createElement("li");
     const label = document.createElement("label");
@@ -131,7 +129,7 @@ subjectSelector.addEventListener("change", () => {
     if (selectedSubjects.length === 0) {
       drawCalendar([]); // No checkboxes are selected, draw all blocks
     } else {
-      const selectedBlocks = blocks.filter(block => selectedSubjects.includes(block["Unidade Curricular"]));
+        selectedBlocks = blocks.filter(block => selectedSubjects.includes(block["Unidade Curricular"]));
       drawCalendar(selectedBlocks); // Draw selected blocks only
     }
     });
@@ -140,7 +138,8 @@ subjectSelector.addEventListener("change", () => {
 function saveToCSV() {
   const apiUrl = '/api/savecsv'; // URL of the API endpoint to save blocks
   const formData = new FormData(); // Create a new form data object
-  const blocksJson = JSON.stringify(blocks); // Convert the blocks array to a JSON string
+    console.log(selectedBlocks);
+  const blocksJson = JSON.stringify(selectedBlocks); // Convert the blocks array to a JSON string
   const blocksBlob = new Blob([blocksJson], { type: 'application/json' }); // Create a new Blob object from the JSON string
   formData.append('file', blocksBlob, 'blocks.json'); // Add the Blob object to the form data with a filename of 'blocks.json'
   // console.log(blocksJson); // Log the JSON string to the console for debugging purposes
@@ -162,7 +161,7 @@ function saveToCSV() {
 function saveToJson() {
   const apiUrl = '/api/savejson'; // URL of the API endpoint to save blocks
   const formData = new FormData(); // Create a new form data object
-  const blocksJson = JSON.stringify(blocks); // Convert the blocks array to a JSON string
+  const blocksJson = JSON.stringify(selectedBlocks); // Convert the blocks array to a JSON string
   const blocksBlob = new Blob([blocksJson], { type: 'application/json' }); // Create a new Blob object from the JSON string
   formData.append('file', blocksBlob, 'blocks.json'); // Add the Blob object to the form data with a filename of 'blocks.json'
   // console.log(blocksJson); // Log the JSON string to the console for debugging purposes
@@ -199,6 +198,8 @@ function drawCalendar(events) {
 
     // Inicializar o
     currentView = $('#calendar').fullCalendar('getView').name;
+    var currentDate = $('#calendar').fullCalendar('getDate');
+
     $('#calendar').fullCalendar('destroy');
     $('#calendar').fullCalendar({
     header: {
@@ -209,6 +210,7 @@ function drawCalendar(events) {
     height: 'auto', // Ajustar automaticamente a altura ao número de eventos
     contentHeight: 'auto', // Ajustar a altura do conteúdo do calendário para que caiba todos os eventos
     defaultView: currentView ,
+    defaultDate: currentDate,
     minTime: '08:00:00', // Hora de início do horário
     maxTime: '20:30:00', // Hora de término do horário
     slotDuration: '00:30:00', // Duração de cada slot de tempo (30 minutos)

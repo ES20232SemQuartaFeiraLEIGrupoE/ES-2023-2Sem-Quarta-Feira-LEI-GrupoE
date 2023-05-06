@@ -4,8 +4,10 @@ body {
   background-color: #f7f7f7;
   margin: 0;
   padding: 0;
+}
 
-
+h1{
+  color: #007bff;
 }
 .hide {
   display: none;
@@ -150,6 +152,7 @@ ul{
   margin-bottom: 1.25rem; /* 20px / 16px = 1.25rem */
 }
 
+
 /* Estilos para o calendário */
 #calendar {
   margin-top: 1.25rem; /* 20px / 16px = 1.25rem */
@@ -253,5 +256,16 @@ ul{
 /* Estilização para o conteúdo dentro do modal */
 .custom-style {
   background-color: #fff;
+}
+
+.webcalform {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 0.625rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
