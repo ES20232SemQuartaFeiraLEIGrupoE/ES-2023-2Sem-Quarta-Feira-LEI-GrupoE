@@ -29,7 +29,9 @@ public class FileWriter {
     /**
      * Construtor default
      */
-    public FileWriter(){}
+    public FileWriter(){
+        // No Initialization required
+    }
 
     /**
      * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro CSV

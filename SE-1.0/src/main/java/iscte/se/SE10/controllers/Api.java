@@ -20,7 +20,9 @@ public class Api {
     /**
      * Construtor default
      */
-    public Api(){/* No parameters required */ }
+    public Api(){
+        // No Initialization required
+    }
     /**
      * Método que lê o objeto MultipartFile e consoante o formato de defenido devolve uma String nesse formato
      * @param file MultipartFile que é o arquivo que queremos guardar

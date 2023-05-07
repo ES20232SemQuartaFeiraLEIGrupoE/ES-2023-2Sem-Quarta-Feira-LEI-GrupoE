@@ -19,7 +19,9 @@ public class ConvertFiles {
     /**
      * Construtor default
      */
-    public ConvertFiles(){}
+    public ConvertFiles(){
+        // No Initialization required
+    }
     /**
      * Método que extrai os campos de um evento do calendário e devolve num Map
      * @param e recebe um evento de calendário

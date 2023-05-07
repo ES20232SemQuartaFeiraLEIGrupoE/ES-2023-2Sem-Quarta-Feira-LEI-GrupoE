@@ -17,7 +17,9 @@ public class Utils {
     /**
      * Construtor default
      */
-    public Utils(){}
+    public Utils(){
+        // No Initialization required
+    }
 
     /**
      * Método que reorganiza uma String para um formato pretendido
@@ -77,7 +79,7 @@ public class Utils {
      * @param uri endereço do ficheiro remoto
      * @return retorna um ficheito temporário com o conteúdo do ficheiro cujo download foi feito
      */
-    public static File DownloadWebCall(String uri) {
+    public static File downloadWebCall(String uri) {
         if (!uri.startsWith("webcal://fenix.iscte-iul.pt")) {
             throw new IllegalArgumentException("Invalid webcall URI: " + uri);
         }
