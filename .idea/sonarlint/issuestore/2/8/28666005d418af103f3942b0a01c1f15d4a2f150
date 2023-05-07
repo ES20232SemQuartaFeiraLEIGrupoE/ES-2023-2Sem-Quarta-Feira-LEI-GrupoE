@@ -1,13 +1,16 @@
 
 `	java:S1127"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
-`	java:S112h"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ
+`	java:S112f"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ
 P
-java:S1141`"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+java:S1141_"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¬›e
 œ
 java:S1186$"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›Òûÿùÿÿÿÿ
 8
 java:S1118$"Hide this public constructor.(›Òûÿùÿÿÿÿ
-g
-java:S26770"LUse or store the value returned from "readLine" instead of throwing it away.(£­—âÿÿÿÿÿ
-Q	java:S125d"<This block of commented-out lines of code should be removed.(ì‘òŠ
+Z
+java:S18540"=Remove this useless assignment to local variable "firstline".(Å«˜‹8â·³ÿ0
+K
+java:S14810".Remove this unused "firstline" local variable.(Å«˜‹8€·³ÿ0
+E	java:S108M")Either remove or fill this block of code.(”ı¾8©·³ÿ0
+J	java:S108b")Either remove or fill this block of code.(±Ÿ—±ÿÿÿÿÿ8µ·³ÿ0
