@@ -21,7 +21,7 @@ public class CalendarController {
     /**
      * Construtor default
      */
-    public CalendarController() {}
+    public CalendarController() {/* No parameters required */ }
 
     /**
      * Método que controla as solicitações HTTP GET e retorna uma página HTML
