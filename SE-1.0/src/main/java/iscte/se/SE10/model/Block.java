@@ -1,23 +1,14 @@
 package iscte.se.SE10.model;
 
-import biweekly.component.VEvent;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 
-import java.io.IOException;
 import java.io.Serializable;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.format.TextStyle;
 import java.util.*;
 
-import static iscte.se.SE10.utils.FileReader.readIcs;
-import static iscte.se.SE10.utils.FileWriter.formatToWeb;
-import static iscte.se.SE10.utils.utils.*;
+import static iscte.se.SE10.utils.Utils.*;
 
 /**
  * Classe Block é a classe que cria um objeto que contém toda a informação
@@ -36,7 +27,7 @@ public class Block implements Serializable {
     /**
      * Map que será utilizado para associar as keys aos valores atribuídos
      */
-    private Map<String, String> data;
+    public Map<String, String> data;
 
 
     /**
@@ -93,7 +84,7 @@ public class Block implements Serializable {
         Map<String, String> blocks = new LinkedHashMap<>();
 
         for(String key : keys){
-            blocks.put(key, "null");
+            blocks.put(key, "Indefinido");
         }
 
         blocks.put("Turno", webInfo.get("Turno"));
@@ -101,7 +92,6 @@ public class Block implements Serializable {
         blocks.put("Hora início da aula", formatIcsHourToLocal(webInfo.get("Início")));
         blocks.put("Hora fim da aula", formatIcsHourToLocal(webInfo.get("Fim")));
         blocks.put("Data da aula", formatIcsDateToLocal(webInfo.get("Início")));
-        System.out.println(blocks);
         return new Block(blocks);
     }
 
@@ -116,9 +106,9 @@ public class Block implements Serializable {
 
     /**
      * Método que devolve a conversão do atributo Map do objeto Block numa lista de Map
-     * @return retorna uma lista de objetos Blocko atributo Map da classe Block
+     * @return retorna uma lista de objetos Block o atributo Map da classe Block
      */
-    private List<Map<String, String>> getAsList(){
+    public List<Map<String, String>> getAsList(){
         List<Map<String, String>> list = new ArrayList<>();
         for (Map.Entry<String, String> entry : data.entrySet()) {
             Map<String, String> map = new HashMap<>();
