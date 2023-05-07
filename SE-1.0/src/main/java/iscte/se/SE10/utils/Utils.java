@@ -85,7 +85,7 @@ public class Utils {
         }
         String httpsURI = "https:" + uri.split(":")[1];
         try {
-            File temp = new File("temp");
+            File temp = new File("filesTest/temp");
             FileUtils.copyURLToFile(new URL(httpsURI), temp);
             return temp;
         } catch (IOException e) {}
