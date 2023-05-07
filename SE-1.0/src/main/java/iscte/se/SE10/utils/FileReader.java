@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 
-import static iscte.se.SE10.utils.Utils.DownloadWebCall;
+import static iscte.se.SE10.utils.Utils.downloadWebCall;
 
 /**
  * Classe utilizada para ler ficheiros
@@ -33,7 +33,9 @@ public class FileReader {
     /**
      * Construtor default
      */
-    public FileReader(){}
+    public FileReader(){
+        // No Initialization required
+    }
 
 	/**
 	 * Função que lê um CSV através de um objeto InputStream e cria uma lista de objetos Block
@@ -84,7 +86,7 @@ public class FileReader {
 	 * @return retorna uma lista de objetos Block
 	 */
     public static List<Block> readIcs(String uri) {
-        File temp = DownloadWebCall(uri);
+        File temp = downloadWebCall(uri);
         List<Block> blocks = new ArrayList<>();
         ICalendar ical;
         try {
