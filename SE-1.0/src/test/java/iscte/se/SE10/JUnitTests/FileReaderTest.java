@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class FileReaderTest {
+class FileReaderTest {
     @Test
     void readCSVEmptyFileTest() {
         // String CSV vazio
@@ -23,7 +23,7 @@ public class FileReaderTest {
     }
 
     @Test
-    public void testReadJsonWithEmptyInput() {
+    void testReadJsonWithEmptyInput() {
         // Dados de entrada
         String json = "[{}]";
         InputStream inputStream = new ByteArrayInputStream(json.getBytes());

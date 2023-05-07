@@ -13,17 +13,17 @@ class BlockTest {
         String data = "ME;Teoria dos Jogos e dos Contratos;01789TP01;MEA1;30;Sex;13:00:00;14:30:00;01/05/2023;AA2.25;34";
         Block block = Block.createFromCSV(data);
 
-        assertEquals("ME", block.data.get("Curso"));
-        assertEquals("Teoria dos Jogos e dos Contratos", block.data.get("Unidade Curricular"));
-        assertEquals("01789TP01", block.data.get("Turno"));
-        assertEquals("MEA1", block.data.get("Turma"));
-        assertEquals("30", block.data.get("Inscritos no turno"));
-        assertEquals("Sex", block.data.get("Dia da semana"));
-        assertEquals("13:00:00", block.data.get("Hora início da aula"));
-        assertEquals("14:30:00", block.data.get("Hora fim da aula"));
-        assertEquals("01/05/2023", block.data.get("Data da aula"));
-        assertEquals("AA2.25", block.data.get("Sala atribuída à aula"));
-        assertEquals("34", block.data.get("Lotação da sala"));
+        assertEquals("ME", block.getBlockData().get("Curso"));
+        assertEquals("Teoria dos Jogos e dos Contratos", block.getBlockData().get("Unidade Curricular"));
+        assertEquals("01789TP01", block.getBlockData().get("Turno"));
+        assertEquals("MEA1", block.getBlockData().get("Turma"));
+        assertEquals("30", block.getBlockData().get("Inscritos no turno"));
+        assertEquals("Sex", block.getBlockData().get("Dia da semana"));
+        assertEquals("13:00:00", block.getBlockData().get("Hora início da aula"));
+        assertEquals("14:30:00", block.getBlockData().get("Hora fim da aula"));
+        assertEquals("01/05/2023", block.getBlockData().get("Data da aula"));
+        assertEquals("AA2.25", block.getBlockData().get("Sala atribuída à aula"));
+        assertEquals("34", block.getBlockData().get("Lotação da sala"));
     }
 
     @Test
@@ -50,11 +50,11 @@ class BlockTest {
         Block block = Block.createFromScheduleFormat(data);
 
         // Check that the Block instance was created correctly
-        assertEquals("ME", block.data.get("Curso"));
-        assertEquals("Teoria dos Jogos e dos Contratos", block.data.get("Unidade Curricular"));
-        assertEquals("13:00:00", block.data.get("Hora início da aula"));
-        assertEquals("14:30:00", block.data.get("Hora fim da aula"));
-        assertEquals("07/05/2023", block.data.get("Data da aula"));
+        assertEquals("ME", block.getBlockData().get("Curso"));
+        assertEquals("Teoria dos Jogos e dos Contratos", block.getBlockData().get("Unidade Curricular"));
+        assertEquals("13:00:00", block.getBlockData().get("Hora início da aula"));
+        assertEquals("14:30:00", block.getBlockData().get("Hora fim da aula"));
+        assertEquals("07/05/2023", block.getBlockData().get("Data da aula"));
     }
 
     @Test
@@ -67,13 +67,13 @@ class BlockTest {
 
         Block block = Block.createFromWebCalendar(webInfo);
 
-        assertEquals("Manhã", block.data.get("Turno"));
-        assertEquals("Algoritmos e Estruturas de Dados", block.data.get("Unidade Curricular"));
-        assertEquals("18:00", block.data.get("Hora início da aula"));
-        assertEquals("19:30", block.data.get("Hora fim da aula"));
-        assertEquals("14/03/2023", block.data.get("Data da aula"));
-        assertEquals("Indefinido", block.data.get("Sala atribuída à aula"));
-        assertEquals("Indefinido", block.data.get("Lotação da sala"));
+        assertEquals("Manhã", block.getBlockData().get("Turno"));
+        assertEquals("Algoritmos e Estruturas de Dados", block.getBlockData().get("Unidade Curricular"));
+        assertEquals("18:00", block.getBlockData().get("Hora início da aula"));
+        assertEquals("19:30", block.getBlockData().get("Hora fim da aula"));
+        assertEquals("14/03/2023", block.getBlockData().get("Data da aula"));
+        assertEquals("Indefinido", block.getBlockData().get("Sala atribuída à aula"));
+        assertEquals("Indefinido", block.getBlockData().get("Lotação da sala"));
     }
 
     @Test
@@ -85,7 +85,7 @@ class BlockTest {
     void testGetAsList() {
         Block block = createBlock();
         List<Map<String, String>> list = block.getAsList();
-        assertEquals(block.data.size(), list.size());
+        assertEquals(block.getBlockData().size(), list.size());
 
         List<Map<String, String>> expectedList = Arrays.asList(
                 new LinkedHashMap<String, String>() {{ put("Curso", "ME"); }},
