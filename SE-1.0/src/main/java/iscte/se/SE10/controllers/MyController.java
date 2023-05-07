@@ -15,7 +15,7 @@ public class MyController {
     /**
      * Construtor default
      */
-    public MyController(){}
+    public MyController(){/* No parameters required */ }
 
     /**
      * Método que retorna Hello World! quando se dá um request
