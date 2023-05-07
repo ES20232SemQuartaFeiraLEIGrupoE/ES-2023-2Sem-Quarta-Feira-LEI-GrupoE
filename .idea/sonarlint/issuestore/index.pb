@@ -11,8 +11,6 @@ j
 :SE-1.0/src/main/java/iscte/se/SE10/utils/ConvertFiles.java,c\5\c505ce5f77d7d553f6e17080c541ffaf74675fb3
 >
 SE-1.0/pom.xml,4\7\47d5cc321a03058392162969b348062c2d0ed65f
-b
-2SE-1.0/src/main/java/iscte/se/SE10/utils/Main.java,7\c\7cd178d3b013a54a313a58499b6ed7eb07e09df9
 v
 FSE-1.0/src/main/java/iscte/se/SE10/controllers/CalendarController.java,9\6\96a26f83002208e922442e062bbfafd3f87d8c13
 p

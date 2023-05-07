@@ -37,6 +37,7 @@ public class FileWriter {
     /**
      * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro CSV
      * @param data lista de objetos Block
+     * @return File
      */
     public static File saveInCSV(List<Block> data) {
         File file = new File("schedule.csv");
@@ -57,6 +58,7 @@ public class FileWriter {
     /**
      * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro JSON
      * @param data lista de objetos Block
+     * @return File
      */
     public static File saveInJson(List<Block> data) {
         File file = new File("schedule.json");
