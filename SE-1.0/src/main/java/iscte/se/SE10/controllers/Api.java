@@ -18,7 +18,7 @@ import static iscte.se.SE10.utils.FileWriter.*;
  * @version 1.0
  */
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost")
 @RestController
 @RequestMapping("/api")
 public class Api {
