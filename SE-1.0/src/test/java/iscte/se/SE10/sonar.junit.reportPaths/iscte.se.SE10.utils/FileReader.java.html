@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FileReader.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">AllTests Coverage Results</a> &gt; <a href="index.source.html" class="el_package">iscte.se.SE10.utils</a> &gt; <span class="el_source">FileReader.java</span></div><h1>FileReader.java</h1><pre class="source lang-java linenums">package iscte.se.SE10.utils;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+import biweekly.Biweekly;
+import biweekly.ICalendar;
+import biweekly.component.VEvent;
+import iscte.se.SE10.model.Block;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import java.util.ArrayList;
+
+import java.util.List;
+
+import java.util.Map;
+
+
+import static iscte.se.SE10.utils.Utils.DownloadWebCall;
+
+/**
+ * Classe utilizada para ler ficheiros
+ * @author Grupo E
+ * @version 1.0
+ */
+public class FileReader {
+
+    /**
+     * Construtor default
+     */
+<span class="nc" id="L36">    public FileReader(){}</span>
+
+	/**
+	 * Função que lê um CSV através de um objeto InputStream e cria uma lista de objetos Block
+	 * @param inputStream objeto inputStream
+	 * @return retorna uma lista de blocks
+	 */
+
+	public static List&lt;Block&gt; readCSV(InputStream inputStream) {
+<span class="nc" id="L45">		List&lt;Block&gt; blocks = new ArrayList&lt;&gt;();</span>
+		try {
+<span class="nc" id="L47">			BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));</span>
+<span class="nc" id="L48">			reader.readLine();</span>
+			String line;
+<span class="nc bnc" id="L50" title="All 2 branches missed.">			while ((line = reader.readLine()) != null) {</span>
+<span class="nc" id="L51">				Block block = Block.createFromCSV(line);</span>
+<span class="nc" id="L52">				blocks.add(block);</span>
+<span class="nc" id="L53">			}</span>
+<span class="nc" id="L54">		} catch (IOException e) {</span>
+<span class="nc" id="L55">			throw new RuntimeException(e);</span>
+<span class="nc" id="L56">		}</span>
+<span class="nc" id="L57">		return blocks;</span>
+	}
+
+	/**
+	 * Função que lê um CSV através de um objeto InputStream e cria uma lista de objetos Block
+	 * @param inputStream objeto inputStream
+	 * @param type String que identifica o formato do ficheiro
+	 * @return lista de objetos Block
+	 */
+
+    public static List&lt;Block&gt; readJson(InputStream inputStream, String type) {
+<span class="nc" id="L68">        List&lt;Block&gt; blocks = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L69">        try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {</span>
+<span class="nc" id="L70">            Gson gson = new Gson();</span>
+<span class="nc" id="L71">            List&lt;Map&lt;String, String&gt;&gt; data = gson.fromJson(reader, new TypeToken&lt;List&lt;Map&lt;String, String&gt;&gt;&gt;() {</span>
+<span class="nc" id="L72">            }.getType());</span>
+<span class="nc bnc" id="L73" title="All 2 branches missed.">            for (Map&lt;String, String&gt; map : data) {</span>
+<span class="nc bnc" id="L74" title="All 2 branches missed.">                Block block = (&quot;web&quot;.equals(type)) ? Block.createFromScheduleFormat(map) : new Block(map);</span>
+<span class="nc" id="L75">                blocks.add(block);</span>
+<span class="nc" id="L76">            }</span>
+<span class="nc" id="L77">        } catch (Exception e) {</span>
+<span class="nc" id="L78">            e.printStackTrace();</span>
+<span class="nc" id="L79">        }</span>
+<span class="nc" id="L80">        return blocks;</span>
+    }
+
+	/**
+	 * Função que através de um ficheiro remoto cria uma lista do objetos Block
+	 * @param uri endereço do ficheiro remoto
+	 * @return retorna uma lista de objetos Block
+	 */
+    public static List&lt;Block&gt; readIcs(String uri) {
+<span class="nc" id="L89">        File temp = DownloadWebCall(uri);</span>
+<span class="nc" id="L90">        List&lt;Block&gt; blocks = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L91">        ICalendar ical = null;</span>
+        try {
+<span class="nc" id="L93">            ical = Biweekly.parse(temp).first();</span>
+<span class="nc" id="L94">            List&lt;VEvent&gt; events = ical.getEvents(); //Lista dos eventos</span>
+<span class="nc bnc" id="L95" title="All 2 branches missed.">            for (VEvent e : events) {</span>
+                try{
+<span class="nc" id="L97">                Block b = Block.createFromWebCalendar(ConvertFiles.getRelevantInfo(e));</span>
+<span class="nc" id="L98">                blocks.add(b);</span>
+<span class="nc" id="L99">                }catch (Exception ex){</span>
+                    //ex.printStackTrace();
+<span class="nc" id="L101">                }</span>
+<span class="nc" id="L102">            }</span>
+<span class="nc" id="L103">        } catch (IOException ex) {</span>
+<span class="nc" id="L104">            throw new RuntimeException(ex);</span>
+<span class="nc" id="L105">        }</span>
+<span class="nc" id="L106">        return blocks;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
