@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Utils.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">AllTests Coverage Results</a> &gt; <a href="index.source.html" class="el_package">iscte.se.SE10.utils</a> &gt; <span class="el_source">Utils.java</span></div><h1>Utils.java</h1><pre class="source lang-java linenums">package iscte.se.SE10.utils;
+
+
+import org.apache.commons.io.FileUtils;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+
+/**
+ * Classe que contém métodos úteis à reorganização de Strings e a copiar ficheiros remotos
+ * @author Grupo E
+ * @version 1.0
+ */
+
+public class Utils {
+
+    /**
+     * Construtor default
+     */
+<span class="fc" id="L20">    public Utils(){}</span>
+
+    /**
+     * Método que reorganiza uma String para um formato pretendido
+     * @param date String que representa uma data
+     * @param hour String que representa uma hora
+     * @return retorna uma String com Data e hora organizada da seguinte forma: ...-...-...T...
+     */
+    public static String formatDateToWeb(String date, String hour) {
+<span class="fc" id="L29">        String[] aux = date.split(&quot;/&quot;);</span>
+<span class="fc" id="L30">        String formattedDate = aux[2] + &quot;-&quot; + aux[1] + &quot;-&quot; + aux[0];</span>
+<span class="fc" id="L31">        return formattedDate + &quot;T&quot; + hour;</span>
+    }
+
+    /**
+     * Método que reorganiza uma String para um formato pretendido
+     * @param info String com uma data e hora organizada organizada da seguinte forma ...-...-...T...
+     * @return retorna uma String com Data e hora organizada da seguinte forma: ...-...-...
+     */
+    public static  String formatDateToLocal(String info) {
+<span class="fc" id="L40">        String[] aux = info.split(&quot;T&quot;);</span>
+<span class="fc" id="L41">        String[] hour = aux[0].split(&quot;-&quot;);</span>
+<span class="fc" id="L42">        return hour[2] + &quot;/&quot; + hour[1] + &quot;/&quot; + hour[0];</span>
+    }
+
+    /**
+     * Método que extrai a hora de uma String que tem a seguinte organização: data T hora
+     * @param info String com uma data e hora organizada organizada da seguinte forma: data T hora
+     * @return retorna uma String apenas com a hora
+     */
+    public static String formatHourToLocal(String info) {
+<span class="fc" id="L51">        return info.split(&quot;T&quot;)[1];</span>
+    }
+
+    /**
+     * Método que extrai a data de uma String que tem a seguinte organização: data hora
+     * @param info String com uma data e hora organizada organizada da seguinte forma: data hora
+     * @return retorna uma String com a data organizada da seguinte forma: .../.../...
+     */
+    public static String formatIcsDateToLocal(String info) {
+<span class="fc" id="L60">        String[] aux = info.split(&quot; &quot;);</span>
+<span class="fc" id="L61">        String[] hour = aux[0].split(&quot;-&quot;);</span>
+<span class="fc" id="L62">        return hour[2] + &quot;/&quot; + hour[1] + &quot;/&quot; + hour[0];</span>
+    }
+
+    /**
+     * Método que extrai a hora de uma String que tem a seguinte organização: data hora
+     * @param info String com uma data e hora organizada organizada da seguinte forma: data hora
+     * @return retorna uma String com a hora
+     */
+    public static String formatIcsHourToLocal(String info) {
+<span class="fc" id="L71">        return info.split(&quot; &quot;)[1];</span>
+    }
+
+    /**
+     * Método que recebe uma String com o endereço de um ficheiro remoto e utiliza a biblioteca FileUtils para copiar
+     * o conteúdo ficheiro remoto para um ficheiro temporário que é devolvido
+     * @param uri endereço do ficheiro remoto
+     * @return retorna um ficheito temporário com o conteúdo do ficheiro cujo download foi feito
+     */
+    public static File DownloadWebCall(String uri) {
+<span class="fc" id="L81">        String httpsURI = &quot;https:&quot; + uri.split(&quot;:&quot;)[1];</span>
+        try {
+<span class="fc" id="L83">            File temp = new File(&quot;temp&quot;);</span>
+<span class="fc" id="L84">            FileUtils.copyURLToFile(new URL(httpsURI), temp);</span>
+<span class="fc" id="L85">            return temp;</span>
+<span class="nc" id="L86">        } catch (IOException e) {</span>
+<span class="nc" id="L87">            e.printStackTrace();</span>
+        }
+<span class="nc" id="L89">        throw new RuntimeException(&quot;Valid to open file&quot;);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
