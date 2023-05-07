@@ -35,6 +35,8 @@
   
 ## Bugs
 
+A quantidade de sobrelotação e sobreposição é apenas atualizada quando há rendering do horário.
+
 
 
 
