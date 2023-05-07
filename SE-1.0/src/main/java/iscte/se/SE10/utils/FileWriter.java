@@ -1,5 +1,6 @@
 package iscte.se.SE10.utils;
 
+import java.io.File;
 import java.io.IOException;
 
 import java.io.PrintWriter;
@@ -37,36 +38,44 @@ public class FileWriter {
      * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro CSV
      * @param data lista de objetos Block
      */
-    public static void saveInCSV(List<Block> data) {
+    public static File saveInCSV(List<Block> data) {
+        File file = new File("schedule.csv");
         try {
-            PrintWriter writer = new PrintWriter("schedule.csv");
+            PrintWriter writer = new PrintWriter(file);
 
             writer.println(Block.getCSVHeader()); // cabeçalho do arquivo
+            System.out.println(data);
             for (Block b : data)
                 writer.println(b.getAsCsv());
             writer.close();
         } catch (IOException e) {
             System.err.println("Erro ao criar arquivo CSV: " + e.getMessage());
         }
+        return file;
     }
 
     /**
      * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro JSON
      * @param data lista de objetos Block
      */
-    public static void saveInJson(List<Block> data) {
+    public static File saveInJson(List<Block> data) {
+        File file = new File("schedule.json");
+
         try {
-            PrintWriter writer = new PrintWriter("schedule.json");
+            PrintWriter writer = new PrintWriter(file);
             writer.println('[');
-            for (int i = 0; i<data.size() -1 ; i++) {
-                writer.println(data.get(i).getAsJson() + ',');
+            if(data.size() != 0 ) {
+                for (int i = 0; i < data.size(); i++) {
+                    writer.println(data.get(i).getAsJson() + ',');
+                }
+                writer.println(data.get(data.size() - 1).getAsJson());
             }
-            writer.println(data.get(data.size()-1).getAsJson());
             writer.println(']');
             writer.close();
         } catch (IOException e) {
             System.out.println("Error saving data to file: " + e.getMessage());
         }
+        return file;
     }
 
     /**
@@ -77,16 +86,16 @@ public class FileWriter {
      * @throws IOException Input/Output exception
      */
 
-    public static String save(MultipartFile file, String extension) throws IOException {
+    public static File save(MultipartFile file, String extension) throws IOException {
         List<Block> data = readJson(file.getInputStream(), "web");
 
         if ("csv".equals(extension))
-            saveInCSV(data);
+            return saveInCSV(data);
 
         if ("json".equals(extension))
-            saveInJson(data);
+            return saveInJson(data);
 
-        return "File saved ";
+        throw new RuntimeException("unable to create file");
     }
 
     /**
