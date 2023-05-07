@@ -36,15 +36,16 @@ public class Api {
      */
     @PostMapping("/blocks")
     public String getBlocks(@RequestParam("file") MultipartFile file) throws IOException {
-        String fileName = file.getOriginalFilename();
-        String extension = fileName.substring(fileName.lastIndexOf(".") + 1);
+        try {
+            String fileName = file.getOriginalFilename();
+            String extension = fileName.substring(fileName.lastIndexOf(".") + 1);
 
-        if ("csv".equals(extension))
-            return formatToWeb( readCSV(file.getInputStream()));
+            if ("csv".equals(extension))
+                return formatToWeb(readCSV(file.getInputStream()));
 
-        if ("json".equals(extension))
-            return formatToWeb( readJson(file.getInputStream(), "local"));
-
+            if ("json".equals(extension))
+                return formatToWeb(readJson(file.getInputStream(), "local"));
+        }catch (NullPointerException e){}
         return "[]";
     }
 
