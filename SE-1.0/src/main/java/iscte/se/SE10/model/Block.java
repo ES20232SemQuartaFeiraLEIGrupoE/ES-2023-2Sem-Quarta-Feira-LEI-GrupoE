@@ -55,7 +55,7 @@ public class Block implements Serializable {
     }
 
     /**
-     * Função que que retorna o Map<String,String> data
+     * Função que que retorna o Map data
      * @return retorna a informação contida dentro do Block
      */
     public Map<String, String> getBlockData (){

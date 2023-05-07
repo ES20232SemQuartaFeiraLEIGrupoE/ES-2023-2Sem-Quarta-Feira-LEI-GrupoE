@@ -15,8 +15,6 @@ k
 SE-1.0/pom.xml,4\7\47d5cc321a03058392162969b348062c2d0ed65f
 j
 :SE-1.0/src/main/java/iscte/se/SE10/utils/ConvertFiles.java,c\5\c505ce5f77d7d553f6e17080c541ffaf74675fb3
-b
-2SE-1.0/src/main/java/iscte/se/SE10/utils/Main.java,7\c\7cd178d3b013a54a313a58499b6ed7eb07e09df9
 g
 7SE-1.0/src/main/java/iscte/se/SE10/controllers/Api.java,5\8\58bca170168f88b3d03803b753cd6c1d7130ed3e
 c
