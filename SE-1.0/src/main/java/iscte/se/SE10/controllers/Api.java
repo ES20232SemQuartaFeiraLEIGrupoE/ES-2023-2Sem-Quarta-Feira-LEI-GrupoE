@@ -1,14 +1,8 @@
 package iscte.se.SE10.controllers;
 
-
-
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
-
 import java.io.IOException;
-
-
 import static iscte.se.SE10.utils.FileReader.*;
 import static iscte.se.SE10.utils.FileWriter.*;
 
@@ -54,10 +48,9 @@ public class Api {
      * Método que recebe um endereço e devolve uma lista de objetos Block em formato WEB
      * @param uri endereço do ficheiro remoto
      * @return retorna uma String JSON com o conteúdo da lista de objetos Block
-     * @throws IOException Input/Output exception
      */
     @PostMapping("/web")
-    public String getBlocks2(@RequestParam String uri) throws IOException {
+    public String getBlocks2(@RequestParam String uri) {
         return formatToWeb(readIcs(uri));
     }
 

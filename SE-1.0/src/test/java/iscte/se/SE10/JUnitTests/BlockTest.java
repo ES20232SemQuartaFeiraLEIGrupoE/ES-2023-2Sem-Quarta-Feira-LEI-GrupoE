@@ -1,21 +1,15 @@
 package iscte.se.SE10.JUnitTests;
 
 import iscte.se.SE10.model.Block;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.time.DayOfWeek;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
-
-import static junit.framework.TestCase.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class BlockTest {
 
     @Test
-    public void testCreateFromCSV() {
+    void testCreateFromCSV() {
         String data = "ME;Teoria dos Jogos e dos Contratos;01789TP01;MEA1;30;Sex;13:00:00;14:30:00;01/05/2023;AA2.25;34";
         Block block = Block.createFromCSV(data);
 
@@ -33,18 +27,18 @@ class BlockTest {
     }
 
     @Test
-    public void testCreateFromCSVInvalidData() {
+    void testCreateFromCSVInvalidData() {
         String data = "ME;Teoria dos Jogos e dos Contratos;01789TP01;MEA1;30;Sex;13:00:00;14:30:00;01/05/2023;AA2.25;34;10";
         try {
             Block block = Block.createFromCSV(data);
-            fail("Expected RuntimeException to be thrown, but it wasn't.");
+            Assertions.fail("Expected RuntimeException to be thrown, but it wasn't.");
         } catch (RuntimeException e) {
             // Exception was thrown, test passed
         }
     }
 
     @Test
-    public void testCreateFromScheduleFormat() {
+     void testCreateFromScheduleFormat() {
         // Create a sample data map with "start" and "end" properties
         Map<String, String> data = new HashMap<>();
         data.put("Curso", "ME");
@@ -84,7 +78,7 @@ class BlockTest {
 
     @Test
     void testGetCSVHeader (){
-        assertEquals(Block.getCSVHeader() ,"Curso;Unidade Curricular;Turno;Turma;Inscritos no turno;Dia da semana;Hora início da aula;Hora fim da aula;Data da aula;Sala atribuída à aula;Lotação da sala");
+        assertEquals("Curso;Unidade Curricular;Turno;Turma;Inscritos no turno;Dia da semana;Hora início da aula;Hora fim da aula;Data da aula;Sala atribuída à aula;Lotação da sala" , Block.getCSVHeader());
     }
 
     @Test
@@ -124,19 +118,20 @@ class BlockTest {
     @Test
     void testGetAsJson() {
         Block block = createBlock();
-        String expectedJson = "{\n"
-                + "  \"Curso\": \"ME\",\n"
-                + "  \"Unidade Curricular\": \"Teoria dos Jogos e dos Contratos\",\n"
-                + "  \"Turno\": \"01789TP01\",\n"
-                + "  \"Turma\": \"MEA1\",\n"
-                + "  \"Inscritos no turno\": \"30\",\n"
-                + "  \"Dia da semana\": \"Sex\",\n"
-                + "  \"Hora início da aula\": \"13:00:00\",\n"
-                + "  \"Hora fim da aula\": \"14:30:00\",\n"
-                + "  \"Data da aula\": \"01/05/2023\",\n"
-                + "  \"Sala atribuída à aula\": \"AA2.25\",\n"
-                + "  \"Lotação da sala\": \"34\"\n"
-                + "}";
+        String expectedJson = """
+                {
+                  "Curso": "ME",
+                  "Unidade Curricular": "Teoria dos Jogos e dos Contratos",
+                  "Turno": "01789TP01",
+                  "Turma": "MEA1",
+                  "Inscritos no turno": "30",
+                  "Dia da semana": "Sex",
+                  "Hora início da aula": "13:00:00",
+                  "Hora fim da aula": "14:30:00",
+                  "Data da aula": "01/05/2023",
+                  "Sala atribuída à aula": "AA2.25",
+                  "Lotação da sala": "34"
+                }""";
         String result = block.getAsJson();
         assertEquals(expectedJson, result);
     }
@@ -163,7 +158,7 @@ class BlockTest {
         }
     }
 
-    public Block createBlock (){
+    Block createBlock (){
         Map<String, String> data = new LinkedHashMap<>();
         data.put("Curso", "ME");
         data.put("Unidade Curricular", "Teoria dos Jogos e dos Contratos");

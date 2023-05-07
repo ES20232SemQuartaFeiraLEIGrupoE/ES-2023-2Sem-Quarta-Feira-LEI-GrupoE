@@ -74,8 +74,7 @@ public class FileReader {
                 Block block = ("web".equals(type)) ? Block.createFromScheduleFormat(map) : new Block(map);
                 blocks.add(block);
             }
-        } catch (Exception e) {
-        }
+        } catch (Exception e) {}
         return blocks;
     }
 
@@ -87,7 +86,7 @@ public class FileReader {
     public static List<Block> readIcs(String uri) {
         File temp = DownloadWebCall(uri);
         List<Block> blocks = new ArrayList<>();
-        ICalendar ical = null;
+        ICalendar ical;
         try {
             ical = Biweekly.parse(temp).first();
             List<VEvent> events = ical.getEvents(); //Lista dos eventos

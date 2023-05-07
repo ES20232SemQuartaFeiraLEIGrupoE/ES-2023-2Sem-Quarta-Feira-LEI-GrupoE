@@ -14,7 +14,7 @@ public class ConvertFiles {
     /**
      * Array de String que representa as webKeys
      */
-    public static final String[] webKeys = {"Unidade de execução", "Turno", "Início", "Fim"};
+    protected static final String[] webKeys = {"Unidade de execução", "Turno", "Início", "Fim"};
 
     /**
      * Construtor default
@@ -38,9 +38,8 @@ public class ConvertFiles {
             for (String webKey : webKeys) {
                 if (key.contains(webKey))
                     webInfo.put(key, value);
-            }}catch (Exception ex){
-                //ex.printStackTrace();
             }
+            }catch (Exception ex){}
         }
 
         return webInfo;
