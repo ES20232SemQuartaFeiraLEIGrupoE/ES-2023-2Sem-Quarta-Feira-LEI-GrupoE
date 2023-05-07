@@ -1,15 +1,30 @@
 
-`	java:S112<"FDefine and throw a dedicated exception instead of using a generic one.(…İ•™øÿÿÿÿ
+`	java:S112="FDefine and throw a dedicated exception instead of using a generic one.(…İ•™øÿÿÿÿ
 a
-java:S1192!"FDefine a constant instead of duplicating this literal "Turno" 3 times.(ÀËÊæÿÿÿÿÿ
+java:S1192""FDefine a constant instead of duplicating this literal "Turno" 5 times.(ÀËÊæÿÿÿÿÿ
+i
+java:S1192""NDefine a constant instead of duplicating this literal "Dia da semana" 3 times.(ÀËÊæÿÿÿÿÿ
 h
-java:S1192!"MDefine a constant instead of duplicating this literal "Data da aula" 4 times.(ÀËÊæÿÿÿÿÿ
-p
-java:S1192!"UDefine a constant instead of duplicating this literal "Hora inÃ­cio da aula" 4 times.(ÀËÊæÿÿÿÿÿ
-l
-java:S1192!"QDefine a constant instead of duplicating this literal "Hora fim da aula" 4 times.(ÀËÊæÿÿÿÿÿ
+java:S1192""MDefine a constant instead of duplicating this literal "Data da aula" 6 times.(ÀËÊæÿÿÿÿÿ
+m
+java:S1192""RDefine a constant instead of duplicating this literal "LotaÃ§Ã£o da sala" 3 times.(ÀËÊæÿÿÿÿÿ
+w
+java:S1192""UDefine a constant instead of duplicating this literal "Hora inÃ­cio da aula" 6 times.(ÀËÊæÿÿÿÿÿ8Î²ê«ÿ0
+u
+java:S1192""SDefine a constant instead of duplicating this literal "Inscritos no turno" 3 times.(ÀËÊæÿÿÿÿÿ8Ï²ê«ÿ0
+h
+java:S1192""FDefine a constant instead of duplicating this literal "Turma" 3 times.(ÀËÊæÿÿÿÿÿ8Ï²ê«ÿ0
+s
+java:S1192""QDefine a constant instead of duplicating this literal "Hora fim da aula" 6 times.(ÀËÊæÿÿÿÿÿ8Ğ²ê«ÿ0
+u
+java:S1192""SDefine a constant instead of duplicating this literal "Unidade Curricular" 4 times.(ÀËÊæÿÿÿÿÿ8Ğ²ê«ÿ0
+h
+java:S1192""FDefine a constant instead of duplicating this literal "Curso" 3 times.(ÀËÊæÿÿÿÿÿ8Ğ²ê«ÿ0
+z
+java:S1192""XDefine a constant instead of duplicating this literal "Sala atribuÃ­da Ã  aula" 3 times.(ÀËÊæÿÿÿÿÿ8Ñ²ê«ÿ0
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²å¦
 8
-java:S2386!"Make this member "protected".(ÀËÊæÿÿÿÿÿ
-V	java:S125_"<This block of commented-out lines of code should be removed.(Ş¯”äùÿÿÿÿ
-M	java:S106f"9Replace this use of System.out or System.err by a logger.(Ò‡ºf
+java:S2386""Make this member "protected".(ÀËÊæÿÿÿÿÿ
+M	java:S106h"9Replace this use of System.out or System.err by a logger.(Ò‡ºf
+K
+java:S1144y".Remove this unused private "getAsList" method.(ÔÊ˜8ÿµê«ÿ0

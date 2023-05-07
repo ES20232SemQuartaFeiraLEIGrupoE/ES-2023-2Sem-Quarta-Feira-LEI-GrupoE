@@ -21,10 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 
-import org.apache.commons.io.FileUtils;
-
-
-import static iscte.se.SE10.utils.utils.DownloadWebCall;
+import static iscte.se.SE10.utils.Utils.DownloadWebCall;
 
 /**
  * Classe utilizada para ler ficheiros

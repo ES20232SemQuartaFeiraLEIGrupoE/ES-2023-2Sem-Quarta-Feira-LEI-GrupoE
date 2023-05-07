@@ -1,4 +1,6 @@
 
+k
+;SE-1.0/src/test/java/iscte/se/SE10/JUnitTests/AllTests.java,0\8\0848a48d625b0fba5f9db90d5972dc5e3aee9ea2
 g
 7SE-1.0/src/main/java/iscte/se/SE10/controllers/Api.java,5\8\58bca170168f88b3d03803b753cd6c1d7130ed3e
 h
