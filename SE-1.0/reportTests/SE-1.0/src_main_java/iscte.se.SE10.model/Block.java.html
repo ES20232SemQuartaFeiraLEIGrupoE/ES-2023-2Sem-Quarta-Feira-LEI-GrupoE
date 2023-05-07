@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>Block.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (1) (07/05/2023 20:14:27)</a> &gt; <a href="../../index.html" class="el_group">SE-1.0</a> &gt; <a href="../index.html" class="el_bundle">src/main/java</a> &gt; <a href="index.source.html" class="el_package">iscte.se.SE10.model</a> &gt; <span class="el_source">Block.java</span></div><h1>Block.java</h1><pre class="source lang-java linenums">package iscte.se.SE10.model;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+
+import java.io.Serializable;
+
+import java.util.*;
+
+import static iscte.se.SE10.utils.Utils.*;
+
+/**
+ * Classe Block é a classe que cria um objeto que contém toda a informação
+ * necessária para ser apresentada num horário
+ *
+ * @author Grupo E
+ * @version 1.0
+ */
+public class Block implements Serializable {
+
+    /**
+     * Constantes que representam o header do block
+     */
+    static final String CURSO = &quot;Curso&quot;;
+    static final String UNIDADE_CURRICULAR = &quot;Unidade Curricular&quot;;
+    static final String TURNO = &quot;Turno&quot;;
+    static final String TURMA = &quot;Turma&quot;;
+    static final String INSCRITOS_NO_TURNO = &quot;Inscritos no turno&quot;;
+    static final String DIA_DA_SEMANA = &quot;Dia da semana&quot;;
+    static final String HORA_INICIO_AULA = &quot;Hora início da aula&quot;;
+    static final String HORA_FIM_AULA = &quot;Hora fim da aula&quot;;
+    static final String DATA_DA_AULA = &quot;Data da aula&quot;;
+    static final String SALA_ATRIBUIDA = &quot;Sala atribuída à aula&quot;;
+    static final String LOTACAO_SALA = &quot;Lotação da sala&quot;;
+
+    /**
+     * Array de String que representa as keys da classe Block
+     */
+<span class="fc" id="L40">    protected static final String[] keys = {CURSO,UNIDADE_CURRICULAR,TURNO , TURMA,INSCRITOS_NO_TURNO, DIA_DA_SEMANA, HORA_INICIO_AULA, HORA_FIM_AULA, DATA_DA_AULA, SALA_ATRIBUIDA, LOTACAO_SALA};</span>
+
+
+    /**
+     * Map que será utilizado para associar as keys aos valores atribuídos
+     */
+    private Map&lt;String, String&gt; data;
+
+
+    /**
+     * Construtor de um objeto Block dado um Map
+     * @param data Map
+     */
+<span class="fc" id="L53">    public Block(Map&lt;String, String&gt; data){</span>
+<span class="fc" id="L54">        this.data = data;</span>
+<span class="fc" id="L55">    }</span>
+
+    /**
+     * Função que que retorna o Map&lt;String,String&gt; data
+     * @return retorna a informação contida dentro do Block
+     */
+    public Map&lt;String, String&gt; getBlockData (){
+<span class="fc" id="L62">        return data;</span>
+    }
+
+    /**
+     * Função que cria instãncias Block a partir de uma String CSV
+     * @param data String CSV
+     * @return retorna uma nova instãncia do objeto Block
+     */
+
+    public static Block createFromCSV(String data) {
+<span class="fc" id="L72">        String[] keys = Block.keys;</span>
+<span class="fc" id="L73">        String[] values = data.split(&quot;;&quot;);</span>
+
+<span class="fc bfc" id="L75" title="All 2 branches covered.">        if (values.length &gt; keys.length)</span>
+<span class="fc" id="L76">            throw new RuntimeException(&quot;Quantidade de atributos invalida&quot;);</span>
+
+<span class="fc" id="L78">        Map&lt;String, String&gt; block = new LinkedHashMap&lt;&gt;();</span>
+
+<span class="fc bfc" id="L80" title="All 2 branches covered.">        for (int i = 0; i &lt; keys.length; i++)</span>
+<span class="pc bpc" id="L81" title="1 of 2 branches missed.">            if (i &gt;= values.length) block.put(keys[i], &quot;Indefinido&quot;);</span>
+<span class="fc" id="L82">            else block.put(keys[i], values[i]);</span>
+
+<span class="fc" id="L84">        return new Block(block);</span>
+    }
+
+    /**
+     * Método que recebe um Map e inicializa um objeto Block
+     * @param data Map de Strings
+     * @return retorna um objeto Block inicializado com o conteúdo do Map
+     */
+
+    public static Block createFromScheduleFormat(Map&lt;String, String&gt; data) {
+<span class="fc" id="L94">        String start = data.remove(&quot;start&quot;);</span>
+<span class="fc" id="L95">        String end = data.remove(&quot;end&quot;);</span>
+<span class="fc" id="L96">        data.put(HORA_INICIO_AULA, formatHourToLocal(start));</span>
+<span class="fc" id="L97">        data.put(HORA_FIM_AULA, formatHourToLocal(end));</span>
+<span class="fc" id="L98">        data.put(DATA_DA_AULA, formatDateToLocal(start));</span>
+<span class="fc" id="L99">        return new Block(data);</span>
+    }
+
+    /**
+     * Método que recebe um Map com a informação de um horário WEB e cria instâncias do objeto Block
+     * @param webInfo Map com a informação de um calendário WEB
+     * @return retorna instâncias do objeto Block
+     */
+    public static Block createFromWebCalendar(Map&lt;String, String&gt; webInfo) {
+<span class="fc" id="L108">        Map&lt;String, String&gt; blocks = new LinkedHashMap&lt;&gt;();</span>
+
+<span class="fc bfc" id="L110" title="All 2 branches covered.">        for(String key : keys){</span>
+<span class="fc" id="L111">            blocks.put(key, &quot;Indefinido&quot;);</span>
+        }
+
+<span class="fc" id="L114">        blocks.put(TURNO, webInfo.get(TURNO));</span>
+<span class="fc" id="L115">        blocks.put(UNIDADE_CURRICULAR, webInfo.get(&quot;Unidade de execução&quot;));</span>
+<span class="fc" id="L116">        blocks.put(HORA_INICIO_AULA, formatIcsHourToLocal(webInfo.get(&quot;Início&quot;)));</span>
+<span class="fc" id="L117">        blocks.put(HORA_FIM_AULA, formatIcsHourToLocal(webInfo.get(&quot;Fim&quot;)));</span>
+<span class="fc" id="L118">        blocks.put(DATA_DA_AULA, formatIcsDateToLocal(webInfo.get(&quot;Início&quot;)));</span>
+<span class="fc" id="L119">        return new Block(blocks);</span>
+    }
+
+    /**
+     * Método que devolve o header do objeto Block
+     * @return retorna o header
+     */
+    public static String getCSVHeader() {
+<span class="fc" id="L127">        return String.join(&quot;;&quot;, Block.keys);</span>
+    }
+
+
+    /**
+     * Método que devolve a conversão do atributo Map do objeto Block numa lista de Map
+     * @return retorna uma lista de objetos Block o atributo Map da classe Block
+     */
+    public List&lt;Map&lt;String, String&gt;&gt; getAsList(){
+<span class="fc" id="L136">        List&lt;Map&lt;String, String&gt;&gt; list = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L137" title="All 2 branches covered.">        for (Map.Entry&lt;String, String&gt; entry : data.entrySet()) {</span>
+<span class="fc" id="L138">            Map&lt;String, String&gt; map = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L139">            map.put(entry.getKey(), entry.getValue());</span>
+<span class="fc" id="L140">            list.add(map);</span>
+        }
+<span class="fc" id="L142">        return list;</span>
+    }
+
+    /**
+     * Método que devolve uma String CSV com os values do atributo Map de um objeto Block
+     * @return retorna uma String CSV
+     */
+    public String getAsCsv() {
+<span class="fc" id="L150">        return String.join(&quot;;&quot;, data.values());</span>
+    }
+
+    /**
+     * Método que devolve uma String JSON com os values do atributo Map de um objeto Block
+     * @return retorna uma String CSV
+     */
+
+    public String getAsJson() {
+<span class="fc" id="L159">        JsonObject jsonObject = new JsonObject();</span>
+<span class="fc" id="L160">        jsonObject.addProperty(CURSO, data.get(CURSO));</span>
+<span class="fc" id="L161">        jsonObject.addProperty(UNIDADE_CURRICULAR, data.get(UNIDADE_CURRICULAR));</span>
+<span class="fc" id="L162">        jsonObject.addProperty(TURNO, data.get(TURNO));</span>
+<span class="fc" id="L163">        jsonObject.addProperty(TURMA, data.get(TURMA));</span>
+<span class="fc" id="L164">        jsonObject.addProperty(INSCRITOS_NO_TURNO, data.get(INSCRITOS_NO_TURNO));</span>
+<span class="fc" id="L165">        jsonObject.addProperty(DIA_DA_SEMANA, data.get(DIA_DA_SEMANA));</span>
+<span class="fc" id="L166">        jsonObject.addProperty(HORA_INICIO_AULA, data.get(HORA_INICIO_AULA));</span>
+<span class="fc" id="L167">        jsonObject.addProperty(HORA_FIM_AULA, data.get(HORA_FIM_AULA));</span>
+<span class="fc" id="L168">        jsonObject.addProperty(DATA_DA_AULA, data.get(DATA_DA_AULA));</span>
+<span class="fc" id="L169">        jsonObject.addProperty(SALA_ATRIBUIDA, data.get(SALA_ATRIBUIDA));</span>
+<span class="fc" id="L170">        jsonObject.addProperty(LOTACAO_SALA, data.get(LOTACAO_SALA));</span>
+
+<span class="fc" id="L172">        Gson gson = new GsonBuilder().setPrettyPrinting().create();</span>
+<span class="fc" id="L173">        return gson.toJson(jsonObject);</span>
+    }
+
+    /**
+     * Método que copia o atributo Map da classe Block e devolve um LinkedHashMap num formato WEB
+     * @return retorna um LinkedHashMap num formato WEB
+     */
+
+    public Map&lt;String, String&gt; getAsScheduleFormat() {
+<span class="fc" id="L182">        Map&lt;String, String&gt; copyData = new LinkedHashMap&lt;&gt;(data);</span>
+<span class="fc" id="L183">        String startHour = copyData.remove(HORA_INICIO_AULA);</span>
+<span class="fc" id="L184">        String endHour = copyData.remove(HORA_FIM_AULA);</span>
+<span class="fc" id="L185">        String classDate = copyData.remove(DATA_DA_AULA);</span>
+<span class="fc" id="L186">        copyData.put(&quot;start&quot;, formatDateToWeb(classDate, startHour));</span>
+<span class="fc" id="L187">        copyData.put(&quot;end&quot;, formatDateToWeb(classDate, endHour));</span>
+<span class="fc" id="L188">        return copyData;</span>
+    }
+    //easter egg
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span>AllTests (1) (07/05/2023 20:14:27)</div></body></html>

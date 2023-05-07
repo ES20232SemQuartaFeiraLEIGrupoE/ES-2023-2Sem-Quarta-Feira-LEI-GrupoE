@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>CalendarController.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (1) (07/05/2023 20:14:27)</a> &gt; <a href="../../index.html" class="el_group">SE-1.0</a> &gt; <a href="../index.html" class="el_bundle">src/main/java</a> &gt; <a href="index.source.html" class="el_package">iscte.se.SE10.controllers</a> &gt; <span class="el_source">CalendarController.java</span></div><h1>CalendarController.java</h1><pre class="source lang-java linenums">package iscte.se.SE10.controllers;
+
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+/**
+ * Classe em java spring que fornece uma resposta HTML para uma solicitação do calendário
+ *
+ * @author Grupo E
+ * @version 1.0
+ */
+
+@Controller
+public class CalendarController {
+
+    /**
+     * Construtor default
+     */
+<span class="nc" id="L24">    public CalendarController() {</span>
+        // No Initialization required
+<span class="nc" id="L26">    }</span>
+
+    /**
+     * Método que controla as solicitações HTTP GET e retorna uma página HTML
+     *
+     * @return retorna uma String com o código HTML, os cabeçalhos da resposta e o HttpStatus.OK
+     */
+    @GetMapping(value = &quot;/calendar&quot;, produces = MediaType.TEXT_HTML_VALUE)
+    @ResponseBody
+    public ResponseEntity&lt;String&gt; getCalendar() {
+<span class="nc" id="L36">        String html = &quot;&quot;&quot;</span>
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                  &lt;meta charset=&quot;utf-8&quot;&gt;
+                  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css&quot; /&gt;
+                  &lt;script src=&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;&gt;&lt;/script&gt;
+                  &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js&quot;&gt;&lt;/script&gt;
+                  &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js&quot;&gt;&lt;/script&gt;
+                  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles.css&quot;&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;div class=&quot;rift&quot;&gt;
+                        &lt;div class=&quot;top&quot;&gt;
+                            &lt;div class=&quot;flex-c&quot;&gt;
+                                &lt;h2&gt;Carregar Ficheiro Local&lt;/h2&gt;
+                                &lt;input class=&quot;support&quot; type=&quot;file&quot; id=&quot;file-input&quot;&gt;
+                                &lt;button class=&quot; btn-load-file&quot;&gt;Carregar Ficheiro&lt;/button&gt;
+                                &lt;h2&gt;Carregar Webcal&lt;/h2&gt;
+                                 &lt;form id=&quot;url-form&quot; &gt;
+                                   &lt;input type=&quot;text&quot; id=&quot;uri&quot; class=&quot;webcalform&quot; name=&quot;uri&quot;&gt;
+                                   &lt;button type=&quot;submit&quot; class=&quot;btn-load-file&quot;&gt;Carregar Ficheiro&lt;/button&gt;
+                                 &lt;/form&gt;
+                            &lt;/div&gt;&lt;br&gt;
+                        &lt;/div&gt;
+                        &lt;div&gt;
+                            &lt;h2&gt;Guardar Calendário&lt;/h2&gt;
+                            &lt;button class=&quot; btn-load-file&quot; onclick=&quot;saveToCSV()&quot;&gt;Guardar em CSV&lt;/button&gt;
+                            &lt;button class=&quot; btn-load-file&quot; onclick=&quot;saveToJson()&quot;&gt;Guardar em JSON&lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;mid&quot;&gt;
+                            &lt;h2&gt;Info&lt;/h2&gt;
+                            &lt;div&gt;\s
+                                &lt;h3 class=&quot;countertxt&quot;&gt;Número de Sobrelotações&lt;/h3&gt;\s
+                                &lt;h3 class=&quot;counter&quot;&gt;0 &lt;/h3&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;\s
+                                &lt;h3 class=&quot;counterotxt&quot;&gt;Número de Sobreposições&lt;/h3&gt;\s
+                                &lt;h3 class=&quot;countero&quot;&gt; 0 &lt;/h3&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;adc&quot;&gt;
+                        &lt;h1&gt; App Calendar &lt;/h1&gt;         &lt;div&gt;
+                            &lt;h2&gt;Selecionar Curso&lt;/h2&gt;
+                            &lt;select id=&quot;coursesDropdown&quot; class=&quot;&quot;&gt;&lt;/select&gt;
+                        &lt;/div&gt;
+                        &lt;h3&gt;Selecionar Cadeiras&lt;/h3&gt;
+                        &lt;ul id=&quot;subjectSelector&quot;&gt;&lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;calendar&quot;&gt;
+
+                &lt;div class=&quot;adc&quot;&gt;
+                  &lt;div id=&quot;calendar&quot;&gt;&lt;/div&gt;
+                  &lt;script defer src=&quot;script.js&quot;&gt;&lt;/script&gt;
+                    &lt;/div&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;&quot;&quot;&quot;;
+
+<span class="nc" id="L95">        HttpHeaders headers = new HttpHeaders();</span>
+<span class="nc" id="L96">        headers.setContentType(MediaType.TEXT_HTML);</span>
+<span class="nc" id="L97">        return new ResponseEntity&lt;&gt;(html, headers, HttpStatus.OK);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span>AllTests (1) (07/05/2023 20:14:27)</div></body></html>

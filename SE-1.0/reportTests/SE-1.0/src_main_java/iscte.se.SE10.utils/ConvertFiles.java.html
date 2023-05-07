@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>ConvertFiles.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (1) (07/05/2023 20:14:27)</a> &gt; <a href="../../index.html" class="el_group">SE-1.0</a> &gt; <a href="../index.html" class="el_bundle">src/main/java</a> &gt; <a href="index.source.html" class="el_package">iscte.se.SE10.utils</a> &gt; <span class="el_source">ConvertFiles.java</span></div><h1>ConvertFiles.java</h1><pre class="source lang-java linenums">package iscte.se.SE10.utils;
+
+import java.util.*;
+import biweekly.component.VEvent;
+
+
+/**
+ * Classe para extrair informação de eventos de um calendário
+ * @author Grupo E
+ * @version 1.0
+ */
+public class ConvertFiles {
+
+    /**
+     * Array de String que representa as webKeys
+     */
+<span class="fc" id="L17">    protected static final String[] webKeys = {&quot;Unidade de execução&quot;, &quot;Turno&quot;, &quot;Início&quot;, &quot;Fim&quot;};</span>
+
+    /**
+     * Construtor default
+     */
+<span class="fc" id="L22">    public ConvertFiles(){</span>
+        // No Initialization required
+<span class="fc" id="L24">    }</span>
+    /**
+     * Método que extrai os campos de um evento do calendário e devolve num Map
+     * @param e recebe um evento de calendário
+     * @return retorna um Map com as informações extraídas do evento do calendário
+     */
+    public static Map&lt;String, String&gt; getRelevantInfo(VEvent e) {
+<span class="fc" id="L31">        Map&lt;String, String&gt; webInfo = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L32">        String[] description = e.getDescription().getValue().split(&quot;\n&quot;);</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">        for (String s : description) {</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">            if(&quot;\r&quot;.equals(s))</span>
+<span class="fc" id="L35">                continue;</span>
+            try{
+<span class="fc" id="L37">            String key = s.substring(0, s.indexOf(&quot;:&quot;));</span>
+<span class="fc" id="L38">            String value = s.substring(s.indexOf(&quot;:&quot;) + 2).strip();</span>
+
+<span class="fc bfc" id="L40" title="All 2 branches covered.">            for (String webKey : webKeys) {</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">                if (key.contains(webKey))</span>
+<span class="fc" id="L42">                    webInfo.put(key, value);</span>
+            }
+<span class="pc" id="L44">            }catch (Exception ex){}</span>
+        }
+
+<span class="fc" id="L47">        return webInfo;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span>AllTests (1) (07/05/2023 20:14:27)</div></body></html>

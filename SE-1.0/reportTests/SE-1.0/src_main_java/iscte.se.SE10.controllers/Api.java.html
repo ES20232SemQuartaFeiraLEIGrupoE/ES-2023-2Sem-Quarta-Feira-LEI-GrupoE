@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>Api.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (1) (07/05/2023 20:14:27)</a> &gt; <a href="../../index.html" class="el_group">SE-1.0</a> &gt; <a href="../index.html" class="el_bundle">src/main/java</a> &gt; <a href="index.source.html" class="el_package">iscte.se.SE10.controllers</a> &gt; <span class="el_source">Api.java</span></div><h1>Api.java</h1><pre class="source lang-java linenums">package iscte.se.SE10.controllers;
+
+import org.springframework.core.io.ByteArrayResource;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.core.io.Resource;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+import static iscte.se.SE10.utils.FileReader.*;
+import static iscte.se.SE10.utils.FileWriter.*;
+
+/**
+ * Classe que implementa a API-RESTful
+ *
+ * @author Grupo E
+ * @version 1.0
+ */
+
+@CrossOrigin(origins = &quot;http://localhost&quot;)
+@RestController
+@RequestMapping(&quot;/api&quot;)
+public class Api {
+
+    /**
+     * Construtor default
+     */
+<span class="nc" id="L35">    public Api() {</span>
+        // No Initialization required
+<span class="nc" id="L37">    }</span>
+
+    /**
+     * Método que lê o objeto MultipartFile e consoante o formato de defenido devolve uma String nesse formato
+     *
+     * @param file MultipartFile que é o arquivo que queremos guardar
+     * @return retorna uma String num formato CSV ou JSON consoante o formato lido no objeto MultipartFile
+     * ou vazia na situação em que não encontra nenhum dos dois formatos
+     * @throws IOException Input/Output exception
+     */
+    @PostMapping(&quot;/blocks&quot;)
+    public String getBlocks(@RequestParam(&quot;file&quot;) MultipartFile file) throws IOException {
+<span class="nc" id="L49">        String fileName = file.getOriginalFilename();</span>
+<span class="nc bnc" id="L50" title="All 2 branches missed.">        if (fileName != null) {</span>
+<span class="nc" id="L51">            String extension = fileName.substring(fileName.lastIndexOf(&quot;.&quot;) + 1);</span>
+
+<span class="nc bnc" id="L53" title="All 2 branches missed.">            if (&quot;csv&quot;.equals(extension))</span>
+<span class="nc" id="L54">                return formatToWeb(readCSV(file.getInputStream()));</span>
+
+<span class="nc bnc" id="L56" title="All 2 branches missed.">            if (&quot;json&quot;.equals(extension))</span>
+<span class="nc" id="L57">                return formatToWeb(readJson(file.getInputStream(), &quot;local&quot;));</span>
+
+        }
+<span class="nc" id="L60">        return &quot;[]&quot;;</span>
+    }
+
+    /**
+     * Método que recebe um endereço e devolve uma lista de objetos Block em formato WEB
+     *
+     * @param uri endereço do ficheiro remoto
+     * @return retorna uma String JSON com o conteúdo da lista de objetos Block
+     */
+    @PostMapping(&quot;/web&quot;)
+    public String getBlocks2(@RequestParam String uri) {
+<span class="nc" id="L71">        return formatToWeb(readIcs(uri));</span>
+    }
+
+    /**
+     * Método que recebe um objeto MultipartFile e chama a função para guardar no formato CSV
+     *
+     * @param file objeto MultipartFile que é o arquivo que queremos guardar
+     * @return retorna uma String com status da ação
+     * @throws IOException Input/Output exception
+     */
+    // grava localmente
+    @PostMapping(&quot;/savecsv&quot;)
+    public ResponseEntity&lt;Resource&gt; saveCsv(@RequestParam(&quot;file&quot;) MultipartFile file) throws IOException {
+<span class="nc" id="L84">        File savedFile = save(file, &quot;csv&quot;);</span>
+<span class="nc" id="L85">        Path path = savedFile.toPath();</span>
+<span class="nc" id="L86">        ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));</span>
+<span class="nc" id="L87">        return ResponseEntity.ok()</span>
+<span class="nc" id="L88">                .contentLength(savedFile.length())</span>
+<span class="nc" id="L89">                .contentType(MediaType.parseMediaType(&quot;application/json&quot;))</span>
+<span class="nc" id="L90">                .body(resource);</span>
+    }
+
+    /**
+     * Método que recebe um objeto MultipartFile e chama a função para guardar no formato JSON
+     *
+     * @param file objeto MultipartFile que é o arquivo que queremos guardar
+     * @return retorna uma String com status da ação
+     * @throws IOException Input/Output exception
+     */
+    // grava localmente
+    @PostMapping(&quot;/savejson&quot;)
+    public ResponseEntity&lt;Resource&gt; saveJson(@RequestParam(&quot;file&quot;) MultipartFile file) throws IOException {
+<span class="nc" id="L103">        File savedFile = save(file, &quot;json&quot;);</span>
+<span class="nc" id="L104">        Path path = savedFile.toPath();</span>
+<span class="nc" id="L105">        ByteArrayResource resource = new ByteArrayResource(Files.readAllBytes(path));</span>
+<span class="nc" id="L106">        return ResponseEntity.ok()</span>
+<span class="nc" id="L107">                .contentLength(savedFile.length())</span>
+<span class="nc" id="L108">                .contentType(MediaType.parseMediaType(&quot;application/json&quot;))</span>
+<span class="nc" id="L109">                .body(resource);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span>AllTests (1) (07/05/2023 20:14:27)</div></body></html>
