@@ -30,10 +30,12 @@ jobs:
           path: ~/.m2
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
+      - name: Generate Jacoco XML report
+        run: mvn jacoco:report
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           cd "SE-1.0"
-          mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=ES20232SemQuartaFeiraLEIGrupoE_ES-2023-2Sem-Quarta-Feira-LEI-GrupoE -Dsonar.junit.reportPaths=src/test/java/iscte/se/SE10/sonar.junit.reportPaths/
+          mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=ES20232SemQuartaFeiraLEIGrupoE_ES-2023-2Sem-Quarta-Feira-LEI-GrupoE -Dsonar.junit.reportPaths=src/test/java/iscte/se/SE10/sonar.junit.reportPaths/ -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
