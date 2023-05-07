@@ -294,6 +294,6 @@ function drawCalendar(events) {
     }
      });
 
-    if(aux == 0)   updateCounters(overlapcount/2, lotacioncount);
+    if(aux == 0)   updateCounters(overlapcount, lotacioncount);
     aux = 1;
 }
