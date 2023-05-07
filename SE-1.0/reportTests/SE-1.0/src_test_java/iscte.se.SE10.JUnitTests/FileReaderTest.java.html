@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>FileReaderTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (1) (07/05/2023 17:01:13)</a> &gt; <a href="../../index.html" class="el_group">SE-1.0</a> &gt; <a href="../index.html" class="el_bundle">src/test/java</a> &gt; <a href="index.source.html" class="el_package">iscte.se.SE10.JUnitTests</a> &gt; <span class="el_source">FileReaderTest.java</span></div><h1>FileReaderTest.java</h1><pre class="source lang-java linenums">package iscte.se.SE10.JUnitTests;
+
+import iscte.se.SE10.model.Block;
+import iscte.se.SE10.utils.FileReader;
+import org.junit.jupiter.api.Test;
+import java.io.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import static org.junit.jupiter.api.Assertions.*;
+
+<span class="fc" id="L12">class FileReaderTest {</span>
+    @Test
+    void readCSVEmptyFileTest() {
+        // String CSV vazio
+<span class="fc" id="L16">        String emptyCsv = &quot;&quot;;</span>
+
+<span class="fc" id="L18">        InputStream inputStream = new ByteArrayInputStream(emptyCsv.getBytes());</span>
+
+<span class="fc" id="L20">        List&lt;Block&gt; blocksCSV = FileReader.readCSV(inputStream);</span>
+        // verifica se retorna uma lista fazia no método
+<span class="fc" id="L22">        assertTrue(blocksCSV.isEmpty());</span>
+<span class="fc" id="L23">    }</span>
+
+    @Test
+    void testReadJsonWithEmptyInput() {
+        // Dados de entrada
+<span class="fc" id="L28">        String json = &quot;[{}]&quot;;</span>
+<span class="fc" id="L29">        InputStream inputStream = new ByteArrayInputStream(json.getBytes());</span>
+<span class="fc" id="L30">        String type = &quot;web&quot;;</span>
+
+        // Execução do método
+<span class="fc" id="L33">        List&lt;Block&gt; blocks = FileReader.readJson(inputStream, type);</span>
+
+        // Verificação do resultado esperado
+<span class="fc" id="L36">        assertTrue(blocks.isEmpty());</span>
+<span class="fc" id="L37">    }</span>
+
+
+    @Test
+    void readIcsValidLinkTest() {
+<span class="fc" id="L42">        List&lt;Block&gt; blocks = FileReader.readIcs(&quot;webcal://fenix.iscte-iul.pt/publico/publicPersonICalendar&quot; +</span>
+                &quot;.do?method=iCalendar&amp;username=gigca@iscte.pt&amp;password=HfOvgRuJSLdkuVD2ZJWhW8J80BjItDxzzTZ6CbjNdDS&quot; +
+                &quot;CYzVnujToQAaQBTMThu6G4tlkvErewMSAMGyFulrTEDJho2buarIWXrwG2LWVv1ysWeirhpkK2OCmYS1g8oN3&quot;);
+        // verifica se é falso que a lista de objetos Block está vazia
+<span class="fc" id="L46">        assertFalse(blocks.isEmpty());</span>
+<span class="fc" id="L47">    }</span>
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span>AllTests (1) (07/05/2023 17:01:13)</div></body></html>
