@@ -78,6 +78,9 @@ public class Utils {
      * @return retorna um ficheito temporário com o conteúdo do ficheiro cujo download foi feito
      */
     public static File DownloadWebCall(String uri) {
+        if (!uri.startsWith("webcal://fenix.iscte-iul.pt")) {
+            throw new IllegalArgumentException("Invalid webcall URI: " + uri);
+        }
         String httpsURI = "https:" + uri.split(":")[1];
         try {
             File temp = new File("temp");
