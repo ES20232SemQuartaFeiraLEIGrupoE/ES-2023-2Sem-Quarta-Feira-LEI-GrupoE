@@ -1,0 +1,154 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > ConvertFiles</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">iscte.se.SE10.utils</a>
+</div>
+
+<h1>Coverage Summary for Class: ConvertFiles (iscte.se.SE10.utils)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ConvertFiles</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (3/3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    86,7%
+  </span>
+  <span class="absValue">
+    (13/15)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package iscte.se.SE10.utils;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;import java.util.*;
+<i class="no-highlight">4</i>&nbsp;import biweekly.component.VEvent;
+<i class="no-highlight">5</i>&nbsp;
+<i class="no-highlight">6</i>&nbsp;
+<i class="no-highlight">7</i>&nbsp;/**
+<i class="no-highlight">8</i>&nbsp; * Classe para extrair informação de eventos de um calendário
+<i class="no-highlight">9</i>&nbsp; * @author Grupo E
+<i class="no-highlight">10</i>&nbsp; * @version 1.0
+<i class="no-highlight">11</i>&nbsp; */
+<i class="no-highlight">12</i>&nbsp;public class ConvertFiles {
+<i class="no-highlight">13</i>&nbsp;
+<i class="no-highlight">14</i>&nbsp;    /**
+<i class="no-highlight">15</i>&nbsp;     * Array de String que representa as webKeys
+<i class="no-highlight">16</i>&nbsp;     */
+<b class="fc"><i class="no-highlight">17</i>&nbsp;    public static final String[] webKeys = {&quot;Unidade de execução&quot;, &quot;Turno&quot;, &quot;Início&quot;, &quot;Fim&quot;};</b>
+<i class="no-highlight">18</i>&nbsp;
+<i class="no-highlight">19</i>&nbsp;    /**
+<i class="no-highlight">20</i>&nbsp;     * Construtor default
+<i class="no-highlight">21</i>&nbsp;     */
+<b class="fc"><i class="no-highlight">22</i>&nbsp;    public ConvertFiles(){}</b>
+<i class="no-highlight">23</i>&nbsp;    /**
+<i class="no-highlight">24</i>&nbsp;     * Método que extrai os campos de um evento do calendário e devolve num Map
+<i class="no-highlight">25</i>&nbsp;     * @param e recebe um evento de calendário
+<i class="no-highlight">26</i>&nbsp;     * @return retorna um Map com as informações extraídas do evento do calendário
+<i class="no-highlight">27</i>&nbsp;     */
+<i class="no-highlight">28</i>&nbsp;    public static Map&lt;String, String&gt; getRelevantInfo(VEvent e) {
+<b class="fc"><i class="no-highlight">29</i>&nbsp;        Map&lt;String, String&gt; webInfo = new HashMap&lt;&gt;();</b>
+<b class="fc"><i class="no-highlight">30</i>&nbsp;        String[] description = e.getDescription().getValue().split(&quot;\n&quot;);</b>
+<b class="fc"><i class="no-highlight">31</i>&nbsp;        for (String s : description) {</b>
+<b class="fc"><i class="no-highlight">32</i>&nbsp;            if(&quot;\r&quot;.equals(s))</b>
+<b class="nc"><i class="no-highlight">33</i>&nbsp;                continue;</b>
+<i class="no-highlight">34</i>&nbsp;            try{
+<b class="fc"><i class="no-highlight">35</i>&nbsp;            String key = s.substring(0, s.indexOf(&quot;:&quot;));</b>
+<b class="fc"><i class="no-highlight">36</i>&nbsp;            String value = s.substring(s.indexOf(&quot;:&quot;) + 2).strip();</b>
+<i class="no-highlight">37</i>&nbsp;
+<b class="fc"><i class="no-highlight">38</i>&nbsp;            for (String webKey : webKeys) {</b>
+<b class="fc"><i class="no-highlight">39</i>&nbsp;                if (key.contains(webKey))</b>
+<b class="fc"><i class="no-highlight">40</i>&nbsp;                    webInfo.put(key, value);</b>
+<b class="nc"><i class="no-highlight">41</i>&nbsp;            }}catch (Exception ex){</b>
+<i class="no-highlight">42</i>&nbsp;                //ex.printStackTrace();
+<b class="fc"><i class="no-highlight">43</i>&nbsp;            }</b>
+<i class="no-highlight">44</i>&nbsp;        }
+<i class="no-highlight">45</i>&nbsp;
+<b class="fc"><i class="no-highlight">46</i>&nbsp;        return webInfo;</b>
+<i class="no-highlight">47</i>&nbsp;    }
+<i class="no-highlight">48</i>&nbsp;
+<i class="no-highlight">49</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-05-07 12:44</div>
+</div>
+</body>
+</html>
