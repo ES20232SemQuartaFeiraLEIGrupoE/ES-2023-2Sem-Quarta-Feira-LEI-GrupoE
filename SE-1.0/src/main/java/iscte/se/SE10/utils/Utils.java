@@ -84,7 +84,6 @@ public class Utils {
             FileUtils.copyURLToFile(new URL(httpsURI), temp);
             return temp;
         } catch (IOException e) {
-            e.printStackTrace();
         }
         throw new RuntimeException("Valid to open file");
     }

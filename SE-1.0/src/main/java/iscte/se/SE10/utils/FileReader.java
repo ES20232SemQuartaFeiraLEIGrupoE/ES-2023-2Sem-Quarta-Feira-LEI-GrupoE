@@ -45,7 +45,7 @@ public class FileReader {
 		List<Block> blocks = new ArrayList<>();
 		try {
 			BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-			reader.readLine();
+			String firstline = reader.readLine();
 			String line;
 			while ((line = reader.readLine()) != null) {
 				Block block = Block.createFromCSV(line);
@@ -75,7 +75,6 @@ public class FileReader {
                 blocks.add(block);
             }
         } catch (Exception e) {
-            e.printStackTrace();
         }
         return blocks;
     }
@@ -97,7 +96,6 @@ public class FileReader {
                 Block b = Block.createFromWebCalendar(ConvertFiles.getRelevantInfo(e));
                 blocks.add(b);
                 }catch (Exception ex){
-                    //ex.printStackTrace();
                 }
             }
         } catch (IOException ex) {
