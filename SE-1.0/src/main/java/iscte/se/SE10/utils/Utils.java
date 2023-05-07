@@ -12,12 +12,14 @@ import java.net.URL;
  * @version 1.0
  */
 
-public class utils {
+public class Utils {
 
     /**
      * Construtor default
      */
-    public utils(){}
+    public Utils(){
+        // No Initialization required
+    }
 
     /**
      * Método que reorganiza uma String para um formato pretendido
@@ -63,7 +65,7 @@ public class utils {
     }
 
     /**
-     * Método que extrai a hroa de uma String que tem a seguinte organização: data hora
+     * Método que extrai a hora de uma String que tem a seguinte organização: data hora
      * @param info String com uma data e hora organizada organizada da seguinte forma: data hora
      * @return retorna uma String com a hora
      */
@@ -77,16 +79,16 @@ public class utils {
      * @param uri endereço do ficheiro remoto
      * @return retorna um ficheito temporário com o conteúdo do ficheiro cujo download foi feito
      */
-    public static File DownloadWebCall(String uri) {
+    public static File downloadWebCall(String uri) {
+        if (!uri.startsWith("webcal://fenix.iscte-iul.pt")) {
+            throw new IllegalArgumentException("Invalid webcall URI: " + uri);
+        }
         String httpsURI = "https:" + uri.split(":")[1];
-
         try {
             File temp = new File("temp");
             FileUtils.copyURLToFile(new URL(httpsURI), temp);
             return temp;
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        } catch (IOException e) {}
         throw new RuntimeException("Valid to open file");
     }
 }

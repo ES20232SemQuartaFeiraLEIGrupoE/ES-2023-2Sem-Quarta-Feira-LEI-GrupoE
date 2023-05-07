@@ -21,10 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 
-import org.apache.commons.io.FileUtils;
-
-
-import static iscte.se.SE10.utils.utils.DownloadWebCall;
+import static iscte.se.SE10.utils.Utils.downloadWebCall;
 
 /**
  * Classe utilizada para ler ficheiros
@@ -36,7 +33,9 @@ public class FileReader {
     /**
      * Construtor default
      */
-    public FileReader(){}
+    public FileReader(){
+        // No Initialization required
+    }
 
 	/**
 	 * Função que lê um CSV através de um objeto InputStream e cria uma lista de objetos Block
@@ -48,7 +47,7 @@ public class FileReader {
 		List<Block> blocks = new ArrayList<>();
 		try {
 			BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-			reader.readLine();
+			String firstline = reader.readLine();
 			String line;
 			while ((line = reader.readLine()) != null) {
 				Block block = Block.createFromCSV(line);
@@ -77,9 +76,7 @@ public class FileReader {
                 Block block = ("web".equals(type)) ? Block.createFromScheduleFormat(map) : new Block(map);
                 blocks.add(block);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        } catch (Exception e) {}
         return blocks;
     }
 
@@ -89,9 +86,9 @@ public class FileReader {
 	 * @return retorna uma lista de objetos Block
 	 */
     public static List<Block> readIcs(String uri) {
-        File temp = DownloadWebCall(uri);
+        File temp = downloadWebCall(uri);
         List<Block> blocks = new ArrayList<>();
-        ICalendar ical = null;
+        ICalendar ical;
         try {
             ical = Biweekly.parse(temp).first();
             List<VEvent> events = ical.getEvents(); //Lista dos eventos
@@ -100,7 +97,6 @@ public class FileReader {
                 Block b = Block.createFromWebCalendar(ConvertFiles.getRelevantInfo(e));
                 blocks.add(b);
                 }catch (Exception ex){
-                    //ex.printStackTrace();
                 }
             }
         } catch (IOException ex) {

@@ -1,14 +1,8 @@
 package iscte.se.SE10.controllers;
 
-
-
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
-
 import java.io.IOException;
-
-
 import static iscte.se.SE10.utils.FileReader.*;
 import static iscte.se.SE10.utils.FileWriter.*;
 
@@ -18,7 +12,7 @@ import static iscte.se.SE10.utils.FileWriter.*;
  * @version 1.0
  */
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "http://localhost")
 @RestController
 @RequestMapping("/api")
 public class Api {
@@ -26,7 +20,9 @@ public class Api {
     /**
      * Construtor default
      */
-    public Api(){}
+    public Api(){
+        // No Initialization required
+    }
     /**
      * Método que lê o objeto MultipartFile e consoante o formato de defenido devolve uma String nesse formato
      * @param file MultipartFile que é o arquivo que queremos guardar
@@ -36,15 +32,17 @@ public class Api {
      */
     @PostMapping("/blocks")
     public String getBlocks(@RequestParam("file") MultipartFile file) throws IOException {
-        String fileName = file.getOriginalFilename();
-        String extension = fileName.substring(fileName.lastIndexOf(".") + 1);
+            String fileName = file.getOriginalFilename();
+            if (fileName != null){
+                String extension = fileName.substring(fileName.lastIndexOf(".") + 1);
 
-        if ("csv".equals(extension))
-            return formatToWeb( readCSV(file.getInputStream()));
+                if ("csv".equals(extension))
+                    return formatToWeb(readCSV(file.getInputStream()));
 
-        if ("json".equals(extension))
-            return formatToWeb( readJson(file.getInputStream(), "local"));
+                if ("json".equals(extension))
+                    return formatToWeb(readJson(file.getInputStream(), "local"));
 
+            }
         return "[]";
     }
 
@@ -52,10 +50,9 @@ public class Api {
      * Método que recebe um endereço e devolve uma lista de objetos Block em formato WEB
      * @param uri endereço do ficheiro remoto
      * @return retorna uma String JSON com o conteúdo da lista de objetos Block
-     * @throws IOException Input/Output exception
      */
     @PostMapping("/web")
-    public String getBlocks2(@RequestParam String uri) throws IOException {
+    public String getBlocks2(@RequestParam String uri) {
         return formatToWeb(readIcs(uri));
     }
 

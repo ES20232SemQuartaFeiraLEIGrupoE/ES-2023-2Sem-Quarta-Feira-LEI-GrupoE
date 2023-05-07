@@ -1,9 +1,9 @@
 
 k
-java:S1192="PDefine a constant instead of duplicating this literal "        </div>
-" 3 times.(““ÅÆúÿÿÿÿ
+java:S1192:"PDefine a constant instead of duplicating this literal "        </div>
+" 4 times.(““ÅÆúÿÿÿÿ
 g
-java:S1192M"LDefine a constant instead of duplicating this literal "    </div>
+java:S1192K"LDefine a constant instead of duplicating this literal "    </div>
 " 3 times.(““ÅÆúÿÿÿÿ
 t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùŠ¥üÿÿÿÿ
 œ

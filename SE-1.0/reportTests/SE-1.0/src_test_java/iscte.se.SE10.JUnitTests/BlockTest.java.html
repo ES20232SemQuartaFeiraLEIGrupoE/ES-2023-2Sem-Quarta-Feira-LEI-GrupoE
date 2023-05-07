@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>BlockTest.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">AllTests (1) (07/05/2023 17:01:13)</a> &gt; <a href="../../index.html" class="el_group">SE-1.0</a> &gt; <a href="../index.html" class="el_bundle">src/test/java</a> &gt; <a href="index.source.html" class="el_package">iscte.se.SE10.JUnitTests</a> &gt; <span class="el_source">BlockTest.java</span></div><h1>BlockTest.java</h1><pre class="source lang-java linenums">package iscte.se.SE10.JUnitTests;
+
+import iscte.se.SE10.model.Block;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import java.util.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+<span class="fc" id="L9">class BlockTest {</span>
+
+    @Test
+    void testCreateFromCSV() {
+<span class="fc" id="L13">        String data = &quot;ME;Teoria dos Jogos e dos Contratos;01789TP01;MEA1;30;Sex;13:00:00;14:30:00;01/05/2023;AA2.25;34&quot;;</span>
+<span class="fc" id="L14">        Block block = Block.createFromCSV(data);</span>
+
+<span class="fc" id="L16">        assertEquals(&quot;ME&quot;, block.getBlockData().get(&quot;Curso&quot;));</span>
+<span class="fc" id="L17">        assertEquals(&quot;Teoria dos Jogos e dos Contratos&quot;, block.getBlockData().get(&quot;Unidade Curricular&quot;));</span>
+<span class="fc" id="L18">        assertEquals(&quot;01789TP01&quot;, block.getBlockData().get(&quot;Turno&quot;));</span>
+<span class="fc" id="L19">        assertEquals(&quot;MEA1&quot;, block.getBlockData().get(&quot;Turma&quot;));</span>
+<span class="fc" id="L20">        assertEquals(&quot;30&quot;, block.getBlockData().get(&quot;Inscritos no turno&quot;));</span>
+<span class="fc" id="L21">        assertEquals(&quot;Sex&quot;, block.getBlockData().get(&quot;Dia da semana&quot;));</span>
+<span class="fc" id="L22">        assertEquals(&quot;13:00:00&quot;, block.getBlockData().get(&quot;Hora início da aula&quot;));</span>
+<span class="fc" id="L23">        assertEquals(&quot;14:30:00&quot;, block.getBlockData().get(&quot;Hora fim da aula&quot;));</span>
+<span class="fc" id="L24">        assertEquals(&quot;01/05/2023&quot;, block.getBlockData().get(&quot;Data da aula&quot;));</span>
+<span class="fc" id="L25">        assertEquals(&quot;AA2.25&quot;, block.getBlockData().get(&quot;Sala atribuída à aula&quot;));</span>
+<span class="fc" id="L26">        assertEquals(&quot;34&quot;, block.getBlockData().get(&quot;Lotação da sala&quot;));</span>
+<span class="fc" id="L27">    }</span>
+
+    @Test
+    void testCreateFromCSVInvalidData() {
+<span class="fc" id="L31">        String data = &quot;ME;Teoria dos Jogos e dos Contratos;01789TP01;MEA1;30;Sex;13:00:00;14:30:00;01/05/2023;AA2.25;34;10&quot;;</span>
+        try {
+<span class="nc" id="L33">            Block block = Block.createFromCSV(data);</span>
+<span class="nc" id="L34">            Assertions.fail(&quot;Expected RuntimeException to be thrown, but it wasn't.&quot;);</span>
+<span class="pc" id="L35">        } catch (RuntimeException e) {</span>
+            // Exception was thrown, test passed
+        }
+<span class="fc" id="L38">    }</span>
+
+    @Test
+     void testCreateFromScheduleFormat() {
+        // Create a sample data map with &quot;start&quot; and &quot;end&quot; properties
+<span class="fc" id="L43">        Map&lt;String, String&gt; data = new HashMap&lt;&gt;();</span>
+<span class="fc" id="L44">        data.put(&quot;Curso&quot;, &quot;ME&quot;);</span>
+<span class="fc" id="L45">        data.put(&quot;Unidade Curricular&quot;, &quot;Teoria dos Jogos e dos Contratos&quot;);</span>
+<span class="fc" id="L46">        data.put(&quot;start&quot;, &quot;2023-05-07T13:00:00&quot;);</span>
+<span class="fc" id="L47">        data.put(&quot;end&quot;, &quot;2023-05-07T14:30:00&quot;);</span>
+
+        // Call the createFromScheduleFormat method to create a Block instance
+<span class="fc" id="L50">        Block block = Block.createFromScheduleFormat(data);</span>
+
+        // Check that the Block instance was created correctly
+<span class="fc" id="L53">        assertEquals(&quot;ME&quot;, block.getBlockData().get(&quot;Curso&quot;));</span>
+<span class="fc" id="L54">        assertEquals(&quot;Teoria dos Jogos e dos Contratos&quot;, block.getBlockData().get(&quot;Unidade Curricular&quot;));</span>
+<span class="fc" id="L55">        assertEquals(&quot;13:00:00&quot;, block.getBlockData().get(&quot;Hora início da aula&quot;));</span>
+<span class="fc" id="L56">        assertEquals(&quot;14:30:00&quot;, block.getBlockData().get(&quot;Hora fim da aula&quot;));</span>
+<span class="fc" id="L57">        assertEquals(&quot;07/05/2023&quot;, block.getBlockData().get(&quot;Data da aula&quot;));</span>
+<span class="fc" id="L58">    }</span>
+
+    @Test
+    void testCreateFromWebCalendar() {
+<span class="fc" id="L62">        Map&lt;String, String&gt; webInfo = new LinkedHashMap&lt;&gt;();</span>
+<span class="fc" id="L63">        webInfo.put(&quot;Turno&quot;, &quot;Manhã&quot;);</span>
+<span class="fc" id="L64">        webInfo.put(&quot;Unidade de execução&quot;, &quot;Algoritmos e Estruturas de Dados&quot;);</span>
+<span class="fc" id="L65">        webInfo.put(&quot;Início&quot;, &quot;2023-03-14 18:00&quot;);</span>
+<span class="fc" id="L66">        webInfo.put(&quot;Fim&quot;, &quot;2023-03-14 19:30&quot;);</span>
+
+<span class="fc" id="L68">        Block block = Block.createFromWebCalendar(webInfo);</span>
+
+<span class="fc" id="L70">        assertEquals(&quot;Manhã&quot;, block.getBlockData().get(&quot;Turno&quot;));</span>
+<span class="fc" id="L71">        assertEquals(&quot;Algoritmos e Estruturas de Dados&quot;, block.getBlockData().get(&quot;Unidade Curricular&quot;));</span>
+<span class="fc" id="L72">        assertEquals(&quot;18:00&quot;, block.getBlockData().get(&quot;Hora início da aula&quot;));</span>
+<span class="fc" id="L73">        assertEquals(&quot;19:30&quot;, block.getBlockData().get(&quot;Hora fim da aula&quot;));</span>
+<span class="fc" id="L74">        assertEquals(&quot;14/03/2023&quot;, block.getBlockData().get(&quot;Data da aula&quot;));</span>
+<span class="fc" id="L75">        assertEquals(&quot;Indefinido&quot;, block.getBlockData().get(&quot;Sala atribuída à aula&quot;));</span>
+<span class="fc" id="L76">        assertEquals(&quot;Indefinido&quot;, block.getBlockData().get(&quot;Lotação da sala&quot;));</span>
+<span class="fc" id="L77">    }</span>
+
+    @Test
+    void testGetCSVHeader (){
+<span class="fc" id="L81">        assertEquals(&quot;Curso;Unidade Curricular;Turno;Turma;Inscritos no turno;Dia da semana;Hora início da aula;Hora fim da aula;Data da aula;Sala atribuída à aula;Lotação da sala&quot; , Block.getCSVHeader());</span>
+<span class="fc" id="L82">    }</span>
+
+    @Test
+    void testGetAsList() {
+<span class="fc" id="L86">        Block block = createBlock();</span>
+<span class="fc" id="L87">        List&lt;Map&lt;String, String&gt;&gt; list = block.getAsList();</span>
+<span class="fc" id="L88">        assertEquals(block.getBlockData().size(), list.size());</span>
+
+<span class="fc" id="L90">        List&lt;Map&lt;String, String&gt;&gt; expectedList = Arrays.asList(</span>
+<span class="fc" id="L91">                new LinkedHashMap&lt;String, String&gt;() {{ put(&quot;Curso&quot;, &quot;ME&quot;); }},</span>
+<span class="fc" id="L92">                new LinkedHashMap&lt;String, String&gt;() {{ put(&quot;Unidade Curricular&quot;, &quot;Teoria dos Jogos e dos Contratos&quot;); }},</span>
+<span class="fc" id="L93">                new LinkedHashMap&lt;String, String&gt;() {{ put(&quot;Turno&quot;, &quot;01789TP01&quot;); }},</span>
+<span class="fc" id="L94">                new LinkedHashMap&lt;String, String&gt;() {{ put(&quot;Turma&quot;, &quot;MEA1&quot;); }},</span>
+<span class="fc" id="L95">                new LinkedHashMap&lt;String, String&gt;() {{ put(&quot;Inscritos no turno&quot;, &quot;30&quot;); }},</span>
+<span class="fc" id="L96">                new LinkedHashMap&lt;String, String&gt;() {{ put(&quot;Dia da semana&quot;, &quot;Sex&quot;); }},</span>
+<span class="fc" id="L97">                new LinkedHashMap&lt;String, String&gt;() {{ put(&quot;Hora início da aula&quot;, &quot;13:00:00&quot;); }},</span>
+<span class="fc" id="L98">                new LinkedHashMap&lt;String, String&gt;() {{ put(&quot;Hora fim da aula&quot;, &quot;14:30:00&quot;); }},</span>
+<span class="fc" id="L99">                new LinkedHashMap&lt;String, String&gt;() {{ put(&quot;Data da aula&quot;, &quot;01/05/2023&quot;); }},</span>
+<span class="fc" id="L100">                new LinkedHashMap&lt;String, String&gt;() {{ put(&quot;Sala atribuída à aula&quot;, &quot;AA2.25&quot;); }},</span>
+<span class="fc" id="L101">                new LinkedHashMap&lt;String, String&gt;() {{ put(&quot;Lotação da sala&quot;, &quot;34&quot;); }}</span>
+        );
+
+<span class="fc" id="L104">        assertEquals(expectedList.size(), list.size());</span>
+<span class="fc bfc" id="L105" title="All 2 branches covered.">        for (int i = 0; i &lt; list.size(); i++) {</span>
+<span class="fc" id="L106">            assertEquals(expectedList.get(i), list.get(i));</span>
+        }
+<span class="fc" id="L108">    }</span>
+
+    @Test
+    void testgetAsCsv(){
+<span class="fc" id="L112">        Block block = createBlock();</span>
+<span class="fc" id="L113">        String result = block.getAsCsv();</span>
+<span class="fc" id="L114">        String expected = &quot;ME;Teoria dos Jogos e dos Contratos;01789TP01;MEA1;30;Sex;13:00:00;14:30:00;01/05/2023;AA2.25;34&quot;;</span>
+<span class="fc" id="L115">        assertEquals(expected, result);</span>
+<span class="fc" id="L116">    }</span>
+
+    @Test
+    void testGetAsJson() {
+<span class="fc" id="L120">        Block block = createBlock();</span>
+<span class="fc" id="L121">        String expectedJson = &quot;&quot;&quot;</span>
+                {
+                  &quot;Curso&quot;: &quot;ME&quot;,
+                  &quot;Unidade Curricular&quot;: &quot;Teoria dos Jogos e dos Contratos&quot;,
+                  &quot;Turno&quot;: &quot;01789TP01&quot;,
+                  &quot;Turma&quot;: &quot;MEA1&quot;,
+                  &quot;Inscritos no turno&quot;: &quot;30&quot;,
+                  &quot;Dia da semana&quot;: &quot;Sex&quot;,
+                  &quot;Hora início da aula&quot;: &quot;13:00:00&quot;,
+                  &quot;Hora fim da aula&quot;: &quot;14:30:00&quot;,
+                  &quot;Data da aula&quot;: &quot;01/05/2023&quot;,
+                  &quot;Sala atribuída à aula&quot;: &quot;AA2.25&quot;,
+                  &quot;Lotação da sala&quot;: &quot;34&quot;
+                }&quot;&quot;&quot;;
+<span class="fc" id="L135">        String result = block.getAsJson();</span>
+<span class="fc" id="L136">        assertEquals(expectedJson, result);</span>
+<span class="fc" id="L137">    }</span>
+
+    @Test
+    void testGetAsScheduleFormat() {
+<span class="fc" id="L141">        Block block = createBlock();</span>
+<span class="fc" id="L142">        Map&lt;String, String&gt; scheduleData = block.getAsScheduleFormat();</span>
+
+<span class="fc" id="L144">        Map&lt;String, String&gt; expectedValues = new LinkedHashMap&lt;&gt;();</span>
+<span class="fc" id="L145">        expectedValues.put(&quot;Curso&quot;, &quot;ME&quot;);</span>
+<span class="fc" id="L146">        expectedValues.put(&quot;Unidade Curricular&quot;, &quot;Teoria dos Jogos e dos Contratos&quot;);</span>
+<span class="fc" id="L147">        expectedValues.put(&quot;Turno&quot;, &quot;01789TP01&quot;);</span>
+<span class="fc" id="L148">        expectedValues.put(&quot;Turma&quot;, &quot;MEA1&quot;);</span>
+<span class="fc" id="L149">        expectedValues.put(&quot;Inscritos no turno&quot;, &quot;30&quot;);</span>
+<span class="fc" id="L150">        expectedValues.put(&quot;Dia da semana&quot;, &quot;Sex&quot;);</span>
+<span class="fc" id="L151">        expectedValues.put(&quot;start&quot;, &quot;2023-05-01T13:00:00&quot;);</span>
+<span class="fc" id="L152">        expectedValues.put(&quot;end&quot;, &quot;2023-05-01T14:30:00&quot;);</span>
+<span class="fc" id="L153">        expectedValues.put(&quot;Sala atribuída à aula&quot;, &quot;AA2.25&quot;);</span>
+<span class="fc" id="L154">        expectedValues.put(&quot;Lotação da sala&quot;, &quot;34&quot;);</span>
+
+<span class="fc bfc" id="L156" title="All 2 branches covered.">        for (Map.Entry&lt;String, String&gt; entry : expectedValues.entrySet()) {</span>
+<span class="fc" id="L157">            assertEquals(entry.getValue(), scheduleData.get(entry.getKey()));</span>
+        }
+<span class="fc" id="L159">    }</span>
+
+    Block createBlock (){
+<span class="fc" id="L162">        Map&lt;String, String&gt; data = new LinkedHashMap&lt;&gt;();</span>
+<span class="fc" id="L163">        data.put(&quot;Curso&quot;, &quot;ME&quot;);</span>
+<span class="fc" id="L164">        data.put(&quot;Unidade Curricular&quot;, &quot;Teoria dos Jogos e dos Contratos&quot;);</span>
+<span class="fc" id="L165">        data.put(&quot;Turno&quot;, &quot;01789TP01&quot;);</span>
+<span class="fc" id="L166">        data.put(&quot;Turma&quot;, &quot;MEA1&quot;);</span>
+<span class="fc" id="L167">        data.put(&quot;Inscritos no turno&quot;, &quot;30&quot;);</span>
+<span class="fc" id="L168">        data.put(&quot;Dia da semana&quot;, &quot;Sex&quot;);</span>
+<span class="fc" id="L169">        data.put(&quot;Hora início da aula&quot;, &quot;13:00:00&quot;);</span>
+<span class="fc" id="L170">        data.put(&quot;Hora fim da aula&quot;, &quot;14:30:00&quot;);</span>
+<span class="fc" id="L171">        data.put(&quot;Data da aula&quot;, &quot;01/05/2023&quot;);</span>
+<span class="fc" id="L172">        data.put(&quot;Sala atribuída à aula&quot;, &quot;AA2.25&quot;);</span>
+<span class="fc" id="L173">        data.put(&quot;Lotação da sala&quot;, &quot;34&quot;);</span>
+
+<span class="fc" id="L175">        return new Block(data);</span>
+    }
+
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span>AllTests (1) (07/05/2023 17:01:13)</div></body></html>
