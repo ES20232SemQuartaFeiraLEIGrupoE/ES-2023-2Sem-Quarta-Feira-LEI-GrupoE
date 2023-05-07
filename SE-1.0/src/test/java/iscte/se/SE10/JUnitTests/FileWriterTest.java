@@ -16,7 +16,7 @@ class FileWriterTest {
 
 
     @Test
-    public void saveInCSV_JsonExistTest() throws IOException {
+    void saveInCSV_JsonExistTest() throws IOException {
         // Chamar o método
         FileWriter.saveInCSV(creatList());
         FileWriter.saveInJson(creatList());
@@ -47,7 +47,7 @@ class FileWriterTest {
         assertFalse(fileJson.exists());
     }
 
-    public List<Block> creatList(){
+    private List<Block> creatList(){
         blocks.add(new Block(createMap()));
         return blocks;
     }
