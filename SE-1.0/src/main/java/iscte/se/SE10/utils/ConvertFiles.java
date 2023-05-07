@@ -14,12 +14,14 @@ public class ConvertFiles {
     /**
      * Array de String que representa as webKeys
      */
-    public static final String[] webKeys = {"Unidade de execução", "Turno", "Início", "Fim"};
+    protected static final String[] webKeys = {"Unidade de execução", "Turno", "Início", "Fim"};
 
     /**
      * Construtor default
      */
-    public ConvertFiles(){}
+    public ConvertFiles(){
+        // No Initialization required
+    }
     /**
      * Método que extrai os campos de um evento do calendário e devolve num Map
      * @param e recebe um evento de calendário
@@ -38,9 +40,8 @@ public class ConvertFiles {
             for (String webKey : webKeys) {
                 if (key.contains(webKey))
                     webInfo.put(key, value);
-            }}catch (Exception ex){
-                //ex.printStackTrace();
             }
+            }catch (Exception ex){}
         }
 
         return webInfo;

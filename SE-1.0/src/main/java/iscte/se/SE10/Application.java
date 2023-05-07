@@ -15,7 +15,7 @@ public class Application {
 	/**
 	 * Construtor default
 	 */
-	public Application(){}
+	public Application(){ /* No parameters required */ }
 
 	/**
 	 * Método main

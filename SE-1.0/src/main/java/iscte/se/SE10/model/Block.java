@@ -20,14 +20,30 @@ import static iscte.se.SE10.utils.Utils.*;
 public class Block implements Serializable {
 
     /**
+     * Constantes que representam o header do block
+     */
+    static final String CURSO = "Curso";
+    static final String UNIDADE_CURRICULAR = "Unidade Curricular";
+    static final String TURNO = "Turno";
+    static final String TURMA = "Turma";
+    static final String INSCRITOS_NO_TURNO = "Inscritos no turno";
+    static final String DIA_DA_SEMANA = "Dia da semana";
+    static final String HORA_INICIO_AULA = "Hora início da aula";
+    static final String HORA_FIM_AULA = "Hora fim da aula";
+    static final String DATA_DA_AULA = "Data da aula";
+    static final String SALA_ATRIBUIDA = "Sala atribuída à aula";
+    static final String LOTACAO_SALA = "Lotação da sala";
+
+    /**
      * Array de String que representa as keys da classe Block
      */
-    public static final String[] keys = {"Curso", "Unidade Curricular", "Turno", "Turma", "Inscritos no turno", "Dia da semana", "Hora início da aula", "Hora fim da aula", "Data da aula", "Sala atribuída à aula", "Lotação da sala"};
+    protected static final String[] keys = {CURSO,UNIDADE_CURRICULAR,TURNO , TURMA,INSCRITOS_NO_TURNO, DIA_DA_SEMANA, HORA_INICIO_AULA, HORA_FIM_AULA, DATA_DA_AULA, SALA_ATRIBUIDA, LOTACAO_SALA};
+
 
     /**
      * Map que será utilizado para associar as keys aos valores atribuídos
      */
-    public Map<String, String> data;
+    private Map<String, String> data;
 
 
     /**
@@ -36,6 +52,14 @@ public class Block implements Serializable {
      */
     public Block(Map<String, String> data){
         this.data = data;
+    }
+
+    /**
+     * Função que que retorna o Map<String,String> data
+     * @return retorna a informação contida dentro do Block
+     */
+    public Map<String, String> getBlockData (){
+        return data;
     }
 
     /**
@@ -69,9 +93,9 @@ public class Block implements Serializable {
     public static Block createFromScheduleFormat(Map<String, String> data) {
         String start = data.remove("start");
         String end = data.remove("end");
-        data.put("Hora início da aula", formatHourToLocal(start));
-        data.put("Hora fim da aula", formatHourToLocal(end));
-        data.put("Data da aula", formatDateToLocal(start));
+        data.put(HORA_INICIO_AULA, formatHourToLocal(start));
+        data.put(HORA_FIM_AULA, formatHourToLocal(end));
+        data.put(DATA_DA_AULA, formatDateToLocal(start));
         return new Block(data);
     }
 
@@ -87,11 +111,11 @@ public class Block implements Serializable {
             blocks.put(key, "Indefinido");
         }
 
-        blocks.put("Turno", webInfo.get("Turno"));
-        blocks.put("Unidade Curricular", webInfo.get("Unidade de execução"));
-        blocks.put("Hora início da aula", formatIcsHourToLocal(webInfo.get("Início")));
-        blocks.put("Hora fim da aula", formatIcsHourToLocal(webInfo.get("Fim")));
-        blocks.put("Data da aula", formatIcsDateToLocal(webInfo.get("Início")));
+        blocks.put(TURNO, webInfo.get(TURNO));
+        blocks.put(UNIDADE_CURRICULAR, webInfo.get("Unidade de execução"));
+        blocks.put(HORA_INICIO_AULA, formatIcsHourToLocal(webInfo.get("Início")));
+        blocks.put(HORA_FIM_AULA, formatIcsHourToLocal(webInfo.get("Fim")));
+        blocks.put(DATA_DA_AULA, formatIcsDateToLocal(webInfo.get("Início")));
         return new Block(blocks);
     }
 
@@ -133,17 +157,17 @@ public class Block implements Serializable {
 
     public String getAsJson() {
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("Curso", data.get("Curso"));
-        jsonObject.addProperty("Unidade Curricular", data.get("Unidade Curricular"));
-        jsonObject.addProperty("Turno", data.get("Turno"));
-        jsonObject.addProperty("Turma", data.get("Turma"));
-        jsonObject.addProperty("Inscritos no turno", data.get("Inscritos no turno"));
-        jsonObject.addProperty("Dia da semana", data.get("Dia da semana"));
-        jsonObject.addProperty("Hora início da aula", data.get("Hora início da aula"));
-        jsonObject.addProperty("Hora fim da aula", data.get("Hora fim da aula"));
-        jsonObject.addProperty("Data da aula", data.get("Data da aula"));
-        jsonObject.addProperty("Sala atribuída à aula", data.get("Sala atribuída à aula"));
-        jsonObject.addProperty("Lotação da sala", data.get("Lotação da sala"));
+        jsonObject.addProperty(CURSO, data.get(CURSO));
+        jsonObject.addProperty(UNIDADE_CURRICULAR, data.get(UNIDADE_CURRICULAR));
+        jsonObject.addProperty(TURNO, data.get(TURNO));
+        jsonObject.addProperty(TURMA, data.get(TURMA));
+        jsonObject.addProperty(INSCRITOS_NO_TURNO, data.get(INSCRITOS_NO_TURNO));
+        jsonObject.addProperty(DIA_DA_SEMANA, data.get(DIA_DA_SEMANA));
+        jsonObject.addProperty(HORA_INICIO_AULA, data.get(HORA_INICIO_AULA));
+        jsonObject.addProperty(HORA_FIM_AULA, data.get(HORA_FIM_AULA));
+        jsonObject.addProperty(DATA_DA_AULA, data.get(DATA_DA_AULA));
+        jsonObject.addProperty(SALA_ATRIBUIDA, data.get(SALA_ATRIBUIDA));
+        jsonObject.addProperty(LOTACAO_SALA, data.get(LOTACAO_SALA));
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         return gson.toJson(jsonObject);
@@ -156,9 +180,9 @@ public class Block implements Serializable {
 
     public Map<String, String> getAsScheduleFormat() {
         Map<String, String> copyData = new LinkedHashMap<>(data);
-        String startHour = copyData.remove("Hora início da aula");
-        String endHour = copyData.remove("Hora fim da aula");
-        String classDate = copyData.remove("Data da aula");
+        String startHour = copyData.remove(HORA_INICIO_AULA);
+        String endHour = copyData.remove(HORA_FIM_AULA);
+        String classDate = copyData.remove(DATA_DA_AULA);
         copyData.put("start", formatDateToWeb(classDate, startHour));
         copyData.put("end", formatDateToWeb(classDate, endHour));
         return copyData;

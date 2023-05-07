@@ -29,7 +29,9 @@ public class FileWriter {
     /**
      * Construtor default
      */
-    public FileWriter(){}
+    public FileWriter(){
+        // No Initialization required
+    }
 
     /**
      * Função que escreve o conteúdo de uma lista de blocks recebida num ficheiro CSV
@@ -76,14 +78,8 @@ public class FileWriter {
      */
 
     public static String save(MultipartFile file, String extension) throws IOException {
-//        System.out.println(file.getOriginalFilename());
-//        System.out.println("File name: " + file.getOriginalFilename());
-//        System.out.println("File size: " + file.getSize() + " bytes");
-
-        // parse the info
         List<Block> data = readJson(file.getInputStream(), "web");
 
-        // Transfer the file to the output path
         if ("csv".equals(extension))
             saveInCSV(data);
 
@@ -104,7 +100,6 @@ public class FileWriter {
             result.add(block.getAsScheduleFormat());
         }
         Gson gson = new Gson();
-//        String json = gson.toJson(result);
         return gson.toJson(result);
     }
 }
