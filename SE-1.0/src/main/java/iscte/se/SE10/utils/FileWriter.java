@@ -1,21 +1,13 @@
 package iscte.se.SE10.utils;
 
 import java.io.IOException;
-
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
-
-
 import com.google.gson.Gson;
 import iscte.se.SE10.model.Block;
-
-
 import java.util.Map;
-
-
 import org.springframework.web.multipart.MultipartFile;
-
 import static iscte.se.SE10.utils.FileReader.readJson;
 
 /**
@@ -73,9 +65,6 @@ public class FileWriter {
      */
 
     public static String save(MultipartFile file, String extension) throws IOException {
-//        System.out.println(file.getOriginalFilename());
-//        System.out.println("File name: " + file.getOriginalFilename());
-//        System.out.println("File size: " + file.getSize() + " bytes");
 
         // parse the info
         List<Block> data = readJson(file.getInputStream(), "web");
@@ -101,7 +90,10 @@ public class FileWriter {
             result.add(block.getAsScheduleFormat());
         }
         Gson gson = new Gson();
-//        String json = gson.toJson(result);
         return gson.toJson(result);
     }
+
+
+
+
 }
