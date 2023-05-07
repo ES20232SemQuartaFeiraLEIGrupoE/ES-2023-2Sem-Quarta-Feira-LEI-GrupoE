@@ -2,9 +2,9 @@ BEGIN:VCALENDAR
 PRODID:-//ISCTE-IUL//fenix//EN
 VERSION:2.0
 CALSCALE:GREGORIAN
-X-WR-CALNAME:gigca@iscte.pt_iscte-iul
+X-WR-CALNAME:jccoa@iscte.pt_iscte-iul
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230310T160000Z
 DTEND:20230310T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -20,7 +20,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230509T120000Z
 DTEND:20230509T133000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -36,21 +36,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C4.06\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20220923T083000Z
-DTEND:20220923T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:847676220412317@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-09-23 09:30\nF
- im: 2022-09-23 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-09-23 09:30\nEnd: 2022-09-23 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório C1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230320T130000Z
 DTEND:20230320T143000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -66,7 +52,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220922T133000Z
 DTEND:20220922T150000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -80,22 +66,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.01\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230424T083000Z
-DTEND:20230424T100000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594311@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-04-24 09:30\nFim: 2023-04-24 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-04-24 09:30\
- nEnd: 2023-04-24 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221130T160000Z
 DTEND:20221130T173000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -110,7 +81,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221128T130000Z
 DTEND:20221128T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -124,7 +95,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230413T133000Z
 DTEND:20230413T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -138,7 +109,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221129T143000Z
 DTEND:20221129T160000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -154,7 +125,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221130T143000Z
 DTEND:20221130T160000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -168,7 +139,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230329T150000Z
 DTEND:20230329T163000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -182,7 +153,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230509T150000Z
 DTEND:20230509T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -198,7 +169,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230209T160000Z
 DTEND:20230209T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -214,7 +185,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:0S08\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230316T160000Z
 DTEND:20230316T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -230,7 +201,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:D1.05\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230303T160000Z
 DTEND:20230303T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -246,7 +217,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221128T160000Z
 DTEND:20221128T173000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -262,7 +233,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221111T143000Z
 DTEND:20221111T160000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -276,22 +247,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230424T100000Z
-DTEND:20230424T113000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594324@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-04-24 11:00\nFim: 2023-04-24 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-04-24 11:00\
- nEnd: 2023-04-24 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230327T120000Z
 DTEND:20230327T133000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -306,7 +262,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230306T143000Z
 DTEND:20230306T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -322,7 +278,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230213T160000Z
 DTEND:20230213T173000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -336,7 +292,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220921T120000Z
 DTEND:20220921T133000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -350,7 +306,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.06\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230217T143000Z
 DTEND:20230217T160000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -364,7 +320,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221206T093000Z
 DTEND:20221206T110000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -380,7 +336,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:D1.05\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230323T130000Z
 DTEND:20230323T143000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -394,7 +350,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230213T143000Z
 DTEND:20230213T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -410,7 +366,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221214T130000Z
 DTEND:20221214T143000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -424,7 +380,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.06\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230328T133000Z
 DTEND:20230328T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -440,22 +396,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230327T100000Z
-DTEND:20230327T113000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594322@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-03-27 11:00\nFim: 2023-03-27 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-03-27 11:00\
- nEnd: 2023-03-27 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230322T160000Z
 DTEND:20230322T173000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -470,7 +411,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230314T143000Z
 DTEND:20230314T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -486,21 +427,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221103T143000Z
-DTEND:20221103T160000Z
-SUMMARY:Arquitetura de Redes - Network Arquitectures
-UID:847676220399528@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
- itetura de Redes\nCódigo: 03708\nTurno: 03708PL03\nInício: 2022-11-03 14
- :30\nFim: 2022-11-03 16:00\nDocente: João Carlos Marques Silva\n\nSemest
- er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
- ode: 03708\nShift: 03708PL03\nBegin: 2022-11-03 14:30\nEnd: 2022-11-03 1
- 6:00\nTeacher: João Carlos Marques Silva\n\n
-LOCATION:C7.09\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230214T160000Z
 DTEND:20230214T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -516,7 +443,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220920T150000Z
 DTEND:20220920T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -532,7 +459,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230502T120000Z
 DTEND:20230502T133000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -548,7 +475,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C4.06\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221212T130000Z
 DTEND:20221212T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -562,7 +489,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221123T143000Z
 DTEND:20221123T160000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -576,7 +503,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230321T130000Z
 DTEND:20230321T143000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -592,7 +519,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C4.06\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220923T133000Z
 DTEND:20220923T150000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -606,7 +533,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221026T120000Z
 DTEND:20221026T133000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -620,7 +547,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.06\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230307T143000Z
 DTEND:20230307T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -636,7 +563,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221114T143000Z
 DTEND:20221114T160000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -650,37 +577,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230320T110000Z
-DTEND:20230320T123000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594321@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-03-20 11:00\nFim: 2023-03-20 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-03-20 11:00\
- nEnd: 2023-03-20 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230417T083000Z
-DTEND:20230417T100000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594310@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-04-17 09:30\nFim: 2023-04-17 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-04-17 09:30\
- nEnd: 2023-04-17 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230317T143000Z
 DTEND:20230317T160000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -694,7 +591,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230418T150000Z
 DTEND:20230418T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -710,7 +607,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230504T120000Z
 DTEND:20230504T133000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -724,21 +621,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221010T083000Z
-DTEND:20221010T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366765@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-10-10 09:30\nF
- im: 2022-10-10 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-10-10 09:30\nEnd: 2022-10-10 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório Silva Leal\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230516T150000Z
 DTEND:20230516T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -754,7 +637,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221202T160000Z
 DTEND:20221202T173000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -768,7 +651,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220928T120000Z
 DTEND:20220928T133000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -782,7 +665,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.06\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230524T150000Z
 DTEND:20230524T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -798,21 +681,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.08\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221215T143000Z
-DTEND:20221215T160000Z
-SUMMARY:Arquitetura de Redes - Network Arquitectures
-UID:1692101150526407@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
- itetura de Redes\nCódigo: 03708\nTurno: 03708PL03\nInício: 2022-12-15 14
- :30\nFim: 2022-12-15 16:00\nDocente: José André Rocha Sá Moura\n\nSemest
- er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
- ode: 03708\nShift: 03708PL03\nBegin: 2022-12-15 14:30\nEnd: 2022-12-15 1
- 6:00\nTeacher: José André Rocha Sá Moura\n\n
-LOCATION:C7.09\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230515T133000Z
 DTEND:20230515T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -828,7 +697,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221018T133000Z
 DTEND:20221018T150000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -844,7 +713,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221121T160000Z
 DTEND:20221121T173000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -860,50 +729,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221027T133000Z
-DTEND:20221027T150000Z
-SUMMARY:Arquitetura de Redes - Network Arquitectures
-UID:847676220399527@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
- itetura de Redes\nCódigo: 03708\nTurno: 03708PL03\nInício: 2022-10-27 14
- :30\nFim: 2022-10-27 16:00\nDocente: Rui Miguel Neto Marinheiro\n\nSemes
- ter: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\n
- Code: 03708\nShift: 03708PL03\nBegin: 2022-10-27 14:30\nEnd: 2022-10-27 
- 16:00\nTeacher: Rui Miguel Neto Marinheiro\n\n
-LOCATION:C7.09\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221014T083000Z
-DTEND:20221014T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366753@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-10-14 09:30\nF
- im: 2022-10-14 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-10-14 09:30\nEnd: 2022-10-14 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório B2.04\, 2\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230320T093000Z
-DTEND:20230320T110000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594308@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-03-20 09:30\nFim: 2023-03-20 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-03-20 09:30\
- nEnd: 2023-03-20 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221012T120000Z
 DTEND:20221012T133000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -917,7 +743,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.06\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230502T133000Z
 DTEND:20230502T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -933,21 +759,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221205T093000Z
-DTEND:20221205T110000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:1130336608060714@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-12-05 09:30\nF
- im: 2022-12-05 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-12-05 09:30\nEnd: 2022-12-05 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório Silva Leal\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221012T133000Z
 DTEND:20221012T150000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -961,22 +773,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230327T083000Z
-DTEND:20230327T100000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594309@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-03-27 09:30\nFim: 2023-03-27 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-03-27 09:30\
- nEnd: 2023-03-27 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230508T120000Z
 DTEND:20230508T133000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -991,22 +788,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230213T110000Z
-DTEND:20230213T123000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594317@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-02-13 11:00\nFim: 2023-02-13 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-02-13 11:00\
- nEnd: 2023-02-13 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230329T133000Z
 DTEND:20230329T150000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -1020,7 +802,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221107T143000Z
 DTEND:20221107T160000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -1034,7 +816,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221010T120000Z
 DTEND:20221010T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -1048,21 +830,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221110T143000Z
-DTEND:20221110T160000Z
-SUMMARY:Arquitetura de Redes - Network Arquitectures
-UID:847676220399529@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
- itetura de Redes\nCódigo: 03708\nTurno: 03708PL03\nInício: 2022-11-10 14
- :30\nFim: 2022-11-10 16:00\nDocente: João Carlos Marques Silva\n\nSemest
- er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
- ode: 03708\nShift: 03708PL03\nBegin: 2022-11-10 14:30\nEnd: 2022-11-10 1
- 6:00\nTeacher: João Carlos Marques Silva\n\n
-LOCATION:C7.09\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230504T133000Z
 DTEND:20230504T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -1076,7 +844,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230516T133000Z
 DTEND:20230516T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -1092,7 +860,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230228T160000Z
 DTEND:20230228T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1108,7 +876,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230324T160000Z
 DTEND:20230324T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1124,7 +892,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220921T133000Z
 DTEND:20220921T150000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -1138,7 +906,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221003T133000Z
 DTEND:20221003T150000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -1152,7 +920,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230420T150000Z
 DTEND:20230420T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1168,7 +936,21 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:D1.05\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
+DTSTART:20221215T143000Z
+DTEND:20221215T160000Z
+SUMMARY:Arquitetura de Redes - Network Arquitectures
+UID:1692101150526402@fenix.iscte.pt
+DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
+ itetura de Redes\nCódigo: 03708\nTurno: 03708PL02\nInício: 2022-12-15 14
+ :30\nFim: 2022-12-15 16:00\nDocente: José André Rocha Sá Moura\n\nSemest
+ er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
+ ode: 03708\nShift: 03708PL02\nBegin: 2022-12-15 14:30\nEnd: 2022-12-15 1
+ 6:00\nTeacher: José André Rocha Sá Moura\n\n
+LOCATION:C7.06\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
 DTSTART:20230208T160000Z
 DTEND:20230208T173000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -1183,7 +965,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221025T133000Z
 DTEND:20221025T150000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -1199,7 +981,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230424T133000Z
 DTEND:20230424T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -1215,7 +997,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221007T133000Z
 DTEND:20221007T150000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -1229,7 +1011,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221206T110000Z
 DTEND:20221206T123000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -1245,7 +1027,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:D1.05\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221031T143000Z
 DTEND:20221031T160000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -1259,7 +1041,21 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
+DTSTART:20221103T143000Z
+DTEND:20221103T160000Z
+SUMMARY:Arquitetura de Redes - Network Arquitectures
+UID:847676220399328@fenix.iscte.pt
+DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
+ itetura de Redes\nCódigo: 03708\nTurno: 03708PL02\nInício: 2022-11-03 14
+ :30\nFim: 2022-11-03 16:00\nDocente: João Carlos Marques Silva\n\nSemest
+ er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
+ ode: 03708\nShift: 03708PL02\nBegin: 2022-11-03 14:30\nEnd: 2022-11-03 1
+ 6:00\nTeacher: João Carlos Marques Silva\n\n
+LOCATION:C7.06\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
 DTSTART:20230206T143000Z
 DTEND:20230206T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -1275,21 +1071,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20220916T083000Z
-DTEND:20220916T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:847676220412316@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-09-16 09:30\nF
- im: 2022-09-16 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-09-16 09:30\nEnd: 2022-09-16 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório 2\, 2\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230301T160000Z
 DTEND:20230301T173000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -1304,7 +1086,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221206T143000Z
 DTEND:20221206T173000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -1320,21 +1102,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:D1.06\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221117T143000Z
-DTEND:20221117T160000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:1130336608060418@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-11-17 14:30\nF
- im: 2022-11-17 16:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-11-17 14:30\nEnd: 2022-11-17 1
- 6:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230510T133000Z
 DTEND:20230510T150000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -1348,21 +1116,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:C4.01\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20220915T133000Z
-DTEND:20220915T150000Z
-SUMMARY:Arquitetura de Redes - Network Arquitectures
-UID:847676220399435@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
- itetura de Redes\nCódigo: 03708\nTurno: 03708TP20\nInício: 2022-09-15 14
- :30\nFim: 2022-09-15 16:00\nDocente: José André Rocha Sá Moura\n\nSemest
- er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
- ode: 03708\nShift: 03708TP20\nBegin: 2022-09-15 14:30\nEnd: 2022-09-15 1
- 6:00\nTeacher: José André Rocha Sá Moura\n\n
-LOCATION:C5.01\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220926T133000Z
 DTEND:20220926T150000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -1376,7 +1130,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221205T143000Z
 DTEND:20221205T160000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -1390,7 +1144,21 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório 2\, 2\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
+DTSTART:20220915T133000Z
+DTEND:20220915T150000Z
+SUMMARY:Arquitetura de Redes - Network Arquitectures
+UID:847676220399435@fenix.iscte.pt
+DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
+ itetura de Redes\nCódigo: 03708\nTurno: 03708TP20\nInício: 2022-09-15 14
+ :30\nFim: 2022-09-15 16:00\nDocente: José André Rocha Sá Moura\n\nSemest
+ er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
+ ode: 03708\nShift: 03708TP20\nBegin: 2022-09-15 14:30\nEnd: 2022-09-15 1
+ 6:00\nTeacher: José André Rocha Sá Moura\n\n
+LOCATION:C5.01\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
 DTSTART:20230526T133000Z
 DTEND:20230526T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -1404,21 +1172,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:Auditório 4\, 2\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221028T083000Z
-DTEND:20221028T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366755@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-10-28 09:30\nF
- im: 2022-10-28 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-10-28 09:30\nEnd: 2022-10-28 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório C1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230525T133000Z
 DTEND:20230525T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -1432,7 +1186,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230323T143000Z
 DTEND:20230323T160000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -1446,7 +1200,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230417T133000Z
 DTEND:20230417T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -1462,7 +1216,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230308T093000Z
 DTEND:20230308T110000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -1477,7 +1231,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.02\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230302T130000Z
 DTEND:20230302T143000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -1491,7 +1245,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:Auditório C1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230331T133000Z
 DTEND:20230331T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -1505,21 +1259,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221117T130000Z
-DTEND:20221117T143000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:1130336608060416@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-11-17 13:00\nF
- im: 2022-11-17 14:30\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-11-17 13:00\nEnd: 2022-11-17 1
- 4:30\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230503T150000Z
 DTEND:20230503T163000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -1533,7 +1273,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230207T103000Z
 DTEND:20230207T120000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -1548,7 +1288,7 @@ LOCATION:Auditório 0NE03 - Mário Murteira\, 0\, Edifício Sedas Nunes (ISC
  TE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220921T150000Z
 DTEND:20220921T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -1563,7 +1303,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221123T160000Z
 DTEND:20221123T173000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -1578,7 +1318,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221017T150000Z
 DTEND:20221017T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -1594,7 +1334,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230412T133000Z
 DTEND:20230412T150000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -1608,7 +1348,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221019T120000Z
 DTEND:20221019T133000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -1622,7 +1362,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.06\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230516T120000Z
 DTEND:20230516T133000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -1638,7 +1378,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C4.06\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221206T130000Z
 DTEND:20221206T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -1652,7 +1392,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221018T120000Z
 DTEND:20221018T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -1666,7 +1406,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230216T143000Z
 DTEND:20230216T160000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -1680,7 +1420,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:Auditório B2.04\, 2\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221004T133000Z
 DTEND:20221004T150000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -1696,7 +1436,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220913T133000Z
 DTEND:20220913T150000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -1712,7 +1452,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221115T130000Z
 DTEND:20221115T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -1726,7 +1466,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221024T120000Z
 DTEND:20221024T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -1740,7 +1480,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221114T130000Z
 DTEND:20221114T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -1754,7 +1494,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221115T143000Z
 DTEND:20221115T160000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -1770,7 +1510,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221010T150000Z
 DTEND:20221010T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -1786,7 +1526,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221109T160000Z
 DTEND:20221109T173000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -1801,7 +1541,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230414T133000Z
 DTEND:20230414T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -1815,7 +1555,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230227T143000Z
 DTEND:20230227T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -1831,7 +1571,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230317T160000Z
 DTEND:20230317T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1847,7 +1587,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220923T150000Z
 DTEND:20220923T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -1861,7 +1601,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230321T160000Z
 DTEND:20230321T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1877,7 +1617,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230525T120000Z
 DTEND:20230525T133000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -1891,7 +1631,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221024T150000Z
 DTEND:20221024T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -1907,7 +1647,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230210T160000Z
 DTEND:20230210T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -1923,7 +1663,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230512T133000Z
 DTEND:20230512T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -1938,21 +1678,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221013T133000Z
-DTEND:20221013T150000Z
-SUMMARY:Arquitetura de Redes - Network Arquitectures
-UID:847676220399525@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
- itetura de Redes\nCódigo: 03708\nTurno: 03708PL03\nInício: 2022-10-13 14
- :30\nFim: 2022-10-13 16:00\nDocente: João Carlos Marques Silva\n\nSemest
- er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
- ode: 03708\nShift: 03708PL03\nBegin: 2022-10-13 14:30\nEnd: 2022-10-13 1
- 6:00\nTeacher: João Carlos Marques Silva\n\n
-LOCATION:C7.09\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230207T143000Z
 DTEND:20230207T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -1968,7 +1694,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230214T143000Z
 DTEND:20230214T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -1984,7 +1710,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221014T133000Z
 DTEND:20221014T150000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -1998,7 +1724,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221014T150000Z
 DTEND:20221014T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -2012,7 +1738,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230313T143000Z
 DTEND:20230313T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -2028,22 +1754,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230508T083000Z
-DTEND:20230508T100000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594312@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-05-08 09:30\nFim: 2023-05-08 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-05-08 09:30\
- nEnd: 2023-05-08 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230313T130000Z
 DTEND:20230313T143000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -2059,7 +1770,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230503T133000Z
 DTEND:20230503T150000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -2073,7 +1784,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221129T130000Z
 DTEND:20221129T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -2087,7 +1798,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230509T133000Z
 DTEND:20230509T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -2103,7 +1814,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230510T150000Z
 DTEND:20230510T163000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -2117,21 +1828,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:C4.01\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221124T143000Z
-DTEND:20221124T160000Z
-SUMMARY:Arquitetura de Redes - Network Arquitectures
-UID:1692101150526406@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
- itetura de Redes\nCódigo: 03708\nTurno: 03708PL03\nInício: 2022-11-24 14
- :30\nFim: 2022-11-24 16:00\nDocente: Rui Miguel Neto Marinheiro\n\nSemes
- ter: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\n
- Code: 03708\nShift: 03708PL03\nBegin: 2022-11-24 14:30\nEnd: 2022-11-24 
- 16:00\nTeacher: Rui Miguel Neto Marinheiro\n\n
-LOCATION:C7.09\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230518T133000Z
 DTEND:20230518T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -2145,7 +1842,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230216T160000Z
 DTEND:20230216T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -2161,7 +1858,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230419T120000Z
 DTEND:20230419T133000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -2175,7 +1872,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221018T150000Z
 DTEND:20221018T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -2191,7 +1888,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221019T133000Z
 DTEND:20221019T150000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -2205,21 +1902,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20220930T083000Z
-DTEND:20220930T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366751@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-09-30 09:30\nF
- im: 2022-09-30 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-09-30 09:30\nEnd: 2022-09-30 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório Silva Leal\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221017T120000Z
 DTEND:20221017T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -2233,21 +1916,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221024T083000Z
-DTEND:20221024T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366767@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-10-24 09:30\nF
- im: 2022-10-24 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-10-24 09:30\nEnd: 2022-10-24 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório Silva Leal\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220916T133000Z
 DTEND:20220916T150000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -2261,21 +1930,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221117T143000Z
-DTEND:20221117T160000Z
-SUMMARY:Arquitetura de Redes - Network Arquitectures
-UID:847676220399530@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
- itetura de Redes\nCódigo: 03708\nTurno: 03708PL03\nInício: 2022-11-17 14
- :30\nFim: 2022-11-17 16:00\nDocente: Rui Miguel Neto Marinheiro\n\nSemes
- ter: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\n
- Code: 03708\nShift: 03708PL03\nBegin: 2022-11-17 14:30\nEnd: 2022-11-17 
- 16:00\nTeacher: Rui Miguel Neto Marinheiro\n\n
-LOCATION:C7.09\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230314T130000Z
 DTEND:20230314T143000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -2291,21 +1946,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C4.06\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221117T160000Z
-DTEND:20221117T173000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:1130336608060420@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-11-17 16:00\nF
- im: 2022-11-17 17:30\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-11-17 16:00\nEnd: 2022-11-17 1
- 7:30\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230505T133000Z
 DTEND:20230505T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -2319,7 +1960,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221003T150000Z
 DTEND:20221003T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -2335,7 +1976,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220916T150000Z
 DTEND:20220916T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -2349,7 +1990,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230328T120000Z
 DTEND:20230328T133000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -2365,7 +2006,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C4.06\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221104T160000Z
 DTEND:20221104T173000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -2379,7 +2020,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221118T143000Z
 DTEND:20221118T160000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -2393,7 +2034,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221125T143000Z
 DTEND:20221125T160000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -2407,7 +2048,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230511T133000Z
 DTEND:20230511T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -2421,7 +2062,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221012T150000Z
 DTEND:20221012T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -2436,7 +2077,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230322T143000Z
 DTEND:20230322T160000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -2451,21 +2092,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221128T093000Z
-DTEND:20221128T110000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366772@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-11-28 09:30\nF
- im: 2022-11-28 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-11-28 09:30\nEnd: 2022-11-28 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório Silva Leal\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230424T120000Z
 DTEND:20230424T133000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -2480,22 +2107,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230508T100000Z
-DTEND:20230508T113000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594325@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-05-08 11:00\nFim: 2023-05-08 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-05-08 11:00\
- nEnd: 2023-05-08 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230330T133000Z
 DTEND:20230330T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -2509,7 +2121,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230327T133000Z
 DTEND:20230327T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -2525,7 +2137,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230320T143000Z
 DTEND:20230320T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -2541,7 +2153,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221121T143000Z
 DTEND:20221121T160000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -2555,7 +2167,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230418T133000Z
 DTEND:20230418T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -2571,7 +2183,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230315T143000Z
 DTEND:20230315T160000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -2586,22 +2198,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230206T110000Z
-DTEND:20230206T123000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594316@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-02-06 11:00\nFim: 2023-02-06 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-02-06 11:00\
- nEnd: 2023-02-06 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230419T133000Z
 DTEND:20230419T150000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -2615,7 +2212,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230421T150000Z
 DTEND:20230421T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -2631,7 +2228,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221108T143000Z
 DTEND:20221108T160000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -2647,7 +2244,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230421T133000Z
 DTEND:20230421T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -2661,7 +2258,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:Auditório 4\, 2\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221213T143000Z
 DTEND:20221213T160000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -2677,7 +2274,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230523T150000Z
 DTEND:20230523T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -2693,7 +2290,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C4.08\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230428T150000Z
 DTEND:20230428T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -2709,7 +2306,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221004T150000Z
 DTEND:20221004T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -2725,7 +2322,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230328T150000Z
 DTEND:20230328T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -2741,7 +2338,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230330T150000Z
 DTEND:20230330T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -2757,7 +2354,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220927T120000Z
 DTEND:20220927T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -2771,7 +2368,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221011T150000Z
 DTEND:20221011T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -2787,7 +2384,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220927T150000Z
 DTEND:20220927T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -2803,21 +2400,21 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221003T083000Z
-DTEND:20221003T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366764@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-10-03 09:30\nF
- im: 2022-10-03 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-10-03 09:30\nEnd: 2022-10-03 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório C1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
+DTSTAMP:20230507T165117Z
+DTSTART:20221027T133000Z
+DTEND:20221027T150000Z
+SUMMARY:Arquitetura de Redes - Network Arquitectures
+UID:847676220399327@fenix.iscte.pt
+DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
+ itetura de Redes\nCódigo: 03708\nTurno: 03708PL02\nInício: 2022-10-27 14
+ :30\nFim: 2022-10-27 16:00\nDocente: Rui Miguel Neto Marinheiro\n\nSemes
+ ter: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\n
+ Code: 03708\nShift: 03708PL02\nBegin: 2022-10-27 14:30\nEnd: 2022-10-27 
+ 16:00\nTeacher: Rui Miguel Neto Marinheiro\n\n
+LOCATION:C7.06\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220914T150000Z
 DTEND:20220914T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -2832,7 +2429,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221025T150000Z
 DTEND:20221025T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -2848,7 +2445,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220913T150000Z
 DTEND:20220913T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -2864,7 +2461,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221215T093000Z
 DTEND:20221215T120000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -2880,7 +2477,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221130T130000Z
 DTEND:20221130T143000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -2894,21 +2491,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.06\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221118T093000Z
-DTEND:20221118T110000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366758@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-11-18 09:30\nF
- im: 2022-11-18 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-11-18 09:30\nEnd: 2022-11-18 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230316T130000Z
 DTEND:20230316T143000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -2922,7 +2505,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221207T160000Z
 DTEND:20221207T173000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -2937,7 +2520,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221102T160000Z
 DTEND:20221102T173000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -2952,7 +2535,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230321T143000Z
 DTEND:20230321T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -2968,7 +2551,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230206T160000Z
 DTEND:20230206T173000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -2982,7 +2565,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230307T160000Z
 DTEND:20230307T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -2998,7 +2581,21 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
+DTSTART:20221013T133000Z
+DTEND:20221013T150000Z
+SUMMARY:Arquitetura de Redes - Network Arquitectures
+UID:847676220399325@fenix.iscte.pt
+DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
+ itetura de Redes\nCódigo: 03708\nTurno: 03708PL02\nInício: 2022-10-13 14
+ :30\nFim: 2022-10-13 16:00\nDocente: João Carlos Marques Silva\n\nSemest
+ er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
+ ode: 03708\nShift: 03708PL02\nBegin: 2022-10-13 14:30\nEnd: 2022-10-13 1
+ 6:00\nTeacher: João Carlos Marques Silva\n\n
+LOCATION:C7.06\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
 DTSTART:20230417T120000Z
 DTEND:20230417T133000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -3013,7 +2610,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220927T133000Z
 DTEND:20220927T150000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -3029,7 +2626,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221212T160000Z
 DTEND:20221212T173000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -3045,7 +2642,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221108T130000Z
 DTEND:20221108T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -3059,7 +2656,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230418T120000Z
 DTEND:20230418T133000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -3075,7 +2672,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C4.06\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230314T160000Z
 DTEND:20230314T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -3091,22 +2688,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230227T093000Z
-DTEND:20230227T110000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594305@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-02-27 09:30\nFim: 2023-02-27 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-02-27 09:30\
- nEnd: 2023-02-27 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221017T133000Z
 DTEND:20221017T150000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -3120,22 +2702,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230313T093000Z
-DTEND:20230313T110000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594307@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-03-13 09:30\nFim: 2023-03-13 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-03-13 09:30\
- nEnd: 2023-03-13 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220919T120000Z
 DTEND:20220919T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -3149,7 +2716,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221028T133000Z
 DTEND:20221028T150000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -3163,7 +2730,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221007T150000Z
 DTEND:20221007T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -3177,7 +2744,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230214T130000Z
 DTEND:20230214T143000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -3193,7 +2760,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221024T133000Z
 DTEND:20221024T150000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -3207,7 +2774,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221004T120000Z
 DTEND:20221004T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -3221,21 +2788,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221114T093000Z
-DTEND:20221114T110000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366770@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-11-14 09:30\nF
- im: 2022-11-14 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-11-14 09:30\nEnd: 2022-11-14 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório Silva Leal\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221125T160000Z
 DTEND:20221125T173000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -3249,7 +2802,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230228T130000Z
 DTEND:20230228T143000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -3265,7 +2818,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221202T143000Z
 DTEND:20221202T160000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -3279,7 +2832,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221109T130000Z
 DTEND:20221109T143000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -3293,22 +2846,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.06\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20220912T083000Z
-DTEND:20220912T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:847676220412318@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-09-12 09:30\nF
- im: 2022-09-12 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-09-12 09:30\nEnd: 2022-09-12 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório 0NE03 - Mário Murteira\, 0\, Edifício Sedas Nunes (ISC
- TE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220913T120000Z
 DTEND:20220913T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -3322,7 +2860,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220930T150000Z
 DTEND:20220930T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -3336,7 +2874,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220919T133000Z
 DTEND:20220919T150000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -3350,21 +2888,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221017T083000Z
-DTEND:20221017T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366766@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-10-17 09:30\nF
- im: 2022-10-17 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-10-17 09:30\nEnd: 2022-10-17 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório Silva Leal\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221006T133000Z
 DTEND:20221006T150000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -3378,7 +2902,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório C1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230511T133000Z
 DTEND:20230511T150000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -3394,22 +2918,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:0S08\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230522T100000Z
-DTEND:20230522T113000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:7322786095694043@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-05-22 11:00\nFim: 2023-05-22 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-05-22 11:00\
- nEnd: 2023-05-22 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230228T143000Z
 DTEND:20230228T160000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -3425,7 +2934,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230511T120000Z
 DTEND:20230511T133000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -3439,7 +2948,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230227T160000Z
 DTEND:20230227T173000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -3454,7 +2963,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230522T133000Z
 DTEND:20230522T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -3470,7 +2979,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221205T130000Z
 DTEND:20221205T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -3484,7 +2993,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230518T120000Z
 DTEND:20230518T133000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -3498,7 +3007,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230315T160000Z
 DTEND:20230315T173000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -3513,7 +3022,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230302T160000Z
 DTEND:20230302T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -3529,7 +3038,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:D1.05\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220926T120000Z
 DTEND:20220926T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -3543,7 +3052,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221019T150000Z
 DTEND:20221019T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -3558,7 +3067,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221115T160000Z
 DTEND:20221115T173000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -3574,22 +3083,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230515T083000Z
-DTEND:20230515T100000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594313@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-05-15 09:30\nFim: 2023-05-15 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-05-15 09:30\
- nEnd: 2023-05-15 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221123T130000Z
 DTEND:20221123T143000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -3603,7 +3097,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.06\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230427T120000Z
 DTEND:20230427T133000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -3618,7 +3112,7 @@ LOCATION:Auditório Afonso de Barros\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCT
  E-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221116T143000Z
 DTEND:20221116T160000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -3632,51 +3126,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230313T110000Z
-DTEND:20230313T123000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594320@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-03-13 11:00\nFim: 2023-03-13 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-03-13 11:00\
- nEnd: 2023-03-13 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221207T130000Z
-DTEND:20221207T143000Z
-SUMMARY:Arquitetura de Redes - Network Arquitectures
-UID:5915411212141383@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
- itetura de Redes\nCódigo: 03708\nTurno: 03708PL03\nInício: 2022-12-07 13
- :00\nFim: 2022-12-07 14:30\nDocente: José André Rocha Sá Moura\n\nSemest
- er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
- ode: 03708\nShift: 03708PL03\nBegin: 2022-12-07 13:00\nEnd: 2022-12-07 1
- 4:30\nTeacher: José André Rocha Sá Moura\n\n
-LOCATION:C7.09\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230417T100000Z
-DTEND:20230417T113000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594323@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-04-17 11:00\nFim: 2023-04-17 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-04-17 11:00\
- nEnd: 2023-04-17 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230306T130000Z
 DTEND:20230306T143000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -3692,7 +3142,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221003T120000Z
 DTEND:20221003T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -3706,7 +3156,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221028T150000Z
 DTEND:20221028T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -3720,21 +3170,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221007T083000Z
-DTEND:20221007T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366752@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-10-07 09:30\nF
- im: 2022-10-07 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-10-07 09:30\nEnd: 2022-10-07 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório C1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230510T120000Z
 DTEND:20230510T133000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -3748,22 +3184,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:C4.01\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230227T110000Z
-DTEND:20230227T123000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594318@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-02-27 11:00\nFim: 2023-02-27 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-02-27 11:00\
- nEnd: 2023-02-27 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221129T160000Z
 DTEND:20221129T173000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -3779,7 +3200,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230512T150000Z
 DTEND:20230512T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -3795,7 +3216,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.08\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221118T160000Z
 DTEND:20221118T173000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -3809,7 +3230,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221116T160000Z
 DTEND:20221116T173000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -3824,7 +3245,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230413T120000Z
 DTEND:20230413T133000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -3838,21 +3259,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221020T133000Z
-DTEND:20221020T150000Z
-SUMMARY:Arquitetura de Redes - Network Arquitectures
-UID:847676220399526@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
- itetura de Redes\nCódigo: 03708\nTurno: 03708PL03\nInício: 2022-10-20 14
- :30\nFim: 2022-10-20 16:00\nDocente: Rui Miguel Neto Marinheiro\n\nSemes
- ter: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\n
- Code: 03708\nShift: 03708PL03\nBegin: 2022-10-20 14:30\nEnd: 2022-10-20 
- 16:00\nTeacher: Rui Miguel Neto Marinheiro\n\n
-LOCATION:C7.09\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220926T150000Z
 DTEND:20220926T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -3868,7 +3275,21 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
+DTSTART:20220929T133000Z
+DTEND:20220929T150000Z
+SUMMARY:Arquitetura de Redes - Network Arquitectures
+UID:847676220399323@fenix.iscte.pt
+DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
+ itetura de Redes\nCódigo: 03708\nTurno: 03708PL02\nInício: 2022-09-29 14
+ :30\nFim: 2022-09-29 16:00\nDocente: João Carlos Marques Silva\n\nSemest
+ er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
+ ode: 03708\nShift: 03708PL02\nBegin: 2022-09-29 14:30\nEnd: 2022-09-29 1
+ 6:00\nTeacher: João Carlos Marques Silva\n\n
+LOCATION:C7.06\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
 DTSTART:20221107T130000Z
 DTEND:20221107T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -3882,7 +3303,21 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
+DTSTART:20221020T133000Z
+DTEND:20221020T150000Z
+SUMMARY:Arquitetura de Redes - Network Arquitectures
+UID:847676220399326@fenix.iscte.pt
+DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
+ itetura de Redes\nCódigo: 03708\nTurno: 03708PL02\nInício: 2022-10-20 14
+ :30\nFim: 2022-10-20 16:00\nDocente: Rui Miguel Neto Marinheiro\n\nSemes
+ ter: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\n
+ Code: 03708\nShift: 03708PL02\nBegin: 2022-10-20 14:30\nEnd: 2022-10-20 
+ 16:00\nTeacher: Rui Miguel Neto Marinheiro\n\n
+LOCATION:C7.06\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
 DTSTART:20220912T133000Z
 DTEND:20220912T150000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -3896,7 +3331,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221010T133000Z
 DTEND:20221010T150000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -3910,7 +3345,21 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
+DTSTART:20221110T143000Z
+DTEND:20221110T160000Z
+SUMMARY:Arquitetura de Redes - Network Arquitectures
+UID:847676220399329@fenix.iscte.pt
+DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
+ itetura de Redes\nCódigo: 03708\nTurno: 03708PL02\nInício: 2022-11-10 14
+ :30\nFim: 2022-11-10 16:00\nDocente: João Carlos Marques Silva\n\nSemest
+ er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
+ ode: 03708\nShift: 03708PL02\nBegin: 2022-11-10 14:30\nEnd: 2022-11-10 1
+ 6:00\nTeacher: João Carlos Marques Silva\n\n
+LOCATION:C7.06\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
 DTSTART:20230427T150000Z
 DTEND:20230427T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -3926,7 +3375,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:D1.05\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221207T143000Z
 DTEND:20221207T160000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -3940,7 +3389,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230216T130000Z
 DTEND:20230216T143000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -3954,7 +3403,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:Auditório B2.04\, 2\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221122T130000Z
 DTEND:20221122T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -3968,21 +3417,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20220926T083000Z
-DTEND:20220926T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366763@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-09-26 09:30\nF
- im: 2022-09-26 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-09-26 09:30\nEnd: 2022-09-26 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório Silva Leal\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230301T143000Z
 DTEND:20230301T160000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -3997,7 +3432,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220920T120000Z
 DTEND:20220920T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -4011,7 +3446,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230323T160000Z
 DTEND:20230323T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -4027,7 +3462,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:D1.05\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230515T120000Z
 DTEND:20230515T133000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -4042,7 +3477,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230428T133000Z
 DTEND:20230428T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -4056,7 +3491,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221109T143000Z
 DTEND:20221109T160000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -4070,7 +3505,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230330T120000Z
 DTEND:20230330T133000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -4084,7 +3519,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221213T160000Z
 DTEND:20221213T173000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -4100,7 +3535,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230420T120000Z
 DTEND:20230420T133000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -4114,7 +3549,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220914T120000Z
 DTEND:20220914T133000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -4128,7 +3563,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.06\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220928T133000Z
 DTEND:20220928T150000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -4142,7 +3577,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221114T160000Z
 DTEND:20221114T173000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -4158,7 +3593,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221102T100000Z
 DTEND:20221102T130000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -4174,7 +3609,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230331T150000Z
 DTEND:20230331T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -4190,7 +3625,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230411T120000Z
 DTEND:20230411T133000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -4206,7 +3641,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C4.06\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221108T160000Z
 DTEND:20221108T173000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -4222,21 +3657,35 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221021T083000Z
-DTEND:20221021T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366754@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-10-21 09:30\nF
- im: 2022-10-21 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-10-21 09:30\nEnd: 2022-10-21 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório C1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
+DTSTAMP:20230507T165117Z
+DTSTART:20221124T143000Z
+DTEND:20221124T160000Z
+SUMMARY:Arquitetura de Redes - Network Arquitectures
+UID:1692101150526401@fenix.iscte.pt
+DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
+ itetura de Redes\nCódigo: 03708\nTurno: 03708PL02\nInício: 2022-11-24 14
+ :30\nFim: 2022-11-24 16:00\nDocente: Rui Miguel Neto Marinheiro\n\nSemes
+ ter: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\n
+ Code: 03708\nShift: 03708PL02\nBegin: 2022-11-24 14:30\nEnd: 2022-11-24 
+ 16:00\nTeacher: Rui Miguel Neto Marinheiro\n\n
+LOCATION:C7.06\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
+DTSTART:20221117T143000Z
+DTEND:20221117T160000Z
+SUMMARY:Arquitetura de Redes - Network Arquitectures
+UID:847676220399330@fenix.iscte.pt
+DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
+ itetura de Redes\nCódigo: 03708\nTurno: 03708PL02\nInício: 2022-11-17 14
+ :30\nFim: 2022-11-17 16:00\nDocente: Rui Miguel Neto Marinheiro\n\nSemes
+ ter: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\n
+ Code: 03708\nShift: 03708PL02\nBegin: 2022-11-17 14:30\nEnd: 2022-11-17 
+ 16:00\nTeacher: Rui Miguel Neto Marinheiro\n\n
+LOCATION:C7.06\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
 DTSTART:20221104T143000Z
 DTEND:20221104T160000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -4250,7 +3699,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220912T120000Z
 DTEND:20220912T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -4264,7 +3713,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220928T150000Z
 DTEND:20220928T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -4279,7 +3728,21 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
+DTSTART:20221207T130000Z
+DTEND:20221207T143000Z
+SUMMARY:Arquitetura de Redes - Network Arquitectures
+UID:848861631350260@fenix.iscte.pt
+DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
+ itetura de Redes\nCódigo: 03708\nTurno: 03708PL02\nInício: 2022-12-07 13
+ :00\nFim: 2022-12-07 14:30\nDocente: José André Rocha Sá Moura\n\nSemest
+ er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
+ ode: 03708\nShift: 03708PL02\nBegin: 2022-12-07 13:00\nEnd: 2022-12-07 1
+ 4:30\nTeacher: José André Rocha Sá Moura\n\n
+LOCATION:C7.06\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
 DTSTART:20220912T150000Z
 DTEND:20220912T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -4295,7 +3758,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221107T160000Z
 DTEND:20221107T173000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -4311,7 +3774,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230208T143000Z
 DTEND:20230208T160000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -4326,7 +3789,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220919T150000Z
 DTEND:20220919T163000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -4342,37 +3805,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230529T100000Z
-DTEND:20230529T113000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:2537711491614138@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-05-29 11:00\nFim: 2023-05-29 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-05-29 11:00\
- nEnd: 2023-05-29 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230529T083000Z
-DTEND:20230529T100000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:2537711491614137@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-05-29 09:30\nFim: 2023-05-29 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-05-29 09:30\
- nEnd: 2023-05-29 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230215T160000Z
 DTEND:20230215T173000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -4387,7 +3820,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221011T120000Z
 DTEND:20221011T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -4401,7 +3834,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230519T133000Z
 DTEND:20230519T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -4416,7 +3849,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230518T133000Z
 DTEND:20230518T150000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -4432,7 +3865,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:D1.05\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221011T133000Z
 DTEND:20221011T150000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -4448,7 +3881,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230207T160000Z
 DTEND:20230207T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -4464,21 +3897,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221121T093000Z
-DTEND:20221121T110000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366771@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-11-21 09:30\nF
- im: 2022-11-21 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-11-21 09:30\nEnd: 2022-11-21 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório Silva Leal\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230316T143000Z
 DTEND:20230316T160000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -4492,7 +3911,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230303T143000Z
 DTEND:20230303T160000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -4506,7 +3925,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230215T143000Z
 DTEND:20230215T160000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -4521,7 +3940,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221116T130000Z
 DTEND:20221116T143000Z
 SUMMARY:Arquitetura de Redes - Network Arquitectures
@@ -4535,22 +3954,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:C5.06\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230515T100000Z
-DTEND:20230515T113000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594326@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-05-15 11:00\nFim: 2023-05-15 12:30\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-05-15 11:00\
- nEnd: 2023-05-15 12:30\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230420T133000Z
 DTEND:20230420T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -4564,21 +3968,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20220929T133000Z
-DTEND:20220929T150000Z
-SUMMARY:Arquitetura de Redes - Network Arquitectures
-UID:847676220399523@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
- itetura de Redes\nCódigo: 03708\nTurno: 03708PL03\nInício: 2022-09-29 14
- :30\nFim: 2022-09-29 16:00\nDocente: João Carlos Marques Silva\n\nSemest
- er: 2022/2023 - 1.º Semestre\nExecution course: Network Arquitectures\nC
- ode: 03708\nShift: 03708PL03\nBegin: 2022-09-29 14:30\nEnd: 2022-09-29 1
- 6:00\nTeacher: João Carlos Marques Silva\n\n
-LOCATION:C7.09\, 7\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230308T110000Z
 DTEND:20230308T123000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -4593,7 +3983,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.02\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221021T150000Z
 DTEND:20221021T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -4607,22 +3997,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230522T083000Z
-DTEND:20230522T100000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:7322786095694044@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-05-22 09:30\nFim: 2023-05-22 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-05-22 09:30\
- nEnd: 2023-05-22 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230412T150000Z
 DTEND:20230412T163000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -4636,7 +4011,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221121T130000Z
 DTEND:20221121T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -4650,7 +4025,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230508T133000Z
 DTEND:20230508T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -4666,7 +4041,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220930T133000Z
 DTEND:20220930T150000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -4680,37 +4055,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230206T093000Z
-DTEND:20230206T110000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594303@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-02-06 09:30\nFim: 2023-02-06 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-02-06 09:30\
- nEnd: 2023-02-06 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230213T093000Z
-DTEND:20230213T110000Z
-SUMMARY:Engenharia de Linguagens de Programação - Programming Language En
- gineering
-UID:6477175754594304@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
- nharia de Linguagens de Programação\nCódigo: 03871\nTurno: ELPPL02\nIníc
- io: 2023-02-13 09:30\nFim: 2023-02-13 11:00\nDocente: André Leal Santos\
- n\nSemester: 2022/2023 - 2.º Semestre\nExecution course: Programming Lan
- guage Engineering\nCode: 03871\nShift: ELPPL02\nBegin: 2023-02-13 09:30\
- nEnd: 2023-02-13 11:00\nTeacher: André Leal Santos\n\n
-LOCATION:D1.07\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230504T150000Z
 DTEND:20230504T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -4726,7 +4071,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:D1.05\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221026T150000Z
 DTEND:20221026T163000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -4741,7 +4086,7 @@ LOCATION:Auditório 0NE02-Caiano Pereira\, 0\, Edifício Sedas Nunes (ISCTE
  -IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230427T133000Z
 DTEND:20230427T150000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -4756,7 +4101,7 @@ LOCATION:Auditório Afonso de Barros\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCT
  E-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230505T150000Z
 DTEND:20230505T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -4772,7 +4117,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221031T130000Z
 DTEND:20221031T143000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -4786,7 +4131,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório B1.03\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230307T130000Z
 DTEND:20230307T143000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -4802,7 +4147,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C4.06\, 4\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230419T150000Z
 DTEND:20230419T163000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -4816,7 +4161,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230324T143000Z
 DTEND:20230324T160000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -4830,7 +4175,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230217T160000Z
 DTEND:20230217T173000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -4846,7 +4191,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230210T143000Z
 DTEND:20230210T160000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -4860,7 +4205,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:C6.10\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230302T143000Z
 DTEND:20230302T160000Z
 SUMMARY:Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -4874,7 +4219,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:Auditório C1.04\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230411T133000Z
 DTEND:20230411T150000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -4890,7 +4235,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221021T133000Z
 DTEND:20221021T150000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -4904,7 +4249,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220914T133000Z
 DTEND:20220914T150000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -4918,35 +4263,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221031T093000Z
-DTEND:20221031T110000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366768@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-10-31 09:30\nF
- im: 2022-10-31 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-10-31 09:30\nEnd: 2022-10-31 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório Silva Leal\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20220919T083000Z
-DTEND:20220919T100000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:847676220412319@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-09-19 09:30\nF
- im: 2022-09-19 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-09-19 09:30\nEnd: 2022-09-19 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório Silva Leal\, 1\, Ala Autónoma (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20220920T133000Z
 DTEND:20220920T150000Z
 SUMMARY:Programação Concorrente e Distribuída - Concurrent and Parallel P
@@ -4962,21 +4279,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:0S01\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221125T093000Z
-DTEND:20221125T110000Z
-SUMMARY:Empreendedorismo - Entrepreneurship
-UID:6758650731366759@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nCódigo: L5033\nTurno: EmpTP03\nInício: 2022-11-25 09:30\nF
- im: 2022-11-25 11:00\nDocente: Renato Telo de Freitas Barbosa Pereira\n\
- nSemester: 2022/2023 - 1.º Semestre\nExecution course: Entrepreneurship\
- nCode: L5033\nShift: EmpTP03\nBegin: 2022-11-25 09:30\nEnd: 2022-11-25 1
- 1:00\nTeacher: Renato Telo de Freitas Barbosa Pereira\n\n
-LOCATION:Auditório 2\, 2\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230426T133000Z
 DTEND:20230426T150000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -4990,7 +4293,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230426T150000Z
 DTEND:20230426T163000Z
 SUMMARY:Engenharia de Software - Software Engineering
@@ -5004,7 +4307,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:D1.09\, 1\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230207T130000Z
 DTEND:20230207T143000Z
 SUMMARY:Projeto de Integração de Sistemas de Informação Distribuídos - Di
@@ -5020,7 +4323,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:0S02\, 0\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230502T150000Z
 DTEND:20230502T163000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -5036,7 +4339,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C6.07\, 6\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221025T120000Z
 DTEND:20221025T133000Z
 SUMMARY:Agentes Autónomos - Autonomous Agents
@@ -5050,7 +4353,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:C5.08\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221111T160000Z
 DTEND:20221111T173000Z
 SUMMARY:Processamento de Informação - Information Processing
@@ -5064,7 +4367,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório 1\, 1\, Edifício Sedas Nunes (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230517T133000Z
 DTEND:20230517T150000Z
 SUMMARY:Desenvolvimento para A Internet e Aplicações Móveis - Development
@@ -5080,7 +4383,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:C5.07\, 5\, Edifício II (ISCTE-IUL)\, ISCTE-IUL
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230626T140000Z
 DTEND:20230626T170000Z
 SUMMARY:Exame: Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -5094,7 +4397,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:Auditório B1.03
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230601T103000Z
 DTEND:20230601T133000Z
 SUMMARY:Exame: Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -5108,7 +4411,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:Auditório 4
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230714T070000Z
 DTEND:20230714T100000Z
 SUMMARY:Exame: Interacção Pessoa-Máquina - Human-Computer Interaction
@@ -5122,101 +4425,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Inte
 LOCATION:AA3.23
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221012T010000Z
-DTEND:20221212T120000Z
-SUMMARY:Avaliação Contínua: Empreendedorismo - Entrepreneurship
-UID:2257610904437903@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nDescrição: Relatório de grupo\nCódigo: L5033\nInício: 2022
- -10-12 02:00\nFim: 2022-12-12 12:00\n\nSemester: 2022/2023 - 1.º Semestr
- e\nExecution course: Entrepreneurship\nDescription: Relatório de grupo\n
- Code: L5033\nBegin: 2022-10-12 02:00\nEnd: 2022-12-12 12:00\n\n
-LOCATION:
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221121T020800Z
-DTEND:20221125T220800Z
-SUMMARY:Avaliação Contínua: Empreendedorismo - Entrepreneurship
-UID:2257610904437902@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nDescrição: Apresentação em grupo\nCódigo: L5033\nInício: 2
- 022-11-21 02:08\nFim: 2022-11-25 22:08\n\nSemester: 2022/2023 - 1.º Seme
- stre\nExecution course: Entrepreneurship\nDescription: Apresentação em g
- rupo\nCode: L5033\nBegin: 2022-11-21 02:08\nEnd: 2022-11-25 22:08\n\n
-LOCATION:
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230106T150000Z
-DTEND:20230106T180000Z
-SUMMARY:Exame: Empreendedorismo - Entrepreneurship
-UID:7324160485229445@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nDescrição: Exame - 1.ª Época\nCódigo: L5033\nInício: 2023-
- 01-06 15:00\nFim: 2023-01-06 18:00\n\nSemester: 2022/2023 - 1.º Semestre
- \nExecution course: Entrepreneurship\nDescription: Exame - 1.ª Época\nCo
- de: L5033\nBegin: 2023-01-06 15:00\nEnd: 2023-01-06 18:00\n\n
-LOCATION:Auditório 0NE02-Caiano Pereira\, Auditório 2\, Auditório 4\, Aud
- itório 0NE03 - Mário Murteira\, Auditório 1NE03 - JJ Laginha
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20221010T010600Z
-DTEND:20221014T210600Z
-SUMMARY:Avaliação Contínua: Empreendedorismo - Entrepreneurship
-UID:2257610904437901@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nDescrição: Apresentação individual\nCódigo: L5033\nInício:
-  2022-10-10 02:06\nFim: 2022-10-14 22:06\n\nSemester: 2022/2023 - 1.º Se
- mestre\nExecution course: Entrepreneurship\nDescription: Apresentação in
- dividual\nCode: L5033\nBegin: 2022-10-10 02:06\nEnd: 2022-10-14 22:06\n\
- n
-LOCATION:
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20220912T083000Z
-DTEND:20221215T123000Z
-SUMMARY:Avaliação Contínua: Empreendedorismo - Entrepreneurship
-UID:2257610904437900@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nDescrição: Assiduidade e Participação\nCódigo: L5033\nIníc
- io: 2022-09-12 09:30\nFim: 2022-12-15 12:30\n\nSemester: 2022/2023 - 1.º
-  Semestre\nExecution course: Entrepreneurship\nDescription: Assiduidade 
- e Participação\nCode: L5033\nBegin: 2022-09-12 09:30\nEnd: 2022-12-15 12
- :30\n\n
-LOCATION:
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230106T150000Z
-DTEND:20230106T170000Z
-SUMMARY:Avaliação Contínua: Empreendedorismo - Entrepreneurship
-UID:2257610904437904@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nDescrição: Frequência/Teste\nCódigo: L5033\nInício: 2023-0
- 1-06 15:00\nFim: 2023-01-06 17:00\n\nSemester: 2022/2023 - 1.º Semestre\
- nExecution course: Entrepreneurship\nDescription: Frequência/Teste\nCode
- : L5033\nBegin: 2023-01-06 15:00\nEnd: 2023-01-06 17:00\n\n
-LOCATION:
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
-DTSTART:20230124T150000Z
-DTEND:20230124T180000Z
-SUMMARY:Exame: Empreendedorismo - Entrepreneurship
-UID:7324160485229446@fenix.iscte.pt
-DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Empr
- eendedorismo\nDescrição: Exame - 2.ª Época\nCódigo: L5033\nInício: 2023-
- 01-24 15:00\nFim: 2023-01-24 18:00\n\nSemester: 2022/2023 - 1.º Semestre
- \nExecution course: Entrepreneurship\nDescription: Exame - 2.ª Época\nCo
- de: L5033\nBegin: 2023-01-24 15:00\nEnd: 2023-01-24 18:00\n\n
-LOCATION:Auditório B1.04\, Auditório B1.03
-END:VEVENT
-BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221029T090000Z
 DTEND:20221029T103000Z
 SUMMARY:Avaliação Contínua: Arquitetura de Redes - Network Arquitectures
@@ -5230,7 +4439,7 @@ LOCATION:Auditório 1NE03 - JJ Laginha\, Auditório B2.04\, Auditório B1.04
  \, Auditório B1.03
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230711T070000Z
 DTEND:20230711T100000Z
 SUMMARY:Exame: Arquitetura de Redes - Network Arquitectures
@@ -5244,7 +4453,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230104T183000Z
 DTEND:20230104T213000Z
 SUMMARY:Exame: Arquitetura de Redes - Network Arquitectures
@@ -5258,7 +4467,7 @@ LOCATION:Auditório B1.03\, C4.06\, Auditório C1.03\, C6.01\, Auditório B1
  .04\, Auditório 4
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230123T150000Z
 DTEND:20230123T180000Z
 SUMMARY:Exame: Arquitetura de Redes - Network Arquitectures
@@ -5271,7 +4480,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Arqu
 LOCATION:Auditório B1.04\, Auditório B1.03
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230614T140000Z
 DTEND:20230614T170000Z
 SUMMARY:Exame: Desenvolvimento para A Internet e Aplicações Móveis - Deve
@@ -5286,7 +4495,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:Auditório C1.03\, Auditório B1.04\, Auditório B1.03
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230630T103000Z
 DTEND:20230630T133000Z
 SUMMARY:Exame: Desenvolvimento para A Internet e Aplicações Móveis - Deve
@@ -5301,7 +4510,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:Auditório B1.03
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230714T173000Z
 DTEND:20230714T203000Z
 SUMMARY:Exame: Desenvolvimento para A Internet e Aplicações Móveis - Deve
@@ -5316,7 +4525,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Dese
 LOCATION:AA3.23
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230612T140000Z
 DTEND:20230612T170000Z
 SUMMARY:Exame: Engenharia de Software - Software Engineering
@@ -5329,7 +4538,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:Auditório 1NE03 - JJ Laginha\, Auditório 4
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230627T140000Z
 DTEND:20230627T170000Z
 SUMMARY:Exame: Engenharia de Software - Software Engineering
@@ -5342,7 +4551,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:Auditório B1.03
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230712T070000Z
 DTEND:20230712T100000Z
 SUMMARY:Exame: Engenharia de Software - Software Engineering
@@ -5356,7 +4565,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Enge
 LOCATION:AA3.23
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230713T070000Z
 DTEND:20230713T100000Z
 SUMMARY:Exame: Projeto de Integração de Sistemas de Informação Distribuíd
@@ -5372,7 +4581,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:AA3.28
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230629T140000Z
 DTEND:20230629T170000Z
 SUMMARY:Exame: Projeto de Integração de Sistemas de Informação Distribuíd
@@ -5387,7 +4596,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:Auditório B1.04
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230606T103000Z
 DTEND:20230606T133000Z
 SUMMARY:Exame: Projeto de Integração de Sistemas de Informação Distribuíd
@@ -5402,7 +4611,7 @@ DESCRIPTION:Semestre: 2022/2023 - 2.º Semestre\nUnidade de execução: Proj
 LOCATION:B2.01\, Auditório B1.03\, Auditório B1.04
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230116T113000Z
 DTEND:20230116T143000Z
 SUMMARY:Exame: Programação Concorrente e Distribuída - Concurrent and Par
@@ -5417,7 +4626,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório B2.04\, Auditório B1.04\, Auditório B1.03
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230128T150000Z
 DTEND:20230128T180000Z
 SUMMARY:Exame: Programação Concorrente e Distribuída - Concurrent and Par
@@ -5432,7 +4641,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:Auditório 4
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230710T070000Z
 DTEND:20230710T100000Z
 SUMMARY:Exame: Programação Concorrente e Distribuída - Concurrent and Par
@@ -5447,7 +4656,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Prog
 LOCATION:
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221105T093000Z
 DTEND:20221105T123000Z
 SUMMARY:Teste: Agentes Autónomos - Autonomous Agents
@@ -5461,7 +4670,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:2E02\, Auditório 4
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20221210T093000Z
 DTEND:20221210T123000Z
 SUMMARY:Teste: Agentes Autónomos - Autonomous Agents
@@ -5475,7 +4684,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório 4
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230711T140000Z
 DTEND:20230711T170000Z
 SUMMARY:Exame: Agentes Autónomos - Autonomous Agents
@@ -5488,7 +4697,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230124T150000Z
 DTEND:20230124T180000Z
 SUMMARY:Exame: Agentes Autónomos - Autonomous Agents
@@ -5501,7 +4710,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório 1NE03 - JJ Laginha
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230109T150000Z
 DTEND:20230109T180000Z
 SUMMARY:Exame: Agentes Autónomos - Autonomous Agents
@@ -5514,7 +4723,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Agen
 LOCATION:Auditório 1NE03 - JJ Laginha
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230126T150000Z
 DTEND:20230126T180000Z
 SUMMARY:Exame: Processamento de Informação - Information Processing
@@ -5528,7 +4737,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:Auditório B2.04
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230112T183000Z
 DTEND:20230112T213000Z
 SUMMARY:Exame: Processamento de Informação - Information Processing
@@ -5542,7 +4751,7 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
 LOCATION:2E02\, Auditório 4
 END:VEVENT
 BEGIN:VEVENT
-DTSTAMP:20230507T160111Z
+DTSTAMP:20230507T165117Z
 DTSTART:20230713T140000Z
 DTEND:20230713T170000Z
 SUMMARY:Exame: Processamento de Informação - Information Processing
@@ -5554,5 +4763,83 @@ DESCRIPTION:Semestre: 2022/2023 - 1.º Semestre\nUnidade de execução: Proc
  xame Época Especial\nCode: L0779\nBegin: 2023-07-13 15:00\nEnd: 2023-07-
  13 18:00\n\n
 LOCATION:
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
+DTSTART:20230412T133000Z
+DTEND:20230412T213000Z
+SUMMARY:Alunos
+UID:4223241342158506_0@fenix.iscte.pt
+DESCRIPTION:Alunos\n\n\nResponsible participant /Participante responsável
+ : Mauro Daniel Fortes\nOther participants /Outros participantes: \n   Ti
+ ago Batista\n   Naylene Barreto\n   Gonçalo Botelho\n   João Carlos Oliv
+ eira\n   Duarte Nuno Laranjeiro\n
+LOCATION:D1.10
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
+DTSTART:20230419T090000Z
+DTEND:20230419T130000Z
+SUMMARY:Alunos
+UID:2534391481896928_0@fenix.iscte.pt
+DESCRIPTION:Alunos\n\n\nResponsible participant /Participante responsável
+ : Francisco Correia Rodrigues\nOther participants /Outros participantes:
+  \n   Alcilinda Sanha Cabral\n   João Carlos Oliveira\n   Djibril Djaman
+ ca\n
+LOCATION:D1.03
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
+DTSTART:20230502T103000Z
+DTEND:20230502T220000Z
+SUMMARY:Alunos
+UID:1408491575053608_0@fenix.iscte.pt
+DESCRIPTION:Alunos\n\n\nResponsible participant /Participante responsável
+ : Eliel Costa da Glória\nOther participants /Outros participantes: \n   
+ Gonçalo Taveira\n   João Henrique Silva\n   Diogo Cosme\n   Ana Margarid
+ a Valério\n   Miguel D´aguiar\n   Pedro Afonso Oliveira\n   Gonçalo Bote
+ lho\n   Tiago Batista\n   João Carlos Oliveira\n   Daniel Morgado\n   Er
+ ika Saraiva\n   Nuno Alves\n   Diogo Miguel Rodrigues\n   Maria João Bog
+ alho\n   Margarida Dias\n   Ruben Francisco Silva\n
+LOCATION:D1.14
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
+DTSTART:20230314T090000Z
+DTEND:20230314T180000Z
+SUMMARY:Alunos
+UID:3941766365448940_0@fenix.iscte.pt
+DESCRIPTION:Alunos\n\n\nResponsible participant /Participante responsável
+ : Ross Wallace\nOther participants /Outros participantes: \n   Tiago Bat
+ ista\n   João Carlos Oliveira\n   Erika Saraiva\n   Carlos Moura Quedi\n
+    Duarte Nuno Laranjeiro\n
+LOCATION:D1.11
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
+DTSTART:20230321T090000Z
+DTEND:20230321T223000Z
+SUMMARY:Alunos
+UID:3378816412027415_0@fenix.iscte.pt
+DESCRIPTION:Alunos\n\n\nResponsible participant /Participante responsável
+ : Stefany dos Santos Fortes\nOther participants /Outros participantes: \
+ n   Gonçalo Botelho\n   João Carlos Oliveira\n   Tiago Batista\n   Ava P
+ erl\n
+LOCATION:D1.10
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20230507T165117Z
+DTSTART:20230320T090000Z
+DTEND:20230320T223000Z
+SUMMARY:Alunos
+UID:3378816412027330_0@fenix.iscte.pt
+DESCRIPTION:Alunos\n\n\nResponsible participant /Participante responsável
+ : Jéssica Gonçalves Raposo\nOther participants /Outros participantes: \n
+    Inês Pedro Pinto\n   André Simões Soares\n   Francisco de Brito\n   S
+ antiago Rafael Veloso\n   Tomás Leal\n   Eliel Costa da Glória\n   Gonça
+ lo Botelho\n   Matilde Gomes Glória\n   Rodrigo José Parente\n   Tiago B
+ atista\n   João Carlos Oliveira\n   Gonçalo Miguel Serrano\n   Elisabete
+  Kirikov\n
+LOCATION:D1.14
 END:VEVENT
 END:VCALENDAR

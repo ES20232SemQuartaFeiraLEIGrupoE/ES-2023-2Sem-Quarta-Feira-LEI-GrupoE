@@ -1,4 +1,4 @@
-console.log("V116")
+console.log("V119")
 var blocks = [];
 var selectedBlocks = [];
 
@@ -35,6 +35,7 @@ btnLoadFile.addEventListener('click', function() {
     }
     populateCoursesDropdown(courses)
     blocks = data
+    selectedBlocks = blocks
     populateSubjectChecklist(blocks)
       coursesDropdown.classList.remove("hide")
     drawCalendar(blocks);
@@ -61,6 +62,7 @@ urlForm.addEventListener('submit', function(event) {
     }
     populateCoursesDropdown(courses)
     blocks = data
+    selectedBlocks = blocks
     populateSubjectChecklist(blocks)
       coursesDropdown.classList.add("hide")
     drawCalendar(blocks);
@@ -69,7 +71,6 @@ urlForm.addEventListener('submit', function(event) {
 
 // Popular menu de cursos
 function populateCoursesDropdown(courses) {
-   // console.log(courses)
    coursesDropdown.innerHTML="";
 
     var uniqueCourses = [...new Set(courses)];
@@ -127,6 +128,7 @@ subjectSelector.addEventListener("change", () => {
     const selectedCheckboxes = Array.from(subjectSelector.querySelectorAll("input[type=checkbox]:checked"));
     const selectedSubjects = selectedCheckboxes.map(checkbox => checkbox.value);
     if (selectedSubjects.length === 0) {
+       selectedBlocks = []
       drawCalendar([]); // No checkboxes are selected, draw all blocks
     } else {
         selectedBlocks = blocks.filter(block => selectedSubjects.includes(block["Unidade Curricular"]));
@@ -138,11 +140,11 @@ subjectSelector.addEventListener("change", () => {
 function saveToCSV() {
   const apiUrl = '/api/savecsv'; // URL of the API endpoint to save blocks
   const formData = new FormData(); // Create a new form data object
-    console.log(selectedBlocks);
+  console.log(selectedBlocks)
   const blocksJson = JSON.stringify(selectedBlocks); // Convert the blocks array to a JSON string
   const blocksBlob = new Blob([blocksJson], { type: 'application/json' }); // Create a new Blob object from the JSON string
-  formData.append('file', blocksBlob, 'blocks.json'); // Add the Blob object to the form data with a filename of 'blocks.json'
-  // console.log(blocksJson); // Log the JSON string to the console for debugging purposes
+  formData.append('file', blocksBlob, blocksBlob.name); // Add the Blob object to the form data with the filename of the uploaded file
+  console.log('File name:', blocksBlob.name); // Print the name of the uploaded file to the console
   fetch(apiUrl, {
     method: 'POST', // Use the HTTP POST method to send data to the API
     body: formData // Set the body of the request to the form data object containing the JSON file
@@ -151,7 +153,17 @@ function saveToCSV() {
     if (!response.ok) { // If the response from the API is not successful
       throw new Error('Failed to save blocks to API'); // Throw an error with a message indicating the save failed
     }
-    //  console.log('Blocks saved to API successfully'); // Log a success message to the console
+    // Convert the response to a Blob object
+    return response.blob();
+  })
+  .then(blob => {
+    // Create a download link for the received file
+    const downloadLink = document.createElement('a');
+    downloadLink.href = URL.createObjectURL(blob);
+    downloadLink.download = 'schedule.csv';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
   })
   .catch(error => {
     // console.error(error); // If an error occurs, log it to the console
@@ -173,7 +185,17 @@ function saveToJson() {
     if (!response.ok) { // If the response from the API is not successful
       throw new Error('Failed to save blocks to API'); // Throw an error with a message indicating the save failed
     }
-    //  console.log('Blocks saved to API successfully'); // Log a success message to the console
+    // Convert the response to a Blob object
+    return response.blob();
+  })
+  .then(blob => {
+    // Create a download link for the received file
+    const downloadLink = document.createElement('a');
+    downloadLink.href = URL.createObjectURL(blob);
+    downloadLink.download = 'blocks.json';
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
   })
   .catch(error => {
     // console.error(error); // If an error occurs, log it to the console
@@ -182,17 +204,15 @@ function saveToJson() {
 
 // Tarefa 25
 function checkLotacion(block){
-    return block["Lotação da sala"] < block["Inscritos no turno"]
+    return parseInt(block["Lotação da sala"]) < parseInt(block["Inscritos no turno"])
 }
-
-
 
 
 function drawCalendar(events) {
     aux = 0;
     var overlapcount = 0;
     var lotacioncount = 0;
-    updateCounters(overlapcount, lotacioncount);
+    //updateCounters(overlapcount, lotacioncount);
 
     // Inicializar o
     currentView = $('#calendar').fullCalendar('getView').name;
@@ -244,7 +264,6 @@ function drawCalendar(events) {
     }
   });
 
-  // If the event overlaps with another event, change the background color to red
   if (overlaps) {
     element.css('background-color', 'purple');
     overlapcount += 1;
@@ -262,19 +281,19 @@ function drawCalendar(events) {
     var modalDialog = $('<div>').addClass('modal-dialog');
     var modalContent = $('<div>').addClass('modal-content custom-style');
     var modalHeader = $('<div>').addClass('modal-header').html('<h5 class="modal-title">' + event["Unidade Curricular"]);
-    var modalBody = $('<div>').addClass('modal-body').html('<br>Número de inscrições: ' + event["Inscritos no turno"] + '<br>Tamanho da sala: ' + event["Lotação da sala"] );
+    var modalBody = $('<div>').addClass('modal-body').html('<br> Sala: '+ event["Sala atribuída à aula"] + '<br>Número de inscrições: ' + event["Inscritos no turno"] + '<br>Tamanho da sala: ' + event["Lotação da sala"]);
     modalContent.append(modalHeader, modalBody);
     modalDialog.append(modalContent);
     modal.append(modalDialog);
 
     // Adicionar o modal ao corpo da página e exibi-lo
     $('body').append(modal);
-    modal.addClass('show');
 
+    modal.addClass('show');
         $('html, body').animate({ scrollTop: $(document).height() }, 'slow');
     }
      });
 
-    if(aux == 0)    updateCounters(overlapcount, lotacioncount);
+    if(aux == 0)   updateCounters(overlapcount/2, lotacioncount);
     aux = 1;
 }
