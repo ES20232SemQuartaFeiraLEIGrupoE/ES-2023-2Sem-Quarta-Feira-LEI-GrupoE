@@ -66,11 +66,11 @@ public class CalendarController {
                         <div class="mid">
                             <h2>Info</h2>
                             <div>\s
-                                <h3 class="countertxt">Número de Sobrelotações</h3>\s
+                                <h3 class="countertxt">Número de Blocos com Sobrelotações</h3>\s
                                 <h3 class="counter">0 </h3>
                             </div>
                             <div>\s
-                                <h3 class="counterotxt">Número de Sobreposições</h3>\s
+                                <h3 class="counterotxt">Número de Blocos com Sobreposições</h3>\s
                                 <h3 class="countero"> 0 </h3>
                             </div>
                         </div>
